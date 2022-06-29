@@ -1,5 +1,7 @@
 # FPGA-Placement-Generator
 
+**This tool is a work in project**
+
 This tool generates a macro_placement.cfg file for use with OpenLANE and OpenFPGA. It takes as input a config.tcl file, an fpga_top.v and your parameters.
 
 Motivation: 
