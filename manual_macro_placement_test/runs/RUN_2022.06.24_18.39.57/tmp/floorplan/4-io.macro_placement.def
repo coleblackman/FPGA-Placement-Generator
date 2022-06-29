@@ -1,0 +1,497 @@
+VERSION 5.8 ;
+DIVIDERCHAR "/" ;
+BUSBITCHARS "[]" ;
+DESIGN manual_macro_placement_test ;
+UNITS DISTANCE MICRONS 1000 ;
+DIEAREA ( 0 0 ) ( 312060 322780 ) ;
+ROW ROW_0 unithd 5520 10880 N DO 654 BY 1 STEP 460 0 ;
+ROW ROW_1 unithd 5520 13600 FS DO 654 BY 1 STEP 460 0 ;
+ROW ROW_2 unithd 5520 16320 N DO 654 BY 1 STEP 460 0 ;
+ROW ROW_3 unithd 5520 19040 FS DO 654 BY 1 STEP 460 0 ;
+ROW ROW_4 unithd 5520 21760 N DO 654 BY 1 STEP 460 0 ;
+ROW ROW_5 unithd 5520 24480 FS DO 654 BY 1 STEP 460 0 ;
+ROW ROW_6 unithd 5520 27200 N DO 654 BY 1 STEP 460 0 ;
+ROW ROW_7 unithd 5520 29920 FS DO 654 BY 1 STEP 460 0 ;
+ROW ROW_8 unithd 5520 32640 N DO 654 BY 1 STEP 460 0 ;
+ROW ROW_9 unithd 5520 35360 FS DO 654 BY 1 STEP 460 0 ;
+ROW ROW_10 unithd 5520 38080 N DO 654 BY 1 STEP 460 0 ;
+ROW ROW_11 unithd 5520 40800 FS DO 654 BY 1 STEP 460 0 ;
+ROW ROW_12 unithd 5520 43520 N DO 654 BY 1 STEP 460 0 ;
+ROW ROW_13 unithd 5520 46240 FS DO 654 BY 1 STEP 460 0 ;
+ROW ROW_14 unithd 5520 48960 N DO 654 BY 1 STEP 460 0 ;
+ROW ROW_15 unithd 5520 51680 FS DO 654 BY 1 STEP 460 0 ;
+ROW ROW_16 unithd 5520 54400 N DO 654 BY 1 STEP 460 0 ;
+ROW ROW_17 unithd 5520 57120 FS DO 654 BY 1 STEP 460 0 ;
+ROW ROW_18 unithd 5520 59840 N DO 654 BY 1 STEP 460 0 ;
+ROW ROW_19 unithd 5520 62560 FS DO 654 BY 1 STEP 460 0 ;
+ROW ROW_20 unithd 5520 65280 N DO 654 BY 1 STEP 460 0 ;
+ROW ROW_21 unithd 5520 68000 FS DO 654 BY 1 STEP 460 0 ;
+ROW ROW_22 unithd 5520 70720 N DO 654 BY 1 STEP 460 0 ;
+ROW ROW_23 unithd 5520 73440 FS DO 654 BY 1 STEP 460 0 ;
+ROW ROW_24 unithd 5520 76160 N DO 654 BY 1 STEP 460 0 ;
+ROW ROW_25 unithd 5520 78880 FS DO 654 BY 1 STEP 460 0 ;
+ROW ROW_26 unithd 5520 81600 N DO 654 BY 1 STEP 460 0 ;
+ROW ROW_27 unithd 5520 84320 FS DO 654 BY 1 STEP 460 0 ;
+ROW ROW_28 unithd 5520 87040 N DO 654 BY 1 STEP 460 0 ;
+ROW ROW_29 unithd 5520 89760 FS DO 654 BY 1 STEP 460 0 ;
+ROW ROW_30 unithd 5520 92480 N DO 654 BY 1 STEP 460 0 ;
+ROW ROW_31 unithd 5520 95200 FS DO 654 BY 1 STEP 460 0 ;
+ROW ROW_32 unithd 5520 97920 N DO 654 BY 1 STEP 460 0 ;
+ROW ROW_33 unithd 5520 100640 FS DO 654 BY 1 STEP 460 0 ;
+ROW ROW_34 unithd 5520 103360 N DO 654 BY 1 STEP 460 0 ;
+ROW ROW_35 unithd 5520 106080 FS DO 654 BY 1 STEP 460 0 ;
+ROW ROW_36 unithd 5520 108800 N DO 654 BY 1 STEP 460 0 ;
+ROW ROW_37 unithd 5520 111520 FS DO 654 BY 1 STEP 460 0 ;
+ROW ROW_38 unithd 5520 114240 N DO 654 BY 1 STEP 460 0 ;
+ROW ROW_39 unithd 5520 116960 FS DO 654 BY 1 STEP 460 0 ;
+ROW ROW_40 unithd 5520 119680 N DO 654 BY 1 STEP 460 0 ;
+ROW ROW_41 unithd 5520 122400 FS DO 654 BY 1 STEP 460 0 ;
+ROW ROW_42 unithd 5520 125120 N DO 654 BY 1 STEP 460 0 ;
+ROW ROW_43 unithd 5520 127840 FS DO 654 BY 1 STEP 460 0 ;
+ROW ROW_44 unithd 5520 130560 N DO 654 BY 1 STEP 460 0 ;
+ROW ROW_45 unithd 5520 133280 FS DO 654 BY 1 STEP 460 0 ;
+ROW ROW_46 unithd 5520 136000 N DO 654 BY 1 STEP 460 0 ;
+ROW ROW_47 unithd 5520 138720 FS DO 654 BY 1 STEP 460 0 ;
+ROW ROW_48 unithd 5520 141440 N DO 654 BY 1 STEP 460 0 ;
+ROW ROW_49 unithd 5520 144160 FS DO 654 BY 1 STEP 460 0 ;
+ROW ROW_50 unithd 5520 146880 N DO 654 BY 1 STEP 460 0 ;
+ROW ROW_51 unithd 5520 149600 FS DO 654 BY 1 STEP 460 0 ;
+ROW ROW_52 unithd 5520 152320 N DO 654 BY 1 STEP 460 0 ;
+ROW ROW_53 unithd 5520 155040 FS DO 654 BY 1 STEP 460 0 ;
+ROW ROW_54 unithd 5520 157760 N DO 654 BY 1 STEP 460 0 ;
+ROW ROW_55 unithd 5520 160480 FS DO 654 BY 1 STEP 460 0 ;
+ROW ROW_56 unithd 5520 163200 N DO 654 BY 1 STEP 460 0 ;
+ROW ROW_57 unithd 5520 165920 FS DO 654 BY 1 STEP 460 0 ;
+ROW ROW_58 unithd 5520 168640 N DO 654 BY 1 STEP 460 0 ;
+ROW ROW_59 unithd 5520 171360 FS DO 654 BY 1 STEP 460 0 ;
+ROW ROW_60 unithd 5520 174080 N DO 654 BY 1 STEP 460 0 ;
+ROW ROW_61 unithd 5520 176800 FS DO 654 BY 1 STEP 460 0 ;
+ROW ROW_62 unithd 5520 179520 N DO 654 BY 1 STEP 460 0 ;
+ROW ROW_63 unithd 5520 182240 FS DO 654 BY 1 STEP 460 0 ;
+ROW ROW_64 unithd 5520 184960 N DO 654 BY 1 STEP 460 0 ;
+ROW ROW_65 unithd 5520 187680 FS DO 654 BY 1 STEP 460 0 ;
+ROW ROW_66 unithd 5520 190400 N DO 654 BY 1 STEP 460 0 ;
+ROW ROW_67 unithd 5520 193120 FS DO 654 BY 1 STEP 460 0 ;
+ROW ROW_68 unithd 5520 195840 N DO 654 BY 1 STEP 460 0 ;
+ROW ROW_69 unithd 5520 198560 FS DO 654 BY 1 STEP 460 0 ;
+ROW ROW_70 unithd 5520 201280 N DO 654 BY 1 STEP 460 0 ;
+ROW ROW_71 unithd 5520 204000 FS DO 654 BY 1 STEP 460 0 ;
+ROW ROW_72 unithd 5520 206720 N DO 654 BY 1 STEP 460 0 ;
+ROW ROW_73 unithd 5520 209440 FS DO 654 BY 1 STEP 460 0 ;
+ROW ROW_74 unithd 5520 212160 N DO 654 BY 1 STEP 460 0 ;
+ROW ROW_75 unithd 5520 214880 FS DO 654 BY 1 STEP 460 0 ;
+ROW ROW_76 unithd 5520 217600 N DO 654 BY 1 STEP 460 0 ;
+ROW ROW_77 unithd 5520 220320 FS DO 654 BY 1 STEP 460 0 ;
+ROW ROW_78 unithd 5520 223040 N DO 654 BY 1 STEP 460 0 ;
+ROW ROW_79 unithd 5520 225760 FS DO 654 BY 1 STEP 460 0 ;
+ROW ROW_80 unithd 5520 228480 N DO 654 BY 1 STEP 460 0 ;
+ROW ROW_81 unithd 5520 231200 FS DO 654 BY 1 STEP 460 0 ;
+ROW ROW_82 unithd 5520 233920 N DO 654 BY 1 STEP 460 0 ;
+ROW ROW_83 unithd 5520 236640 FS DO 654 BY 1 STEP 460 0 ;
+ROW ROW_84 unithd 5520 239360 N DO 654 BY 1 STEP 460 0 ;
+ROW ROW_85 unithd 5520 242080 FS DO 654 BY 1 STEP 460 0 ;
+ROW ROW_86 unithd 5520 244800 N DO 654 BY 1 STEP 460 0 ;
+ROW ROW_87 unithd 5520 247520 FS DO 654 BY 1 STEP 460 0 ;
+ROW ROW_88 unithd 5520 250240 N DO 654 BY 1 STEP 460 0 ;
+ROW ROW_89 unithd 5520 252960 FS DO 654 BY 1 STEP 460 0 ;
+ROW ROW_90 unithd 5520 255680 N DO 654 BY 1 STEP 460 0 ;
+ROW ROW_91 unithd 5520 258400 FS DO 654 BY 1 STEP 460 0 ;
+ROW ROW_92 unithd 5520 261120 N DO 654 BY 1 STEP 460 0 ;
+ROW ROW_93 unithd 5520 263840 FS DO 654 BY 1 STEP 460 0 ;
+ROW ROW_94 unithd 5520 266560 N DO 654 BY 1 STEP 460 0 ;
+ROW ROW_95 unithd 5520 269280 FS DO 654 BY 1 STEP 460 0 ;
+ROW ROW_96 unithd 5520 272000 N DO 654 BY 1 STEP 460 0 ;
+ROW ROW_97 unithd 5520 274720 FS DO 654 BY 1 STEP 460 0 ;
+ROW ROW_98 unithd 5520 277440 N DO 654 BY 1 STEP 460 0 ;
+ROW ROW_99 unithd 5520 280160 FS DO 654 BY 1 STEP 460 0 ;
+ROW ROW_100 unithd 5520 282880 N DO 654 BY 1 STEP 460 0 ;
+ROW ROW_101 unithd 5520 285600 FS DO 654 BY 1 STEP 460 0 ;
+ROW ROW_102 unithd 5520 288320 N DO 654 BY 1 STEP 460 0 ;
+ROW ROW_103 unithd 5520 291040 FS DO 654 BY 1 STEP 460 0 ;
+ROW ROW_104 unithd 5520 293760 N DO 654 BY 1 STEP 460 0 ;
+ROW ROW_105 unithd 5520 296480 FS DO 654 BY 1 STEP 460 0 ;
+ROW ROW_106 unithd 5520 299200 N DO 654 BY 1 STEP 460 0 ;
+ROW ROW_107 unithd 5520 301920 FS DO 654 BY 1 STEP 460 0 ;
+ROW ROW_108 unithd 5520 304640 N DO 654 BY 1 STEP 460 0 ;
+ROW ROW_109 unithd 5520 307360 FS DO 654 BY 1 STEP 460 0 ;
+TRACKS X 230 DO 678 STEP 460 LAYER li1 ;
+TRACKS Y 170 DO 949 STEP 340 LAYER li1 ;
+TRACKS X 170 DO 918 STEP 340 LAYER met1 ;
+TRACKS Y 170 DO 949 STEP 340 LAYER met1 ;
+TRACKS X 230 DO 678 STEP 460 LAYER met2 ;
+TRACKS Y 230 DO 702 STEP 460 LAYER met2 ;
+TRACKS X 340 DO 459 STEP 680 LAYER met3 ;
+TRACKS Y 340 DO 475 STEP 680 LAYER met3 ;
+TRACKS X 460 DO 339 STEP 920 LAYER met4 ;
+TRACKS Y 460 DO 351 STEP 920 LAYER met4 ;
+TRACKS X 1700 DO 92 STEP 3400 LAYER met5 ;
+TRACKS Y 1700 DO 95 STEP 3400 LAYER met5 ;
+COMPONENTS 2 ;
+    - spm_inst_0 spm + FIXED ( 5590 100230 ) N ;
+    - spm_inst_1 spm + FIXED ( 179870 100230 ) N ;
+END COMPONENTS
+PINS 72 ;
+    - clk1 + NET clk1 + DIRECTION INPUT + USE SIGNAL
+      + PORT
+        + LAYER met3 ( -2000 -300 ) ( 2000 300 )
+        + PLACED ( 2000 214540 ) N ;
+    - clk2 + NET clk2 + DIRECTION INPUT + USE SIGNAL
+      + PORT
+        + LAYER met3 ( -2000 -300 ) ( 2000 300 )
+        + PLACED ( 310060 68340 ) N ;
+    - p1 + NET p1 + DIRECTION OUTPUT + USE SIGNAL
+      + PORT
+        + LAYER met3 ( -2000 -300 ) ( 2000 300 )
+        + PLACED ( 2000 88740 ) N ;
+    - p2 + NET p2 + DIRECTION OUTPUT + USE SIGNAL
+      + PORT
+        + LAYER met3 ( -2000 -300 ) ( 2000 300 )
+        + PLACED ( 310060 231540 ) N ;
+    - rst1 + NET rst1 + DIRECTION INPUT + USE SIGNAL
+      + PORT
+        + LAYER met3 ( -2000 -300 ) ( 2000 300 )
+        + PLACED ( 2000 251940 ) N ;
+    - rst2 + NET rst2 + DIRECTION INPUT + USE SIGNAL
+      + PORT
+        + LAYER met3 ( -2000 -300 ) ( 2000 300 )
+        + PLACED ( 310060 105740 ) N ;
+    - x1[0] + NET x1[0] + DIRECTION INPUT + USE SIGNAL
+      + PORT
+        + LAYER met2 ( -140 -2000 ) ( 140 2000 )
+        + PLACED ( 19550 320780 ) N ;
+    - x1[10] + NET x1[10] + DIRECTION INPUT + USE SIGNAL
+      + PORT
+        + LAYER met2 ( -140 -2000 ) ( 140 2000 )
+        + PLACED ( 222410 2000 ) N ;
+    - x1[11] + NET x1[11] + DIRECTION INPUT + USE SIGNAL
+      + PORT
+        + LAYER met3 ( -2000 -300 ) ( 2000 300 )
+        + PLACED ( 310060 194140 ) N ;
+    - x1[12] + NET x1[12] + DIRECTION INPUT + USE SIGNAL
+      + PORT
+        + LAYER met3 ( -2000 -300 ) ( 2000 300 )
+        + PLACED ( 2000 180540 ) N ;
+    - x1[13] + NET x1[13] + DIRECTION INPUT + USE SIGNAL
+      + PORT
+        + LAYER met3 ( -2000 -300 ) ( 2000 300 )
+        + PLACED ( 310060 30940 ) N ;
+    - x1[14] + NET x1[14] + DIRECTION INPUT + USE SIGNAL
+      + PORT
+        + LAYER met2 ( -140 -2000 ) ( 140 2000 )
+        + PLACED ( 238510 2000 ) N ;
+    - x1[15] + NET x1[15] + DIRECTION INPUT + USE SIGNAL
+      + PORT
+        + LAYER met2 ( -140 -2000 ) ( 140 2000 )
+        + PLACED ( 186990 2000 ) N ;
+    - x1[16] + NET x1[16] + DIRECTION INPUT + USE SIGNAL
+      + PORT
+        + LAYER met3 ( -2000 -300 ) ( 2000 300 )
+        + PLACED ( 2000 51340 ) N ;
+    - x1[17] + NET x1[17] + DIRECTION INPUT + USE SIGNAL
+      + PORT
+        + LAYER met2 ( -140 -2000 ) ( 140 2000 )
+        + PLACED ( 309350 2000 ) N ;
+    - x1[18] + NET x1[18] + DIRECTION INPUT + USE SIGNAL
+      + PORT
+        + LAYER met3 ( -2000 -300 ) ( 2000 300 )
+        + PLACED ( 310060 51340 ) N ;
+    - x1[19] + NET x1[19] + DIRECTION INPUT + USE SIGNAL
+      + PORT
+        + LAYER met2 ( -140 -2000 ) ( 140 2000 )
+        + PLACED ( 273930 2000 ) N ;
+    - x1[1] + NET x1[1] + DIRECTION INPUT + USE SIGNAL
+      + PORT
+        + LAYER met2 ( -140 -2000 ) ( 140 2000 )
+        + PLACED ( 241730 320780 ) N ;
+    - x1[20] + NET x1[20] + DIRECTION INPUT + USE SIGNAL
+      + PORT
+        + LAYER met2 ( -140 -2000 ) ( 140 2000 )
+        + PLACED ( 225630 320780 ) N ;
+    - x1[21] + NET x1[21] + DIRECTION INPUT + USE SIGNAL
+      + PORT
+        + LAYER met3 ( -2000 -300 ) ( 2000 300 )
+        + PLACED ( 2000 234940 ) N ;
+    - x1[22] + NET x1[22] + DIRECTION INPUT + USE SIGNAL
+      + PORT
+        + LAYER met3 ( -2000 -300 ) ( 2000 300 )
+        + PLACED ( 310060 214540 ) N ;
+    - x1[23] + NET x1[23] + DIRECTION INPUT + USE SIGNAL
+      + PORT
+        + LAYER met3 ( -2000 -300 ) ( 2000 300 )
+        + PLACED ( 310060 248540 ) N ;
+    - x1[24] + NET x1[24] + DIRECTION INPUT + USE SIGNAL
+      + PORT
+        + LAYER met3 ( -2000 -300 ) ( 2000 300 )
+        + PLACED ( 2000 268940 ) N ;
+    - x1[25] + NET x1[25] + DIRECTION INPUT + USE SIGNAL
+      + PORT
+        + LAYER met2 ( -140 -2000 ) ( 140 2000 )
+        + PLACED ( 170890 2000 ) N ;
+    - x1[26] + NET x1[26] + DIRECTION INPUT + USE SIGNAL
+      + PORT
+        + LAYER met2 ( -140 -2000 ) ( 140 2000 )
+        + PLACED ( 83950 2000 ) N ;
+    - x1[27] + NET x1[27] + DIRECTION INPUT + USE SIGNAL
+      + PORT
+        + LAYER met3 ( -2000 -300 ) ( 2000 300 )
+        + PLACED ( 2000 306340 ) N ;
+    - x1[28] + NET x1[28] + DIRECTION INPUT + USE SIGNAL
+      + PORT
+        + LAYER met3 ( -2000 -300 ) ( 2000 300 )
+        + PLACED ( 2000 17340 ) N ;
+    - x1[29] + NET x1[29] + DIRECTION INPUT + USE SIGNAL
+      + PORT
+        + LAYER met2 ( -140 -2000 ) ( 140 2000 )
+        + PLACED ( 190210 320780 ) N ;
+    - x1[2] + NET x1[2] + DIRECTION INPUT + USE SIGNAL
+      + PORT
+        + LAYER met2 ( -140 -2000 ) ( 140 2000 )
+        + PLACED ( 51750 320780 ) N ;
+    - x1[30] + NET x1[30] + DIRECTION INPUT + USE SIGNAL
+      + PORT
+        + LAYER met2 ( -140 -2000 ) ( 140 2000 )
+        + PLACED ( 67850 2000 ) N ;
+    - x1[31] + NET x1[31] + DIRECTION INPUT + USE SIGNAL
+      + PORT
+        + LAYER met2 ( -140 -2000 ) ( 140 2000 )
+        + PLACED ( 122590 320780 ) N ;
+    - x1[3] + NET x1[3] + DIRECTION INPUT + USE SIGNAL
+      + PORT
+        + LAYER met2 ( -140 -2000 ) ( 140 2000 )
+        + PLACED ( 293250 320780 ) N ;
+    - x1[4] + NET x1[4] + DIRECTION INPUT + USE SIGNAL
+      + PORT
+        + LAYER met2 ( -140 -2000 ) ( 140 2000 )
+        + PLACED ( 290030 2000 ) N ;
+    - x1[5] + NET x1[5] + DIRECTION INPUT + USE SIGNAL
+      + PORT
+        + LAYER met2 ( -140 -2000 ) ( 140 2000 )
+        + PLACED ( 154790 320780 ) N ;
+    - x1[6] + NET x1[6] + DIRECTION INPUT + USE SIGNAL
+      + PORT
+        + LAYER met2 ( -140 -2000 ) ( 140 2000 )
+        + PLACED ( 309350 320780 ) N ;
+    - x1[7] + NET x1[7] + DIRECTION INPUT + USE SIGNAL
+      + PORT
+        + LAYER met2 ( -140 -2000 ) ( 140 2000 )
+        + PLACED ( 257830 2000 ) N ;
+    - x1[8] + NET x1[8] + DIRECTION INPUT + USE SIGNAL
+      + PORT
+        + LAYER met2 ( -140 -2000 ) ( 140 2000 )
+        + PLACED ( 138690 320780 ) N ;
+    - x1[9] + NET x1[9] + DIRECTION INPUT + USE SIGNAL
+      + PORT
+        + LAYER met3 ( -2000 -300 ) ( 2000 300 )
+        + PLACED ( 2000 34340 ) N ;
+    - x2[0] + NET x2[0] + DIRECTION INPUT + USE SIGNAL
+      + PORT
+        + LAYER met3 ( -2000 -300 ) ( 2000 300 )
+        + PLACED ( 310060 85340 ) N ;
+    - x2[10] + NET x2[10] + DIRECTION INPUT + USE SIGNAL
+      + PORT
+        + LAYER met3 ( -2000 -300 ) ( 2000 300 )
+        + PLACED ( 2000 71740 ) N ;
+    - x2[11] + NET x2[11] + DIRECTION INPUT + USE SIGNAL
+      + PORT
+        + LAYER met3 ( -2000 -300 ) ( 2000 300 )
+        + PLACED ( 310060 122740 ) N ;
+    - x2[12] + NET x2[12] + DIRECTION INPUT + USE SIGNAL
+      + PORT
+        + LAYER met2 ( -140 -2000 ) ( 140 2000 )
+        + PLACED ( 230 320780 ) N ;
+    - x2[13] + NET x2[13] + DIRECTION INPUT + USE SIGNAL
+      + PORT
+        + LAYER met2 ( -140 -2000 ) ( 140 2000 )
+        + PLACED ( 206310 320780 ) N ;
+    - x2[14] + NET x2[14] + DIRECTION INPUT + USE SIGNAL
+      + PORT
+        + LAYER met2 ( -140 -2000 ) ( 140 2000 )
+        + PLACED ( 135470 2000 ) N ;
+    - x2[15] + NET x2[15] + DIRECTION INPUT + USE SIGNAL
+      + PORT
+        + LAYER met2 ( -140 -2000 ) ( 140 2000 )
+        + PLACED ( 230 2000 ) N ;
+    - x2[16] + NET x2[16] + DIRECTION INPUT + USE SIGNAL
+      + PORT
+        + LAYER met3 ( -2000 -300 ) ( 2000 300 )
+        + PLACED ( 2000 197540 ) N ;
+    - x2[17] + NET x2[17] + DIRECTION INPUT + USE SIGNAL
+      + PORT
+        + LAYER met2 ( -140 -2000 ) ( 140 2000 )
+        + PLACED ( 174110 320780 ) N ;
+    - x2[18] + NET x2[18] + DIRECTION INPUT + USE SIGNAL
+      + PORT
+        + LAYER met3 ( -2000 -300 ) ( 2000 300 )
+        + PLACED ( 2000 126140 ) N ;
+    - x2[19] + NET x2[19] + DIRECTION INPUT + USE SIGNAL
+      + PORT
+        + LAYER met3 ( -2000 -300 ) ( 2000 300 )
+        + PLACED ( 310060 302940 ) N ;
+    - x2[1] + NET x2[1] + DIRECTION INPUT + USE SIGNAL
+      + PORT
+        + LAYER met2 ( -140 -2000 ) ( 140 2000 )
+        + PLACED ( 103270 320780 ) N ;
+    - x2[20] + NET x2[20] + DIRECTION INPUT + USE SIGNAL
+      + PORT
+        + LAYER met2 ( -140 -2000 ) ( 140 2000 )
+        + PLACED ( 32430 2000 ) N ;
+    - x2[21] + NET x2[21] + DIRECTION INPUT + USE SIGNAL
+      + PORT
+        + LAYER met2 ( -140 -2000 ) ( 140 2000 )
+        + PLACED ( 16330 2000 ) N ;
+    - x2[22] + NET x2[22] + DIRECTION INPUT + USE SIGNAL
+      + PORT
+        + LAYER met3 ( -2000 -300 ) ( 2000 300 )
+        + PLACED ( 310060 285940 ) N ;
+    - x2[23] + NET x2[23] + DIRECTION INPUT + USE SIGNAL
+      + PORT
+        + LAYER met3 ( -2000 -300 ) ( 2000 300 )
+        + PLACED ( 2000 143140 ) N ;
+    - x2[24] + NET x2[24] + DIRECTION INPUT + USE SIGNAL
+      + PORT
+        + LAYER met2 ( -140 -2000 ) ( 140 2000 )
+        + PLACED ( 119370 2000 ) N ;
+    - x2[25] + NET x2[25] + DIRECTION INPUT + USE SIGNAL
+      + PORT
+        + LAYER met3 ( -2000 -300 ) ( 2000 300 )
+        + PLACED ( 310060 268940 ) N ;
+    - x2[26] + NET x2[26] + DIRECTION INPUT + USE SIGNAL
+      + PORT
+        + LAYER met3 ( -2000 -300 ) ( 2000 300 )
+        + PLACED ( 310060 13940 ) N ;
+    - x2[27] + NET x2[27] + DIRECTION INPUT + USE SIGNAL
+      + PORT
+        + LAYER met2 ( -140 -2000 ) ( 140 2000 )
+        + PLACED ( 71070 320780 ) N ;
+    - x2[28] + NET x2[28] + DIRECTION INPUT + USE SIGNAL
+      + PORT
+        + LAYER met3 ( -2000 -300 ) ( 2000 300 )
+        + PLACED ( 310060 160140 ) N ;
+    - x2[29] + NET x2[29] + DIRECTION INPUT + USE SIGNAL
+      + PORT
+        + LAYER met2 ( -140 -2000 ) ( 140 2000 )
+        + PLACED ( 51750 2000 ) N ;
+    - x2[2] + NET x2[2] + DIRECTION INPUT + USE SIGNAL
+      + PORT
+        + LAYER met2 ( -140 -2000 ) ( 140 2000 )
+        + PLACED ( 103270 2000 ) N ;
+    - x2[30] + NET x2[30] + DIRECTION INPUT + USE SIGNAL
+      + PORT
+        + LAYER met3 ( -2000 -300 ) ( 2000 300 )
+        + PLACED ( 2000 160140 ) N ;
+    - x2[31] + NET x2[31] + DIRECTION INPUT + USE SIGNAL
+      + PORT
+        + LAYER met3 ( -2000 -300 ) ( 2000 300 )
+        + PLACED ( 310060 177140 ) N ;
+    - x2[3] + NET x2[3] + DIRECTION INPUT + USE SIGNAL
+      + PORT
+        + LAYER met2 ( -140 -2000 ) ( 140 2000 )
+        + PLACED ( 154790 2000 ) N ;
+    - x2[4] + NET x2[4] + DIRECTION INPUT + USE SIGNAL
+      + PORT
+        + LAYER met2 ( -140 -2000 ) ( 140 2000 )
+        + PLACED ( 277150 320780 ) N ;
+    - x2[5] + NET x2[5] + DIRECTION INPUT + USE SIGNAL
+      + PORT
+        + LAYER met2 ( -140 -2000 ) ( 140 2000 )
+        + PLACED ( 257830 320780 ) N ;
+    - x2[6] + NET x2[6] + DIRECTION INPUT + USE SIGNAL
+      + PORT
+        + LAYER met2 ( -140 -2000 ) ( 140 2000 )
+        + PLACED ( 35650 320780 ) N ;
+    - x2[7] + NET x2[7] + DIRECTION INPUT + USE SIGNAL
+      + PORT
+        + LAYER met2 ( -140 -2000 ) ( 140 2000 )
+        + PLACED ( 87170 320780 ) N ;
+    - x2[8] + NET x2[8] + DIRECTION INPUT + USE SIGNAL
+      + PORT
+        + LAYER met2 ( -140 -2000 ) ( 140 2000 )
+        + PLACED ( 206310 2000 ) N ;
+    - x2[9] + NET x2[9] + DIRECTION INPUT + USE SIGNAL
+      + PORT
+        + LAYER met3 ( -2000 -300 ) ( 2000 300 )
+        + PLACED ( 2000 105740 ) N ;
+    - y1 + NET y1 + DIRECTION INPUT + USE SIGNAL
+      + PORT
+        + LAYER met3 ( -2000 -300 ) ( 2000 300 )
+        + PLACED ( 2000 289340 ) N ;
+    - y2 + NET y2 + DIRECTION INPUT + USE SIGNAL
+      + PORT
+        + LAYER met3 ( -2000 -300 ) ( 2000 300 )
+        + PLACED ( 310060 139740 ) N ;
+END PINS
+NETS 72 ;
+    - clk1 ( PIN clk1 ) ( spm_inst_0 clk ) + USE SIGNAL ;
+    - clk2 ( PIN clk2 ) ( spm_inst_1 clk ) + USE SIGNAL ;
+    - p1 ( PIN p1 ) ( spm_inst_0 p ) + USE SIGNAL ;
+    - p2 ( PIN p2 ) ( spm_inst_1 p ) + USE SIGNAL ;
+    - rst1 ( PIN rst1 ) ( spm_inst_0 rst ) + USE SIGNAL ;
+    - rst2 ( PIN rst2 ) ( spm_inst_1 rst ) + USE SIGNAL ;
+    - x1[0] ( PIN x1[0] ) ( spm_inst_0 x[0] ) + USE SIGNAL ;
+    - x1[10] ( PIN x1[10] ) ( spm_inst_0 x[10] ) + USE SIGNAL ;
+    - x1[11] ( PIN x1[11] ) ( spm_inst_0 x[11] ) + USE SIGNAL ;
+    - x1[12] ( PIN x1[12] ) ( spm_inst_0 x[12] ) + USE SIGNAL ;
+    - x1[13] ( PIN x1[13] ) ( spm_inst_0 x[13] ) + USE SIGNAL ;
+    - x1[14] ( PIN x1[14] ) ( spm_inst_0 x[14] ) + USE SIGNAL ;
+    - x1[15] ( PIN x1[15] ) ( spm_inst_0 x[15] ) + USE SIGNAL ;
+    - x1[16] ( PIN x1[16] ) ( spm_inst_0 x[16] ) + USE SIGNAL ;
+    - x1[17] ( PIN x1[17] ) ( spm_inst_0 x[17] ) + USE SIGNAL ;
+    - x1[18] ( PIN x1[18] ) ( spm_inst_0 x[18] ) + USE SIGNAL ;
+    - x1[19] ( PIN x1[19] ) ( spm_inst_0 x[19] ) + USE SIGNAL ;
+    - x1[1] ( PIN x1[1] ) ( spm_inst_0 x[1] ) + USE SIGNAL ;
+    - x1[20] ( PIN x1[20] ) ( spm_inst_0 x[20] ) + USE SIGNAL ;
+    - x1[21] ( PIN x1[21] ) ( spm_inst_0 x[21] ) + USE SIGNAL ;
+    - x1[22] ( PIN x1[22] ) ( spm_inst_0 x[22] ) + USE SIGNAL ;
+    - x1[23] ( PIN x1[23] ) ( spm_inst_0 x[23] ) + USE SIGNAL ;
+    - x1[24] ( PIN x1[24] ) ( spm_inst_0 x[24] ) + USE SIGNAL ;
+    - x1[25] ( PIN x1[25] ) ( spm_inst_0 x[25] ) + USE SIGNAL ;
+    - x1[26] ( PIN x1[26] ) ( spm_inst_0 x[26] ) + USE SIGNAL ;
+    - x1[27] ( PIN x1[27] ) ( spm_inst_0 x[27] ) + USE SIGNAL ;
+    - x1[28] ( PIN x1[28] ) ( spm_inst_0 x[28] ) + USE SIGNAL ;
+    - x1[29] ( PIN x1[29] ) ( spm_inst_0 x[29] ) + USE SIGNAL ;
+    - x1[2] ( PIN x1[2] ) ( spm_inst_0 x[2] ) + USE SIGNAL ;
+    - x1[30] ( PIN x1[30] ) ( spm_inst_0 x[30] ) + USE SIGNAL ;
+    - x1[31] ( PIN x1[31] ) ( spm_inst_0 x[31] ) + USE SIGNAL ;
+    - x1[3] ( PIN x1[3] ) ( spm_inst_0 x[3] ) + USE SIGNAL ;
+    - x1[4] ( PIN x1[4] ) ( spm_inst_0 x[4] ) + USE SIGNAL ;
+    - x1[5] ( PIN x1[5] ) ( spm_inst_0 x[5] ) + USE SIGNAL ;
+    - x1[6] ( PIN x1[6] ) ( spm_inst_0 x[6] ) + USE SIGNAL ;
+    - x1[7] ( PIN x1[7] ) ( spm_inst_0 x[7] ) + USE SIGNAL ;
+    - x1[8] ( PIN x1[8] ) ( spm_inst_0 x[8] ) + USE SIGNAL ;
+    - x1[9] ( PIN x1[9] ) ( spm_inst_0 x[9] ) + USE SIGNAL ;
+    - x2[0] ( PIN x2[0] ) ( spm_inst_1 x[0] ) + USE SIGNAL ;
+    - x2[10] ( PIN x2[10] ) ( spm_inst_1 x[10] ) + USE SIGNAL ;
+    - x2[11] ( PIN x2[11] ) ( spm_inst_1 x[11] ) + USE SIGNAL ;
+    - x2[12] ( PIN x2[12] ) ( spm_inst_1 x[12] ) + USE SIGNAL ;
+    - x2[13] ( PIN x2[13] ) ( spm_inst_1 x[13] ) + USE SIGNAL ;
+    - x2[14] ( PIN x2[14] ) ( spm_inst_1 x[14] ) + USE SIGNAL ;
+    - x2[15] ( PIN x2[15] ) ( spm_inst_1 x[15] ) + USE SIGNAL ;
+    - x2[16] ( PIN x2[16] ) ( spm_inst_1 x[16] ) + USE SIGNAL ;
+    - x2[17] ( PIN x2[17] ) ( spm_inst_1 x[17] ) + USE SIGNAL ;
+    - x2[18] ( PIN x2[18] ) ( spm_inst_1 x[18] ) + USE SIGNAL ;
+    - x2[19] ( PIN x2[19] ) ( spm_inst_1 x[19] ) + USE SIGNAL ;
+    - x2[1] ( PIN x2[1] ) ( spm_inst_1 x[1] ) + USE SIGNAL ;
+    - x2[20] ( PIN x2[20] ) ( spm_inst_1 x[20] ) + USE SIGNAL ;
+    - x2[21] ( PIN x2[21] ) ( spm_inst_1 x[21] ) + USE SIGNAL ;
+    - x2[22] ( PIN x2[22] ) ( spm_inst_1 x[22] ) + USE SIGNAL ;
+    - x2[23] ( PIN x2[23] ) ( spm_inst_1 x[23] ) + USE SIGNAL ;
+    - x2[24] ( PIN x2[24] ) ( spm_inst_1 x[24] ) + USE SIGNAL ;
+    - x2[25] ( PIN x2[25] ) ( spm_inst_1 x[25] ) + USE SIGNAL ;
+    - x2[26] ( PIN x2[26] ) ( spm_inst_1 x[26] ) + USE SIGNAL ;
+    - x2[27] ( PIN x2[27] ) ( spm_inst_1 x[27] ) + USE SIGNAL ;
+    - x2[28] ( PIN x2[28] ) ( spm_inst_1 x[28] ) + USE SIGNAL ;
+    - x2[29] ( PIN x2[29] ) ( spm_inst_1 x[29] ) + USE SIGNAL ;
+    - x2[2] ( PIN x2[2] ) ( spm_inst_1 x[2] ) + USE SIGNAL ;
+    - x2[30] ( PIN x2[30] ) ( spm_inst_1 x[30] ) + USE SIGNAL ;
+    - x2[31] ( PIN x2[31] ) ( spm_inst_1 x[31] ) + USE SIGNAL ;
+    - x2[3] ( PIN x2[3] ) ( spm_inst_1 x[3] ) + USE SIGNAL ;
+    - x2[4] ( PIN x2[4] ) ( spm_inst_1 x[4] ) + USE SIGNAL ;
+    - x2[5] ( PIN x2[5] ) ( spm_inst_1 x[5] ) + USE SIGNAL ;
+    - x2[6] ( PIN x2[6] ) ( spm_inst_1 x[6] ) + USE SIGNAL ;
+    - x2[7] ( PIN x2[7] ) ( spm_inst_1 x[7] ) + USE SIGNAL ;
+    - x2[8] ( PIN x2[8] ) ( spm_inst_1 x[8] ) + USE SIGNAL ;
+    - x2[9] ( PIN x2[9] ) ( spm_inst_1 x[9] ) + USE SIGNAL ;
+    - y1 ( PIN y1 ) ( spm_inst_0 y ) + USE SIGNAL ;
+    - y2 ( PIN y2 ) ( spm_inst_1 y ) + USE SIGNAL ;
+END NETS
+END DESIGN

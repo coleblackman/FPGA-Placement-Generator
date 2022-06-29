@@ -1,0 +1,17 @@
+Design Name: manual_macro_placement_test
+Run Directory: /openlane/designs/manual_macro_placement_test/runs/RUN_2022.06.22_21.31.23
+----------------------------------------
+
+Magic DRC Summary:
+Source: /openlane/designs/manual_macro_placement_test/runs/RUN_2022.06.22_21.31.23/reports/signoff/drc.rpt
+Total Magic DRC violations is 0
+----------------------------------------
+
+LVS Summary:
+Source: /openlane/designs/manual_macro_placement_test/runs/RUN_2022.06.22_21.31.23/logs/signoff/33-manual_macro_placement_test.lvs.lef.log
+LVS reports no net, device, pin, or property mismatches.
+Total errors = 0
+----------------------------------------
+
+Antenna Summary:
+Source: /openlane/designs/manual_macro_placement_test/runs/RUN_2022.06.22_21.31.23/reports/signoff/35-antenna.rpt

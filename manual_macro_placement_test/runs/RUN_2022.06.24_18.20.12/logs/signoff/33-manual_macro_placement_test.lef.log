@@ -1,0 +1,1565 @@
+Warning: Equate pins:  cell sky130_ef_sc_hd__decap_12 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: sky130_ef_sc_hd__decap_12       |Circuit 2: sky130_ef_sc_hd__decap_12       
+-------------------------------------------|-------------------------------------------
+VGND                                       |VGND                                       
+VPWR                                       |VPWR                                       
+VPB                                        |VPB                                        
+VNB                                        |VNB                                        
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_ef_sc_hd__decap_12 and sky130_ef_sc_hd__decap_12 are equivalent.
+Warning: Equate pins:  cell sky130_fd_sc_hd__decap_6 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: sky130_fd_sc_hd__decap_6        |Circuit 2: sky130_fd_sc_hd__decap_6        
+-------------------------------------------|-------------------------------------------
+VGND                                       |VGND                                       
+VNB                                        |VNB                                        
+VPB                                        |VPB                                        
+VPWR                                       |VPWR                                       
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_fd_sc_hd__decap_6 and sky130_fd_sc_hd__decap_6 are equivalent.
+Warning: Equate pins:  cell sky130_fd_sc_hd__fill_1 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: sky130_fd_sc_hd__fill_1         |Circuit 2: sky130_fd_sc_hd__fill_1         
+-------------------------------------------|-------------------------------------------
+VGND                                       |VGND                                       
+VNB                                        |VNB                                        
+VPB                                        |VPB                                        
+VPWR                                       |VPWR                                       
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_fd_sc_hd__fill_1 and sky130_fd_sc_hd__fill_1 are equivalent.
+Warning: Equate pins:  cell sky130_fd_sc_hd__decap_3 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: sky130_fd_sc_hd__decap_3        |Circuit 2: sky130_fd_sc_hd__decap_3        
+-------------------------------------------|-------------------------------------------
+VGND                                       |VGND                                       
+VNB                                        |VNB                                        
+VPB                                        |VPB                                        
+VPWR                                       |VPWR                                       
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_fd_sc_hd__decap_3 and sky130_fd_sc_hd__decap_3 are equivalent.
+Warning: Equate pins:  cell sky130_fd_sc_hd__decap_4 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: sky130_fd_sc_hd__decap_4        |Circuit 2: sky130_fd_sc_hd__decap_4        
+-------------------------------------------|-------------------------------------------
+VGND                                       |VGND                                       
+VNB                                        |VNB                                        
+VPB                                        |VPB                                        
+VPWR                                       |VPWR                                       
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_fd_sc_hd__decap_4 and sky130_fd_sc_hd__decap_4 are equivalent.
+Warning: Equate pins:  cell sky130_fd_sc_hd__decap_8 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: sky130_fd_sc_hd__decap_8        |Circuit 2: sky130_fd_sc_hd__decap_8        
+-------------------------------------------|-------------------------------------------
+VGND                                       |VGND                                       
+VNB                                        |VNB                                        
+VPB                                        |VPB                                        
+VPWR                                       |VPWR                                       
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_fd_sc_hd__decap_8 and sky130_fd_sc_hd__decap_8 are equivalent.
+Warning: Equate pins:  cell sky130_fd_sc_hd__fill_2 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: sky130_fd_sc_hd__fill_2         |Circuit 2: sky130_fd_sc_hd__fill_2         
+-------------------------------------------|-------------------------------------------
+VGND                                       |VGND                                       
+VNB                                        |VNB                                        
+VPB                                        |VPB                                        
+VPWR                                       |VPWR                                       
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_fd_sc_hd__fill_2 and sky130_fd_sc_hd__fill_2 are equivalent.
+Warning: Equate pins:  cell sky130_fd_sc_hd__tapvpwrvgnd_1 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: sky130_fd_sc_hd__tapvpwrvgnd_1  |Circuit 2: sky130_fd_sc_hd__tapvpwrvgnd_1  
+-------------------------------------------|-------------------------------------------
+VGND                                       |VGND                                       
+VPWR                                       |VPWR                                       
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_fd_sc_hd__tapvpwrvgnd_1 and sky130_fd_sc_hd__tapvpwrvgnd_1 are equivalent.
+Warning: Equate pins:  cell sky130_fd_sc_hd__clkbuf_1 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: sky130_fd_sc_hd__clkbuf_1       |Circuit 2: sky130_fd_sc_hd__clkbuf_1       
+-------------------------------------------|-------------------------------------------
+A                                          |A                                          
+VGND                                       |VGND                                       
+VNB                                        |VNB                                        
+VPB                                        |VPB                                        
+VPWR                                       |VPWR                                       
+X                                          |X                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_fd_sc_hd__clkbuf_1 and sky130_fd_sc_hd__clkbuf_1 are equivalent.
+Warning: Equate pins:  cell sky130_fd_sc_hd__dlymetal6s2s_1 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: sky130_fd_sc_hd__dlymetal6s2s_1 |Circuit 2: sky130_fd_sc_hd__dlymetal6s2s_1 
+-------------------------------------------|-------------------------------------------
+A                                          |A                                          
+VGND                                       |VGND                                       
+VNB                                        |VNB                                        
+VPB                                        |VPB                                        
+VPWR                                       |VPWR                                       
+X                                          |X                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_fd_sc_hd__dlymetal6s2s_1 and sky130_fd_sc_hd__dlymetal6s2s_1 are equivalent.
+Warning: Equate pins:  cell sky130_fd_sc_hd__clkbuf_2 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: sky130_fd_sc_hd__clkbuf_2       |Circuit 2: sky130_fd_sc_hd__clkbuf_2       
+-------------------------------------------|-------------------------------------------
+A                                          |A                                          
+VGND                                       |VGND                                       
+VNB                                        |VNB                                        
+VPB                                        |VPB                                        
+VPWR                                       |VPWR                                       
+X                                          |X                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_fd_sc_hd__clkbuf_2 and sky130_fd_sc_hd__clkbuf_2 are equivalent.
+Warning: Equate pins:  cell sky130_fd_sc_hd__buf_2 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: sky130_fd_sc_hd__buf_2          |Circuit 2: sky130_fd_sc_hd__buf_2          
+-------------------------------------------|-------------------------------------------
+A                                          |A                                          
+VGND                                       |VGND                                       
+VNB                                        |VNB                                        
+VPB                                        |VPB                                        
+VPWR                                       |VPWR                                       
+X                                          |X                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_fd_sc_hd__buf_2 and sky130_fd_sc_hd__buf_2 are equivalent.
+Warning: Equate pins:  cell spm is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: spm                             |Circuit 2: spm                             
+-------------------------------------------|-------------------------------------------
+clk                                        |clk                                        
+p                                          |p                                          
+rst                                        |rst                                        
+x[0]                                       |x[0]                                       
+x[10]                                      |x[10]                                      
+x[11]                                      |x[11]                                      
+x[12]                                      |x[12]                                      
+x[13]                                      |x[13]                                      
+x[14]                                      |x[14]                                      
+x[15]                                      |x[15]                                      
+x[16]                                      |x[16]                                      
+x[17]                                      |x[17]                                      
+x[18]                                      |x[18]                                      
+x[19]                                      |x[19]                                      
+x[1]                                       |x[1]                                       
+x[20]                                      |x[20]                                      
+x[21]                                      |x[21]                                      
+x[22]                                      |x[22]                                      
+x[23]                                      |x[23]                                      
+x[24]                                      |x[24]                                      
+x[25]                                      |x[25]                                      
+x[26]                                      |x[26]                                      
+x[27]                                      |x[27]                                      
+x[28]                                      |x[28]                                      
+x[29]                                      |x[29]                                      
+x[2]                                       |x[2]                                       
+x[30]                                      |x[30]                                      
+x[31]                                      |x[31]                                      
+x[3]                                       |x[3]                                       
+x[4]                                       |x[4]                                       
+x[5]                                       |x[5]                                       
+x[6]                                       |x[6]                                       
+x[7]                                       |x[7]                                       
+x[8]                                       |x[8]                                       
+x[9]                                       |x[9]                                       
+y                                          |y                                          
+VPWR                                       |VPWR                                       
+VGND                                       |VGND                                       
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes spm and spm are equivalent.
+Warning: Equate pins:  cell sky130_fd_sc_hd__clkbuf_4 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: sky130_fd_sc_hd__clkbuf_4       |Circuit 2: sky130_fd_sc_hd__clkbuf_4       
+-------------------------------------------|-------------------------------------------
+A                                          |A                                          
+VGND                                       |VGND                                       
+VNB                                        |VNB                                        
+VPB                                        |VPB                                        
+VPWR                                       |VPWR                                       
+X                                          |X                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_fd_sc_hd__clkbuf_4 and sky130_fd_sc_hd__clkbuf_4 are equivalent.
+
+Class manual_macro_placement_test (0):  Merged 5113 parallel devices.
+Class manual_macro_placement_test (1):  Merged 5113 parallel devices.
+Subcircuit summary:
+Circuit 1: manual_macro_placement_test     |Circuit 2: manual_macro_placement_test     
+-------------------------------------------|-------------------------------------------
+sky130_ef_sc_hd__decap_12 (2691->1)        |sky130_ef_sc_hd__decap_12 (2691->1)        
+sky130_fd_sc_hd__decap_6 (539->1)          |sky130_fd_sc_hd__decap_6 (539->1)          
+sky130_fd_sc_hd__fill_1 (680->1)           |sky130_fd_sc_hd__fill_1 (680->1)           
+sky130_fd_sc_hd__decap_3 (304->1)          |sky130_fd_sc_hd__decap_3 (304->1)          
+sky130_fd_sc_hd__decap_4 (96->1)           |sky130_fd_sc_hd__decap_4 (96->1)           
+sky130_fd_sc_hd__decap_8 (48->1)           |sky130_fd_sc_hd__decap_8 (48->1)           
+sky130_fd_sc_hd__fill_2 (32->1)            |sky130_fd_sc_hd__fill_2 (32->1)            
+sky130_fd_sc_hd__tapvpwrvgnd_1 (731->1)    |sky130_fd_sc_hd__tapvpwrvgnd_1 (731->1)    
+sky130_fd_sc_hd__clkbuf_1 (12)             |sky130_fd_sc_hd__clkbuf_1 (12)             
+sky130_fd_sc_hd__dlymetal6s2s_1 (15)       |sky130_fd_sc_hd__dlymetal6s2s_1 (15)       
+sky130_fd_sc_hd__clkbuf_2 (23)             |sky130_fd_sc_hd__clkbuf_2 (23)             
+sky130_fd_sc_hd__buf_2 (17)                |sky130_fd_sc_hd__buf_2 (17)                
+spm (2)                                    |spm (2)                                    
+sky130_fd_sc_hd__clkbuf_4 (4)              |sky130_fd_sc_hd__clkbuf_4 (4)              
+Number of devices: 81                      |Number of devices: 81                      
+Number of nets: 147 **Mismatch**           |Number of nets: 145 **Mismatch**           
+---------------------------------------------------------------------------------------
+NET mismatches: Class fragments follow (with fanout counts):
+Circuit 1: manual_macro_placement_test     |Circuit 2: manual_macro_placement_test     
+
+---------------------------------------------------------------------------------------
+Net: clk2                                  |Net: clk2                                  
+  sky130_fd_sc_hd__clkbuf_1/A = 1          |  sky130_fd_sc_hd__clkbuf_1/A = 1          
+                                           |                                           
+Net: x1[21]                                |Net: x1[21]                                
+  sky130_fd_sc_hd__clkbuf_1/A = 1          |  sky130_fd_sc_hd__clkbuf_1/A = 1          
+                                           |                                           
+Net: x1[24]                                |Net: x1[24]                                
+  sky130_fd_sc_hd__clkbuf_1/A = 1          |  sky130_fd_sc_hd__clkbuf_1/A = 1          
+                                           |                                           
+Net: x1[26]                                |Net: x1[26]                                
+  sky130_fd_sc_hd__clkbuf_1/A = 1          |  sky130_fd_sc_hd__clkbuf_1/A = 1          
+                                           |                                           
+Net: x1[27]                                |Net: x1[27]                                
+  sky130_fd_sc_hd__clkbuf_1/A = 1          |  sky130_fd_sc_hd__clkbuf_1/A = 1          
+                                           |                                           
+Net: x1[31]                                |Net: x1[31]                                
+  sky130_fd_sc_hd__clkbuf_1/A = 1          |  sky130_fd_sc_hd__clkbuf_1/A = 1          
+                                           |                                           
+Net: x2[11]                                |Net: x2[11]                                
+  sky130_fd_sc_hd__clkbuf_1/A = 1          |  sky130_fd_sc_hd__clkbuf_1/A = 1          
+                                           |                                           
+Net: x2[25]                                |Net: x2[25]                                
+  sky130_fd_sc_hd__clkbuf_1/A = 1          |  sky130_fd_sc_hd__clkbuf_1/A = 1          
+                                           |                                           
+Net: x2[26]                                |Net: x2[26]                                
+  sky130_fd_sc_hd__clkbuf_1/A = 1          |  sky130_fd_sc_hd__clkbuf_1/A = 1          
+                                           |                                           
+Net: x2[28]                                |Net: x2[28]                                
+  sky130_fd_sc_hd__clkbuf_1/A = 1          |  sky130_fd_sc_hd__clkbuf_1/A = 1          
+                                           |                                           
+Net: x2[31]                                |Net: x2[31]                                
+  sky130_fd_sc_hd__clkbuf_1/A = 1          |  sky130_fd_sc_hd__clkbuf_1/A = 1          
+                                           |                                           
+Net: x2[4]                                 |Net: x2[4]                                 
+  sky130_fd_sc_hd__clkbuf_1/A = 1          |  sky130_fd_sc_hd__clkbuf_1/A = 1          
+                                           |                                           
+Net: x1[15]                                |Net: x1[15]                                
+  sky130_fd_sc_hd__buf_2/A = 1             |  sky130_fd_sc_hd__buf_2/A = 1             
+                                           |                                           
+Net: x1[1]                                 |Net: x1[1]                                 
+  sky130_fd_sc_hd__buf_2/A = 1             |  sky130_fd_sc_hd__buf_2/A = 1             
+                                           |                                           
+Net: x1[20]                                |Net: x1[20]                                
+  sky130_fd_sc_hd__buf_2/A = 1             |  sky130_fd_sc_hd__buf_2/A = 1             
+                                           |                                           
+Net: x1[22]                                |Net: x1[22]                                
+  sky130_fd_sc_hd__buf_2/A = 1             |  sky130_fd_sc_hd__buf_2/A = 1             
+                                           |                                           
+Net: x1[29]                                |Net: x1[29]                                
+  sky130_fd_sc_hd__buf_2/A = 1             |  sky130_fd_sc_hd__buf_2/A = 1             
+                                           |                                           
+Net: x1[3]                                 |Net: x1[3]                                 
+  sky130_fd_sc_hd__buf_2/A = 1             |  sky130_fd_sc_hd__buf_2/A = 1             
+                                           |                                           
+Net: x1[4]                                 |Net: x1[4]                                 
+  sky130_fd_sc_hd__buf_2/A = 1             |  sky130_fd_sc_hd__buf_2/A = 1             
+                                           |                                           
+Net: x1[6]                                 |Net: x1[6]                                 
+  sky130_fd_sc_hd__buf_2/A = 1             |  sky130_fd_sc_hd__buf_2/A = 1             
+                                           |                                           
+Net: x2[15]                                |Net: x2[15]                                
+  sky130_fd_sc_hd__buf_2/A = 1             |  sky130_fd_sc_hd__buf_2/A = 1             
+                                           |                                           
+Net: x2[18]                                |Net: x2[18]                                
+  sky130_fd_sc_hd__buf_2/A = 1             |  sky130_fd_sc_hd__buf_2/A = 1             
+                                           |                                           
+Net: x1[10]                                |Net: x1[10]                                
+  sky130_fd_sc_hd__buf_2/A = 1             |  sky130_fd_sc_hd__buf_2/A = 1             
+                                           |                                           
+Net: x2[23]                                |Net: x2[23]                                
+  sky130_fd_sc_hd__buf_2/A = 1             |  sky130_fd_sc_hd__buf_2/A = 1             
+                                           |                                           
+Net: x2[30]                                |Net: x2[30]                                
+  sky130_fd_sc_hd__buf_2/A = 1             |  sky130_fd_sc_hd__buf_2/A = 1             
+                                           |                                           
+Net: x2[6]                                 |Net: x2[6]                                 
+  sky130_fd_sc_hd__buf_2/A = 1             |  sky130_fd_sc_hd__buf_2/A = 1             
+                                           |                                           
+Net: x2[9]                                 |Net: x2[9]                                 
+  sky130_fd_sc_hd__buf_2/A = 1             |  sky130_fd_sc_hd__buf_2/A = 1             
+                                           |                                           
+Net: x1[13]                                |Net: x1[13]                                
+  sky130_fd_sc_hd__buf_2/A = 1             |  sky130_fd_sc_hd__buf_2/A = 1             
+                                           |                                           
+Net: x1[14]                                |Net: x1[14]                                
+  sky130_fd_sc_hd__buf_2/A = 1             |  sky130_fd_sc_hd__buf_2/A = 1             
+                                           |                                           
+Net: x1[16]                                |Net: x1[16]                                
+  sky130_fd_sc_hd__clkbuf_2/A = 1          |  sky130_fd_sc_hd__clkbuf_2/A = 1          
+                                           |                                           
+Net: x1[18]                                |Net: x1[18]                                
+  sky130_fd_sc_hd__clkbuf_2/A = 1          |  sky130_fd_sc_hd__clkbuf_2/A = 1          
+                                           |                                           
+Net: x1[19]                                |Net: x1[19]                                
+  sky130_fd_sc_hd__clkbuf_2/A = 1          |  sky130_fd_sc_hd__clkbuf_2/A = 1          
+                                           |                                           
+Net: x1[23]                                |Net: x1[23]                                
+  sky130_fd_sc_hd__clkbuf_2/A = 1          |  sky130_fd_sc_hd__clkbuf_2/A = 1          
+                                           |                                           
+Net: x1[25]                                |Net: x1[25]                                
+  sky130_fd_sc_hd__clkbuf_2/A = 1          |  sky130_fd_sc_hd__clkbuf_2/A = 1          
+                                           |                                           
+Net: x1[28]                                |Net: x1[28]                                
+  sky130_fd_sc_hd__clkbuf_2/A = 1          |  sky130_fd_sc_hd__clkbuf_2/A = 1          
+                                           |                                           
+Net: x1[2]                                 |Net: x1[2]                                 
+  sky130_fd_sc_hd__clkbuf_2/A = 1          |  sky130_fd_sc_hd__clkbuf_2/A = 1          
+                                           |                                           
+Net: x1[5]                                 |Net: x1[5]                                 
+  sky130_fd_sc_hd__clkbuf_2/A = 1          |  sky130_fd_sc_hd__clkbuf_2/A = 1          
+                                           |                                           
+Net: x1[9]                                 |Net: x1[9]                                 
+  sky130_fd_sc_hd__clkbuf_2/A = 1          |  sky130_fd_sc_hd__clkbuf_2/A = 1          
+                                           |                                           
+Net: x1[0]                                 |Net: x1[0]                                 
+  sky130_fd_sc_hd__clkbuf_2/A = 1          |  sky130_fd_sc_hd__clkbuf_2/A = 1          
+                                           |                                           
+Net: x2[13]                                |Net: x2[13]                                
+  sky130_fd_sc_hd__clkbuf_2/A = 1          |  sky130_fd_sc_hd__clkbuf_2/A = 1          
+                                           |                                           
+Net: x2[14]                                |Net: x2[14]                                
+  sky130_fd_sc_hd__clkbuf_2/A = 1          |  sky130_fd_sc_hd__clkbuf_2/A = 1          
+                                           |                                           
+Net: x2[16]                                |Net: x2[16]                                
+  sky130_fd_sc_hd__clkbuf_2/A = 1          |  sky130_fd_sc_hd__clkbuf_2/A = 1          
+                                           |                                           
+Net: x2[19]                                |Net: x2[19]                                
+  sky130_fd_sc_hd__clkbuf_2/A = 1          |  sky130_fd_sc_hd__clkbuf_2/A = 1          
+                                           |                                           
+Net: x2[1]                                 |Net: x2[1]                                 
+  sky130_fd_sc_hd__clkbuf_2/A = 1          |  sky130_fd_sc_hd__clkbuf_2/A = 1          
+                                           |                                           
+Net: x2[20]                                |Net: x2[20]                                
+  sky130_fd_sc_hd__clkbuf_2/A = 1          |  sky130_fd_sc_hd__clkbuf_2/A = 1          
+                                           |                                           
+Net: x2[22]                                |Net: x2[22]                                
+  sky130_fd_sc_hd__clkbuf_2/A = 1          |  sky130_fd_sc_hd__clkbuf_2/A = 1          
+                                           |                                           
+Net: x2[24]                                |Net: x2[24]                                
+  sky130_fd_sc_hd__clkbuf_2/A = 1          |  sky130_fd_sc_hd__clkbuf_2/A = 1          
+                                           |                                           
+Net: x2[27]                                |Net: x2[27]                                
+  sky130_fd_sc_hd__clkbuf_2/A = 1          |  sky130_fd_sc_hd__clkbuf_2/A = 1          
+                                           |                                           
+Net: x1[11]                                |Net: x1[11]                                
+  sky130_fd_sc_hd__clkbuf_2/A = 1          |  sky130_fd_sc_hd__clkbuf_2/A = 1          
+                                           |                                           
+Net: x2[5]                                 |Net: x2[5]                                 
+  sky130_fd_sc_hd__clkbuf_2/A = 1          |  sky130_fd_sc_hd__clkbuf_2/A = 1          
+                                           |                                           
+Net: x2[7]                                 |Net: x2[7]                                 
+  sky130_fd_sc_hd__clkbuf_2/A = 1          |  sky130_fd_sc_hd__clkbuf_2/A = 1          
+                                           |                                           
+Net: y1                                    |Net: y1                                    
+  sky130_fd_sc_hd__clkbuf_2/A = 1          |  sky130_fd_sc_hd__clkbuf_2/A = 1          
+                                           |                                           
+Net: x1[17]                                |Net: x1[17]                                
+  sky130_fd_sc_hd__clkbuf_4/A = 1          |  sky130_fd_sc_hd__clkbuf_4/A = 1          
+                                           |                                           
+Net: x1[7]                                 |Net: x1[7]                                 
+  sky130_fd_sc_hd__clkbuf_4/A = 1          |  sky130_fd_sc_hd__clkbuf_4/A = 1          
+                                           |                                           
+Net: x2[12]                                |Net: x2[12]                                
+  sky130_fd_sc_hd__clkbuf_4/A = 1          |  sky130_fd_sc_hd__clkbuf_4/A = 1          
+                                           |                                           
+Net: x2[21]                                |Net: x2[21]                                
+  sky130_fd_sc_hd__clkbuf_4/A = 1          |  sky130_fd_sc_hd__clkbuf_4/A = 1          
+                                           |                                           
+Net: rst1                                  |Net: rst1                                  
+  sky130_fd_sc_hd__dlymetal6s2s_1/A = 1    |  sky130_fd_sc_hd__dlymetal6s2s_1/A = 1    
+                                           |                                           
+Net: x1[30]                                |Net: x1[30]                                
+  sky130_fd_sc_hd__dlymetal6s2s_1/A = 1    |  sky130_fd_sc_hd__dlymetal6s2s_1/A = 1    
+                                           |                                           
+Net: rst2                                  |Net: rst2                                  
+  sky130_fd_sc_hd__dlymetal6s2s_1/A = 1    |  sky130_fd_sc_hd__dlymetal6s2s_1/A = 1    
+                                           |                                           
+Net: x1[8]                                 |Net: x1[8]                                 
+  sky130_fd_sc_hd__dlymetal6s2s_1/A = 1    |  sky130_fd_sc_hd__dlymetal6s2s_1/A = 1    
+                                           |                                           
+Net: x2[0]                                 |Net: x2[0]                                 
+  sky130_fd_sc_hd__dlymetal6s2s_1/A = 1    |  sky130_fd_sc_hd__dlymetal6s2s_1/A = 1    
+                                           |                                           
+Net: x2[10]                                |Net: x2[10]                                
+  sky130_fd_sc_hd__dlymetal6s2s_1/A = 1    |  sky130_fd_sc_hd__dlymetal6s2s_1/A = 1    
+                                           |                                           
+Net: x2[17]                                |Net: x2[17]                                
+  sky130_fd_sc_hd__dlymetal6s2s_1/A = 1    |  sky130_fd_sc_hd__dlymetal6s2s_1/A = 1    
+                                           |                                           
+Net: x2[29]                                |Net: x2[29]                                
+  sky130_fd_sc_hd__dlymetal6s2s_1/A = 1    |  sky130_fd_sc_hd__dlymetal6s2s_1/A = 1    
+                                           |                                           
+Net: x2[2]                                 |Net: x2[2]                                 
+  sky130_fd_sc_hd__dlymetal6s2s_1/A = 1    |  sky130_fd_sc_hd__dlymetal6s2s_1/A = 1    
+                                           |                                           
+Net: x2[3]                                 |Net: x2[3]                                 
+  sky130_fd_sc_hd__dlymetal6s2s_1/A = 1    |  sky130_fd_sc_hd__dlymetal6s2s_1/A = 1    
+                                           |                                           
+Net: x2[8]                                 |Net: x2[8]                                 
+  sky130_fd_sc_hd__dlymetal6s2s_1/A = 1    |  sky130_fd_sc_hd__dlymetal6s2s_1/A = 1    
+                                           |                                           
+Net: y2                                    |Net: y2                                    
+  sky130_fd_sc_hd__dlymetal6s2s_1/A = 1    |  sky130_fd_sc_hd__dlymetal6s2s_1/A = 1    
+                                           |                                           
+Net: x1[12]                                |Net: x1[12]                                
+  sky130_fd_sc_hd__dlymetal6s2s_1/A = 1    |  sky130_fd_sc_hd__dlymetal6s2s_1/A = 1    
+                                           |                                           
+Net: clk1                                  |Net: clk1                                  
+  spm/clk = 1                              |  spm/clk = 1                              
+                                           |                                           
+Net: spm_inst_1/VPWR                       |(no matching net)                          
+  spm/VPWR = 1                             |                                           
+                                           |                                           
+Net: spm_inst_0/VGND                       |(no matching net)                          
+  spm/VGND = 1                             |                                           
+---------------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------------
+(no matching net)                          |Net: VPWR                                  
+                                           |  sky130_fd_sc_hd__fill_1/VPB = 1          
+                                           |  sky130_fd_sc_hd__fill_1/VPWR = 1         
+                                           |  sky130_ef_sc_hd__decap_12/VPWR = 1       
+                                           |  sky130_ef_sc_hd__decap_12/VPB = 1        
+                                           |  sky130_fd_sc_hd__decap_3/VPB = 1         
+                                           |  sky130_fd_sc_hd__decap_3/VPWR = 1        
+                                           |  sky130_fd_sc_hd__decap_4/VPB = 1         
+                                           |  sky130_fd_sc_hd__decap_4/VPWR = 1        
+                                           |  sky130_fd_sc_hd__fill_2/VPB = 1          
+                                           |  sky130_fd_sc_hd__fill_2/VPWR = 1         
+                                           |  sky130_fd_sc_hd__decap_8/VPB = 1         
+                                           |  sky130_fd_sc_hd__decap_8/VPWR = 1        
+                                           |  sky130_fd_sc_hd__decap_6/VPB = 1         
+                                           |  sky130_fd_sc_hd__decap_6/VPWR = 1        
+                                           |  sky130_fd_sc_hd__tapvpwrvgnd_1/VPWR = 1  
+                                           |  sky130_fd_sc_hd__clkbuf_1/VPB = 12       
+                                           |  sky130_fd_sc_hd__clkbuf_1/VPWR = 12      
+                                           |  sky130_fd_sc_hd__buf_2/VPB = 17          
+                                           |  sky130_fd_sc_hd__buf_2/VPWR = 17         
+                                           |  sky130_fd_sc_hd__clkbuf_2/VPB = 23       
+                                           |  sky130_fd_sc_hd__clkbuf_2/VPWR = 23      
+                                           |  sky130_fd_sc_hd__clkbuf_4/VPB = 4        
+                                           |  sky130_fd_sc_hd__clkbuf_4/VPWR = 4       
+                                           |  sky130_fd_sc_hd__dlymetal6s2s_1/VPB = 15 
+                                           |  sky130_fd_sc_hd__dlymetal6s2s_1/VPWR = 1 
+                                           |  spm/VPWR = 2                             
+                                           |                                           
+(no matching net)                          |Net: VGND                                  
+                                           |  sky130_fd_sc_hd__fill_1/VGND = 1         
+                                           |  sky130_fd_sc_hd__fill_1/VNB = 1          
+                                           |  sky130_ef_sc_hd__decap_12/VGND = 1       
+                                           |  sky130_ef_sc_hd__decap_12/VNB = 1        
+                                           |  sky130_fd_sc_hd__decap_3/VGND = 1        
+                                           |  sky130_fd_sc_hd__decap_3/VNB = 1         
+                                           |  sky130_fd_sc_hd__decap_4/VGND = 1        
+                                           |  sky130_fd_sc_hd__decap_4/VNB = 1         
+                                           |  sky130_fd_sc_hd__fill_2/VGND = 1         
+                                           |  sky130_fd_sc_hd__fill_2/VNB = 1          
+                                           |  sky130_fd_sc_hd__decap_8/VGND = 1        
+                                           |  sky130_fd_sc_hd__decap_8/VNB = 1         
+                                           |  sky130_fd_sc_hd__decap_6/VGND = 1        
+                                           |  sky130_fd_sc_hd__decap_6/VNB = 1         
+                                           |  sky130_fd_sc_hd__tapvpwrvgnd_1/VGND = 1  
+                                           |  sky130_fd_sc_hd__clkbuf_1/VGND = 12      
+                                           |  sky130_fd_sc_hd__clkbuf_1/VNB = 12       
+                                           |  sky130_fd_sc_hd__buf_2/VGND = 17         
+                                           |  sky130_fd_sc_hd__buf_2/VNB = 17          
+                                           |  sky130_fd_sc_hd__clkbuf_2/VGND = 23      
+                                           |  sky130_fd_sc_hd__clkbuf_2/VNB = 23       
+                                           |  sky130_fd_sc_hd__clkbuf_4/VGND = 4       
+                                           |  sky130_fd_sc_hd__clkbuf_4/VNB = 4        
+                                           |  sky130_fd_sc_hd__dlymetal6s2s_1/VGND = 1 
+                                           |  sky130_fd_sc_hd__dlymetal6s2s_1/VNB = 15 
+                                           |  spm/VGND = 2                             
+---------------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------------
+Net: input69/X                             |Net: net71                                 
+  spm/y = 1                                |  sky130_fd_sc_hd__dlymetal6s2s_1/A = 1    
+  sky130_fd_sc_hd__dlymetal6s2s_1/X = 1    |  spm/p = 1                                
+                                           |                                           
+Net: input67/X                             |Net: net70                                 
+  spm/x[9] = 1                             |  sky130_fd_sc_hd__dlymetal6s2s_1/A = 1    
+  sky130_fd_sc_hd__buf_2/X = 1             |  spm/p = 1                                
+                                           |                                           
+Net: input66/X                             |Net: net9                                  
+  spm/x[8] = 1                             |  sky130_fd_sc_hd__buf_2/X = 1             
+  sky130_fd_sc_hd__dlymetal6s2s_1/X = 1    |  spm/x[14] = 1                            
+                                           |                                           
+Net: input65/X                             |Net: net8                                  
+  spm/x[7] = 1                             |  sky130_fd_sc_hd__buf_2/X = 1             
+  sky130_fd_sc_hd__clkbuf_2/X = 1          |  spm/x[13] = 1                            
+                                           |                                           
+Net: input64/X                             |Net: net7                                  
+  spm/x[6] = 1                             |  sky130_fd_sc_hd__dlymetal6s2s_1/X = 1    
+  sky130_fd_sc_hd__buf_2/X = 1             |  spm/x[12] = 1                            
+                                           |                                           
+Net: input59/X                             |Net: net69                                 
+  spm/x[30] = 1                            |  sky130_fd_sc_hd__dlymetal6s2s_1/X = 1    
+  sky130_fd_sc_hd__buf_2/X = 1             |  spm/y = 1                                
+                                           |                                           
+Net: input58/X                             |Net: net68                                 
+  spm/x[2] = 1                             |  sky130_fd_sc_hd__clkbuf_2/X = 1          
+  sky130_fd_sc_hd__dlymetal6s2s_1/X = 1    |  spm/y = 1                                
+                                           |                                           
+Net: input57/X                             |Net: net67                                 
+  spm/x[29] = 1                            |  sky130_fd_sc_hd__buf_2/X = 1             
+  sky130_fd_sc_hd__dlymetal6s2s_1/X = 1    |  spm/x[9] = 1                             
+                                           |                                           
+Net: input56/X                             |Net: net66                                 
+  spm/x[28] = 1                            |  sky130_fd_sc_hd__dlymetal6s2s_1/X = 1    
+  sky130_fd_sc_hd__clkbuf_1/X = 1          |  spm/x[8] = 1                             
+                                           |                                           
+Net: input55/X                             |Net: net65                                 
+  spm/x[27] = 1                            |  sky130_fd_sc_hd__clkbuf_2/X = 1          
+  sky130_fd_sc_hd__clkbuf_2/X = 1          |  spm/x[7] = 1                             
+                                           |                                           
+Net: input54/X                             |Net: net64                                 
+  spm/x[26] = 1                            |  sky130_fd_sc_hd__buf_2/X = 1             
+  sky130_fd_sc_hd__clkbuf_1/X = 1          |  spm/x[6] = 1                             
+                                           |                                           
+Net: input53/X                             |Net: net63                                 
+  spm/x[25] = 1                            |  sky130_fd_sc_hd__clkbuf_2/X = 1          
+  sky130_fd_sc_hd__clkbuf_1/X = 1          |  spm/x[5] = 1                             
+                                           |                                           
+Net: input49/X                             |Net: net62                                 
+  spm/x[21] = 1                            |  sky130_fd_sc_hd__clkbuf_1/X = 1          
+  sky130_fd_sc_hd__clkbuf_4/X = 1          |  spm/x[4] = 1                             
+                                           |                                           
+Net: input48/X                             |Net: net61                                 
+  spm/x[20] = 1                            |  sky130_fd_sc_hd__dlymetal6s2s_1/X = 1    
+  sky130_fd_sc_hd__clkbuf_2/X = 1          |  spm/x[3] = 1                             
+                                           |                                           
+Net: input47/X                             |Net: net60                                 
+  spm/x[1] = 1                             |  sky130_fd_sc_hd__clkbuf_1/X = 1          
+  sky130_fd_sc_hd__clkbuf_2/X = 1          |  spm/x[31] = 1                            
+                                           |                                           
+Net: input46/X                             |Net: net6                                  
+  spm/x[19] = 1                            |  sky130_fd_sc_hd__clkbuf_2/X = 1          
+  sky130_fd_sc_hd__clkbuf_2/X = 1          |  spm/x[11] = 1                            
+                                           |                                           
+Net: input45/X                             |Net: net59                                 
+  spm/x[18] = 1                            |  sky130_fd_sc_hd__buf_2/X = 1             
+  sky130_fd_sc_hd__buf_2/X = 1             |  spm/x[30] = 1                            
+                                           |                                           
+Net: input44/X                             |Net: net58                                 
+  spm/x[17] = 1                            |  sky130_fd_sc_hd__dlymetal6s2s_1/X = 1    
+  sky130_fd_sc_hd__dlymetal6s2s_1/X = 1    |  spm/x[2] = 1                             
+                                           |                                           
+Net: input43/X                             |Net: net57                                 
+  spm/x[16] = 1                            |  sky130_fd_sc_hd__dlymetal6s2s_1/X = 1    
+  sky130_fd_sc_hd__clkbuf_2/X = 1          |  spm/x[29] = 1                            
+                                           |                                           
+Net: input42/X                             |Net: net56                                 
+  spm/x[15] = 1                            |  sky130_fd_sc_hd__clkbuf_1/X = 1          
+  sky130_fd_sc_hd__buf_2/X = 1             |  spm/x[28] = 1                            
+                                           |                                           
+Net: input39/X                             |Net: net55                                 
+  spm/x[12] = 1                            |  sky130_fd_sc_hd__clkbuf_2/X = 1          
+  sky130_fd_sc_hd__clkbuf_4/X = 1          |  spm/x[27] = 1                            
+                                           |                                           
+Net: input38/X                             |Net: net54                                 
+  spm/x[11] = 1                            |  sky130_fd_sc_hd__clkbuf_1/X = 1          
+  sky130_fd_sc_hd__clkbuf_1/X = 1          |  spm/x[26] = 1                            
+                                           |                                           
+Net: input37/X                             |Net: net53                                 
+  spm/x[10] = 1                            |  sky130_fd_sc_hd__clkbuf_1/X = 1          
+  sky130_fd_sc_hd__dlymetal6s2s_1/X = 1    |  spm/x[25] = 1                            
+                                           |                                           
+Net: input36/X                             |Net: net52                                 
+  spm/x[0] = 1                             |  sky130_fd_sc_hd__clkbuf_2/X = 1          
+  sky130_fd_sc_hd__dlymetal6s2s_1/X = 1    |  spm/x[24] = 1                            
+                                           |                                           
+Net: output71/A                            |Net: net51                                 
+  spm/p = 1                                |  sky130_fd_sc_hd__buf_2/X = 1             
+  sky130_fd_sc_hd__dlymetal6s2s_1/A = 1    |  spm/x[23] = 1                            
+                                           |                                           
+Net: input41/X                             |Net: net50                                 
+  sky130_fd_sc_hd__clkbuf_2/X = 1          |  sky130_fd_sc_hd__clkbuf_2/X = 1          
+  spm/x[14] = 1                            |  spm/x[22] = 1                            
+                                           |                                           
+Net: input52/X                             |Net: net5                                  
+  sky130_fd_sc_hd__clkbuf_2/X = 1          |  sky130_fd_sc_hd__buf_2/X = 1             
+  spm/x[24] = 1                            |  spm/x[10] = 1                            
+                                           |                                           
+Net: input63/X                             |Net: net49                                 
+  sky130_fd_sc_hd__clkbuf_2/X = 1          |  sky130_fd_sc_hd__clkbuf_4/X = 1          
+  spm/x[5] = 1                             |  spm/x[21] = 1                            
+                                           |                                           
+Net: input68/X                             |Net: net48                                 
+  spm/y = 1                                |  sky130_fd_sc_hd__clkbuf_2/X = 1          
+  sky130_fd_sc_hd__clkbuf_2/X = 1          |  spm/x[20] = 1                            
+                                           |                                           
+Net: input35/X                             |Net: net47                                 
+  spm/x[9] = 1                             |  sky130_fd_sc_hd__clkbuf_2/X = 1          
+  sky130_fd_sc_hd__clkbuf_2/X = 1          |  spm/x[1] = 1                             
+                                           |                                           
+Net: input34/X                             |Net: net46                                 
+  spm/x[8] = 1                             |  sky130_fd_sc_hd__clkbuf_2/X = 1          
+  sky130_fd_sc_hd__dlymetal6s2s_1/X = 1    |  spm/x[19] = 1                            
+                                           |                                           
+Net: input33/X                             |Net: net45                                 
+  spm/x[7] = 1                             |  sky130_fd_sc_hd__buf_2/X = 1             
+  sky130_fd_sc_hd__clkbuf_4/X = 1          |  spm/x[18] = 1                            
+                                           |                                           
+Net: input32/X                             |Net: net44                                 
+  spm/x[6] = 1                             |  sky130_fd_sc_hd__dlymetal6s2s_1/X = 1    
+  sky130_fd_sc_hd__buf_2/X = 1             |  spm/x[17] = 1                            
+                                           |                                           
+Net: input31/X                             |Net: net43                                 
+  spm/x[5] = 1                             |  sky130_fd_sc_hd__clkbuf_2/X = 1          
+  sky130_fd_sc_hd__clkbuf_2/X = 1          |  spm/x[16] = 1                            
+                                           |                                           
+Net: input30/X                             |Net: net42                                 
+  spm/x[4] = 1                             |  sky130_fd_sc_hd__buf_2/X = 1             
+  sky130_fd_sc_hd__buf_2/X = 1             |  spm/x[15] = 1                            
+                                           |                                           
+Net: input29/X                             |Net: net41                                 
+  spm/x[3] = 1                             |  sky130_fd_sc_hd__clkbuf_2/X = 1          
+  sky130_fd_sc_hd__buf_2/X = 1             |  spm/x[14] = 1                            
+                                           |                                           
+Net: input28/X                             |Net: net40                                 
+  spm/x[31] = 1                            |  sky130_fd_sc_hd__clkbuf_2/X = 1          
+  sky130_fd_sc_hd__clkbuf_1/X = 1          |  spm/x[13] = 1                            
+                                           |                                           
+Net: input27/X                             |Net: net4                                  
+  spm/x[30] = 1                            |  sky130_fd_sc_hd__clkbuf_2/X = 1          
+  sky130_fd_sc_hd__dlymetal6s2s_1/X = 1    |  spm/x[0] = 1                             
+                                           |                                           
+Net: input26/X                             |Net: net39                                 
+  spm/x[2] = 1                             |  sky130_fd_sc_hd__clkbuf_4/X = 1          
+  sky130_fd_sc_hd__clkbuf_2/X = 1          |  spm/x[12] = 1                            
+                                           |                                           
+Net: input25/X                             |Net: net38                                 
+  spm/x[29] = 1                            |  sky130_fd_sc_hd__clkbuf_1/X = 1          
+  sky130_fd_sc_hd__buf_2/X = 1             |  spm/x[11] = 1                            
+                                           |                                           
+Net: input24/X                             |Net: net37                                 
+  spm/x[28] = 1                            |  sky130_fd_sc_hd__dlymetal6s2s_1/X = 1    
+  sky130_fd_sc_hd__clkbuf_2/X = 1          |  spm/x[10] = 1                            
+                                           |                                           
+Net: input23/X                             |Net: net36                                 
+  spm/x[27] = 1                            |  sky130_fd_sc_hd__dlymetal6s2s_1/X = 1    
+  sky130_fd_sc_hd__clkbuf_1/X = 1          |  spm/x[0] = 1                             
+                                           |                                           
+Net: input22/X                             |Net: net35                                 
+  spm/x[26] = 1                            |  sky130_fd_sc_hd__clkbuf_2/X = 1          
+  sky130_fd_sc_hd__clkbuf_1/X = 1          |  spm/x[9] = 1                             
+                                           |                                           
+Net: input21/X                             |Net: net34                                 
+  spm/x[25] = 1                            |  sky130_fd_sc_hd__dlymetal6s2s_1/X = 1    
+  sky130_fd_sc_hd__clkbuf_2/X = 1          |  spm/x[8] = 1                             
+                                           |                                           
+Net: input20/X                             |Net: net33                                 
+  spm/x[24] = 1                            |  sky130_fd_sc_hd__clkbuf_4/X = 1          
+  sky130_fd_sc_hd__clkbuf_1/X = 1          |  spm/x[7] = 1                             
+                                           |                                           
+Net: input19/X                             |Net: net32                                 
+  spm/x[23] = 1                            |  sky130_fd_sc_hd__buf_2/X = 1             
+  sky130_fd_sc_hd__clkbuf_2/X = 1          |  spm/x[6] = 1                             
+                                           |                                           
+Net: input18/X                             |Net: net31                                 
+  spm/x[22] = 1                            |  sky130_fd_sc_hd__clkbuf_2/X = 1          
+  sky130_fd_sc_hd__buf_2/X = 1             |  spm/x[5] = 1                             
+                                           |                                           
+Net: input17/X                             |Net: net30                                 
+  spm/x[21] = 1                            |  sky130_fd_sc_hd__buf_2/X = 1             
+  sky130_fd_sc_hd__clkbuf_1/X = 1          |  spm/x[4] = 1                             
+                                           |                                           
+Net: input16/X                             |Net: net3                                  
+  spm/x[20] = 1                            |  sky130_fd_sc_hd__dlymetal6s2s_1/X = 1    
+  sky130_fd_sc_hd__buf_2/X = 1             |  spm/rst = 1                              
+                                           |                                           
+Net: input15/X                             |Net: net29                                 
+  spm/x[1] = 1                             |  sky130_fd_sc_hd__buf_2/X = 1             
+  sky130_fd_sc_hd__buf_2/X = 1             |  spm/x[3] = 1                             
+                                           |                                           
+Net: input14/X                             |Net: net28                                 
+  spm/x[19] = 1                            |  sky130_fd_sc_hd__clkbuf_1/X = 1          
+  sky130_fd_sc_hd__clkbuf_2/X = 1          |  spm/x[31] = 1                            
+                                           |                                           
+Net: input13/X                             |Net: net27                                 
+  spm/x[18] = 1                            |  sky130_fd_sc_hd__dlymetal6s2s_1/X = 1    
+  sky130_fd_sc_hd__clkbuf_2/X = 1          |  spm/x[30] = 1                            
+                                           |                                           
+Net: input12/X                             |Net: net26                                 
+  spm/x[17] = 1                            |  sky130_fd_sc_hd__clkbuf_2/X = 1          
+  sky130_fd_sc_hd__clkbuf_4/X = 1          |  spm/x[2] = 1                             
+                                           |                                           
+Net: input11/X                             |Net: net25                                 
+  spm/x[16] = 1                            |  sky130_fd_sc_hd__buf_2/X = 1             
+  sky130_fd_sc_hd__clkbuf_2/X = 1          |  spm/x[29] = 1                            
+                                           |                                           
+Net: input10/X                             |Net: net24                                 
+  spm/x[15] = 1                            |  sky130_fd_sc_hd__clkbuf_2/X = 1          
+  sky130_fd_sc_hd__buf_2/X = 1             |  spm/x[28] = 1                            
+                                           |                                           
+Net: input9/X                              |Net: net23                                 
+  spm/x[14] = 1                            |  sky130_fd_sc_hd__clkbuf_1/X = 1          
+  sky130_fd_sc_hd__buf_2/X = 1             |  spm/x[27] = 1                            
+                                           |                                           
+Net: input8/X                              |Net: net22                                 
+  spm/x[13] = 1                            |  sky130_fd_sc_hd__clkbuf_1/X = 1          
+  sky130_fd_sc_hd__buf_2/X = 1             |  spm/x[26] = 1                            
+                                           |                                           
+Net: input7/X                              |Net: net21                                 
+  spm/x[12] = 1                            |  sky130_fd_sc_hd__clkbuf_2/X = 1          
+  sky130_fd_sc_hd__dlymetal6s2s_1/X = 1    |  spm/x[25] = 1                            
+                                           |                                           
+Net: input6/X                              |Net: net20                                 
+  spm/x[11] = 1                            |  sky130_fd_sc_hd__clkbuf_1/X = 1          
+  sky130_fd_sc_hd__clkbuf_2/X = 1          |  spm/x[24] = 1                            
+                                           |                                           
+Net: output70/A                            |Net: net2                                  
+  spm/p = 1                                |  sky130_fd_sc_hd__dlymetal6s2s_1/X = 1    
+  sky130_fd_sc_hd__dlymetal6s2s_1/A = 1    |  spm/rst = 1                              
+                                           |                                           
+Net: input5/X                              |Net: net19                                 
+  sky130_fd_sc_hd__buf_2/X = 1             |  sky130_fd_sc_hd__clkbuf_2/X = 1          
+  spm/x[10] = 1                            |  spm/x[23] = 1                            
+                                           |                                           
+Net: input51/X                             |Net: net18                                 
+  sky130_fd_sc_hd__buf_2/X = 1             |  sky130_fd_sc_hd__buf_2/X = 1             
+  spm/x[23] = 1                            |  spm/x[22] = 1                            
+                                           |                                           
+Net: input40/X                             |Net: net17                                 
+  sky130_fd_sc_hd__clkbuf_2/X = 1          |  sky130_fd_sc_hd__clkbuf_1/X = 1          
+  spm/x[13] = 1                            |  spm/x[21] = 1                            
+                                           |                                           
+Net: input62/X                             |Net: net16                                 
+  sky130_fd_sc_hd__clkbuf_1/X = 1          |  sky130_fd_sc_hd__buf_2/X = 1             
+  spm/x[4] = 1                             |  spm/x[20] = 1                            
+                                           |                                           
+Net: input4/X                              |Net: net15                                 
+  sky130_fd_sc_hd__clkbuf_2/X = 1          |  sky130_fd_sc_hd__buf_2/X = 1             
+  spm/x[0] = 1                             |  spm/x[1] = 1                             
+                                           |                                           
+Net: input61/X                             |Net: net14                                 
+  sky130_fd_sc_hd__dlymetal6s2s_1/X = 1    |  sky130_fd_sc_hd__clkbuf_2/X = 1          
+  spm/x[3] = 1                             |  spm/x[19] = 1                            
+                                           |                                           
+Net: input50/X                             |Net: net13                                 
+  sky130_fd_sc_hd__clkbuf_2/X = 1          |  sky130_fd_sc_hd__clkbuf_2/X = 1          
+  spm/x[22] = 1                            |  spm/x[18] = 1                            
+                                           |                                           
+Net: input3/X                              |Net: net12                                 
+  sky130_fd_sc_hd__dlymetal6s2s_1/X = 1    |  sky130_fd_sc_hd__clkbuf_4/X = 1          
+  spm/rst = 1                              |  spm/x[17] = 1                            
+                                           |                                           
+Net: input60/X                             |Net: net11                                 
+  sky130_fd_sc_hd__clkbuf_1/X = 1          |  sky130_fd_sc_hd__clkbuf_2/X = 1          
+  spm/x[31] = 1                            |  spm/x[16] = 1                            
+                                           |                                           
+Net: input2/X                              |Net: net10                                 
+  sky130_fd_sc_hd__dlymetal6s2s_1/X = 1    |  sky130_fd_sc_hd__buf_2/X = 1             
+  spm/rst = 1                              |  spm/x[15] = 1                            
+                                           |                                           
+Net: input1/X                              |Net: net1                                  
+  sky130_fd_sc_hd__clkbuf_1/X = 1          |  sky130_fd_sc_hd__clkbuf_1/X = 1          
+  spm/clk = 1                              |  spm/clk = 1                              
+---------------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------------
+Net: VPWR                                  |(no matching net)                          
+  sky130_ef_sc_hd__decap_12/VPWR = 1       |                                           
+  sky130_ef_sc_hd__decap_12/VPB = 1        |                                           
+  sky130_fd_sc_hd__decap_6/VPB = 1         |                                           
+  sky130_fd_sc_hd__decap_6/VPWR = 1        |                                           
+  sky130_fd_sc_hd__fill_1/VPB = 1          |                                           
+  sky130_fd_sc_hd__fill_1/VPWR = 1         |                                           
+  sky130_fd_sc_hd__decap_3/VPB = 1         |                                           
+  sky130_fd_sc_hd__decap_3/VPWR = 1        |                                           
+  sky130_fd_sc_hd__decap_4/VPB = 1         |                                           
+  sky130_fd_sc_hd__decap_4/VPWR = 1        |                                           
+  sky130_fd_sc_hd__decap_8/VPB = 1         |                                           
+  sky130_fd_sc_hd__decap_8/VPWR = 1        |                                           
+  sky130_fd_sc_hd__fill_2/VPB = 1          |                                           
+  sky130_fd_sc_hd__fill_2/VPWR = 1         |                                           
+  sky130_fd_sc_hd__tapvpwrvgnd_1/VPWR = 1  |                                           
+  sky130_fd_sc_hd__clkbuf_1/VPB = 12       |                                           
+  sky130_fd_sc_hd__clkbuf_1/VPWR = 12      |                                           
+  sky130_fd_sc_hd__dlymetal6s2s_1/VPB = 15 |                                           
+  sky130_fd_sc_hd__dlymetal6s2s_1/VPWR = 1 |                                           
+  sky130_fd_sc_hd__clkbuf_2/VPB = 23       |                                           
+  sky130_fd_sc_hd__clkbuf_2/VPWR = 23      |                                           
+  sky130_fd_sc_hd__buf_2/VPB = 17          |                                           
+  sky130_fd_sc_hd__buf_2/VPWR = 17         |                                           
+  spm/VPWR = 1                             |                                           
+  sky130_fd_sc_hd__clkbuf_4/VPB = 4        |                                           
+  sky130_fd_sc_hd__clkbuf_4/VPWR = 4       |                                           
+                                           |                                           
+Net: VGND                                  |(no matching net)                          
+  sky130_ef_sc_hd__decap_12/VGND = 1       |                                           
+  sky130_ef_sc_hd__decap_12/VNB = 1        |                                           
+  sky130_fd_sc_hd__decap_6/VGND = 1        |                                           
+  sky130_fd_sc_hd__decap_6/VNB = 1         |                                           
+  sky130_fd_sc_hd__fill_1/VGND = 1         |                                           
+  sky130_fd_sc_hd__fill_1/VNB = 1          |                                           
+  sky130_fd_sc_hd__decap_3/VGND = 1        |                                           
+  sky130_fd_sc_hd__decap_3/VNB = 1         |                                           
+  sky130_fd_sc_hd__decap_4/VGND = 1        |                                           
+  sky130_fd_sc_hd__decap_4/VNB = 1         |                                           
+  sky130_fd_sc_hd__decap_8/VGND = 1        |                                           
+  sky130_fd_sc_hd__decap_8/VNB = 1         |                                           
+  sky130_fd_sc_hd__fill_2/VGND = 1         |                                           
+  sky130_fd_sc_hd__fill_2/VNB = 1          |                                           
+  sky130_fd_sc_hd__tapvpwrvgnd_1/VGND = 1  |                                           
+  sky130_fd_sc_hd__clkbuf_1/VGND = 12      |                                           
+  sky130_fd_sc_hd__clkbuf_1/VNB = 12       |                                           
+  sky130_fd_sc_hd__dlymetal6s2s_1/VGND = 1 |                                           
+  sky130_fd_sc_hd__dlymetal6s2s_1/VNB = 15 |                                           
+  sky130_fd_sc_hd__clkbuf_2/VGND = 23      |                                           
+  sky130_fd_sc_hd__clkbuf_2/VNB = 23       |                                           
+  sky130_fd_sc_hd__buf_2/VGND = 17         |                                           
+  sky130_fd_sc_hd__buf_2/VNB = 17          |                                           
+  spm/VGND = 1                             |                                           
+  sky130_fd_sc_hd__clkbuf_4/VGND = 4       |                                           
+  sky130_fd_sc_hd__clkbuf_4/VNB = 4        |                                           
+---------------------------------------------------------------------------------------
+DEVICE mismatches: Class fragments follow (with node fanout counts):
+Circuit 1: manual_macro_placement_test     |Circuit 2: manual_macro_placement_test     
+
+---------------------------------------------------------------------------------------
+Instance: sky130_fd_sc_hd__clkbuf_4:input3 |Instance: input49                          
+  A = 1                                    |  A = 1                                    
+  VGND = 158                               |  VGND = 159                               
+  VNB = 158                                |  VNB = 159                                
+  VPB = 158                                |  VPB = 159                                
+  VPWR = 158                               |  VPWR = 159                               
+  X = 2                                    |  X = 2                                    
+                                           |                                           
+Instance: sky130_fd_sc_hd__clkbuf_4:input4 |Instance: input39                          
+  A = 1                                    |  A = 1                                    
+  VGND = 158                               |  VGND = 159                               
+  VNB = 158                                |  VNB = 159                                
+  VPB = 158                                |  VPB = 159                                
+  VPWR = 158                               |  VPWR = 159                               
+  X = 2                                    |  X = 2                                    
+                                           |                                           
+Instance: sky130_fd_sc_hd__clkbuf_4:input1 |Instance: input33                          
+  A = 1                                    |  A = 1                                    
+  VGND = 158                               |  VGND = 159                               
+  VNB = 158                                |  VNB = 159                                
+  VPB = 158                                |  VPB = 159                                
+  VPWR = 158                               |  VPWR = 159                               
+  X = 2                                    |  X = 2                                    
+                                           |                                           
+Instance: sky130_fd_sc_hd__clkbuf_4:input3 |Instance: input12                          
+  A = 1                                    |  A = 1                                    
+  VGND = 158                               |  VGND = 159                               
+  VNB = 158                                |  VNB = 159                                
+  VPB = 158                                |  VPB = 159                                
+  VPWR = 158                               |  VPWR = 159                               
+  X = 2                                    |  X = 2                                    
+---------------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------------
+Instance: spm_inst_1                       |Instance: spm_inst_1                       
+  clk = 2                                  |  clk = 2                                  
+  p = 2                                    |  p = 2                                    
+  rst = 2                                  |  rst = 2                                  
+  x[0] = 2                                 |  x[0] = 2                                 
+  x[10] = 2                                |  x[10] = 2                                
+  x[11] = 2                                |  x[11] = 2                                
+  x[12] = 2                                |  x[12] = 2                                
+  x[13] = 2                                |  x[13] = 2                                
+  x[14] = 2                                |  x[14] = 2                                
+  x[15] = 2                                |  x[15] = 2                                
+  x[16] = 2                                |  x[16] = 2                                
+  x[17] = 2                                |  x[17] = 2                                
+  x[18] = 2                                |  x[18] = 2                                
+  x[19] = 2                                |  x[19] = 2                                
+  x[1] = 2                                 |  x[1] = 2                                 
+  x[20] = 2                                |  x[20] = 2                                
+  x[21] = 2                                |  x[21] = 2                                
+  x[22] = 2                                |  x[22] = 2                                
+  x[23] = 2                                |  x[23] = 2                                
+  x[24] = 2                                |  x[24] = 2                                
+  x[25] = 2                                |  x[25] = 2                                
+  x[26] = 2                                |  x[26] = 2                                
+  x[27] = 2                                |  x[27] = 2                                
+  x[28] = 2                                |  x[28] = 2                                
+  x[29] = 2                                |  x[29] = 2                                
+  x[2] = 2                                 |  x[2] = 2                                 
+  x[30] = 2                                |  x[30] = 2                                
+  x[31] = 2                                |  x[31] = 2                                
+  x[3] = 2                                 |  x[3] = 2                                 
+  x[4] = 2                                 |  x[4] = 2                                 
+  x[5] = 2                                 |  x[5] = 2                                 
+  x[6] = 2                                 |  x[6] = 2                                 
+  x[7] = 2                                 |  x[7] = 2                                 
+  x[8] = 2                                 |  x[8] = 2                                 
+  x[9] = 2                                 |  x[9] = 2                                 
+  y = 2                                    |  y = 2                                    
+  VPWR = 1                                 |  VPWR = 159                               
+  VGND = 158                               |  VGND = 159                               
+                                           |                                           
+Instance: spm_inst_0                       |Instance: spm_inst_0                       
+  clk = 1                                  |  clk = 1                                  
+  p = 2                                    |  p = 2                                    
+  rst = 2                                  |  rst = 2                                  
+  x[0] = 2                                 |  x[0] = 2                                 
+  x[10] = 2                                |  x[10] = 2                                
+  x[11] = 2                                |  x[11] = 2                                
+  x[12] = 2                                |  x[12] = 2                                
+  x[13] = 2                                |  x[13] = 2                                
+  x[14] = 2                                |  x[14] = 2                                
+  x[15] = 2                                |  x[15] = 2                                
+  x[16] = 2                                |  x[16] = 2                                
+  x[17] = 2                                |  x[17] = 2                                
+  x[18] = 2                                |  x[18] = 2                                
+  x[19] = 2                                |  x[19] = 2                                
+  x[1] = 2                                 |  x[1] = 2                                 
+  x[20] = 2                                |  x[20] = 2                                
+  x[21] = 2                                |  x[21] = 2                                
+  x[22] = 2                                |  x[22] = 2                                
+  x[23] = 2                                |  x[23] = 2                                
+  x[24] = 2                                |  x[24] = 2                                
+  x[25] = 2                                |  x[25] = 2                                
+  x[26] = 2                                |  x[26] = 2                                
+  x[27] = 2                                |  x[27] = 2                                
+  x[28] = 2                                |  x[28] = 2                                
+  x[29] = 2                                |  x[29] = 2                                
+  x[2] = 2                                 |  x[2] = 2                                 
+  x[30] = 2                                |  x[30] = 2                                
+  x[31] = 2                                |  x[31] = 2                                
+  x[3] = 2                                 |  x[3] = 2                                 
+  x[4] = 2                                 |  x[4] = 2                                 
+  x[5] = 2                                 |  x[5] = 2                                 
+  x[6] = 2                                 |  x[6] = 2                                 
+  x[7] = 2                                 |  x[7] = 2                                 
+  x[8] = 2                                 |  x[8] = 2                                 
+  x[9] = 2                                 |  x[9] = 2                                 
+  y = 2                                    |  y = 2                                    
+  VPWR = 158                               |  VPWR = 159                               
+  VGND = 1                                 |  VGND = 159                               
+---------------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------------
+Instance: sky130_fd_sc_hd__buf_2:input29   |Instance: input9                           
+  A = 1                                    |  A = 1                                    
+  VGND = 158                               |  VGND = 159                               
+  VNB = 158                                |  VNB = 159                                
+  VPB = 158                                |  VPB = 159                                
+  VPWR = 158                               |  VPWR = 159                               
+  X = 2                                    |  X = 2                                    
+                                           |                                           
+Instance: sky130_fd_sc_hd__buf_2:input18   |Instance: input8                           
+  A = 1                                    |  A = 1                                    
+  VGND = 158                               |  VGND = 159                               
+  VNB = 158                                |  VNB = 159                                
+  VPB = 158                                |  VPB = 159                                
+  VPWR = 158                               |  VPWR = 159                               
+  X = 2                                    |  X = 2                                    
+                                           |                                           
+Instance: sky130_fd_sc_hd__buf_2:input16   |Instance: input67                          
+  A = 1                                    |  A = 1                                    
+  VGND = 158                               |  VGND = 159                               
+  VNB = 158                                |  VNB = 159                                
+  VPB = 158                                |  VPB = 159                                
+  VPWR = 158                               |  VPWR = 159                               
+  X = 2                                    |  X = 2                                    
+                                           |                                           
+Instance: sky130_fd_sc_hd__buf_2:input59   |Instance: input64                          
+  A = 1                                    |  A = 1                                    
+  VGND = 158                               |  VGND = 159                               
+  VNB = 158                                |  VNB = 159                                
+  VPB = 158                                |  VPB = 159                                
+  VPWR = 158                               |  VPWR = 159                               
+  X = 2                                    |  X = 2                                    
+                                           |                                           
+Instance: sky130_fd_sc_hd__buf_2:input15   |Instance: input59                          
+  A = 1                                    |  A = 1                                    
+  VGND = 158                               |  VGND = 159                               
+  VNB = 158                                |  VNB = 159                                
+  VPB = 158                                |  VPB = 159                                
+  VPWR = 158                               |  VPWR = 159                               
+  X = 2                                    |  X = 2                                    
+                                           |                                           
+Instance: sky130_fd_sc_hd__buf_2:input25   |Instance: input51                          
+  A = 1                                    |  A = 1                                    
+  VGND = 158                               |  VGND = 159                               
+  VNB = 158                                |  VNB = 159                                
+  VPB = 158                                |  VPB = 159                                
+  VPWR = 158                               |  VPWR = 159                               
+  X = 2                                    |  X = 2                                    
+                                           |                                           
+Instance: sky130_fd_sc_hd__buf_2:input67   |Instance: input5                           
+  A = 1                                    |  A = 1                                    
+  VGND = 158                               |  VGND = 159                               
+  VNB = 158                                |  VNB = 159                                
+  VPB = 158                                |  VPB = 159                                
+  VPWR = 158                               |  VPWR = 159                               
+  X = 2                                    |  X = 2                                    
+                                           |                                           
+Instance: sky130_fd_sc_hd__buf_2:input45   |Instance: input45                          
+  A = 1                                    |  A = 1                                    
+  VGND = 158                               |  VGND = 159                               
+  VNB = 158                                |  VNB = 159                                
+  VPB = 158                                |  VPB = 159                                
+  VPWR = 158                               |  VPWR = 159                               
+  X = 2                                    |  X = 2                                    
+                                           |                                           
+Instance: sky130_fd_sc_hd__buf_2:input9    |Instance: input42                          
+  A = 1                                    |  A = 1                                    
+  VGND = 158                               |  VGND = 159                               
+  VNB = 158                                |  VNB = 159                                
+  VPB = 158                                |  VPB = 159                                
+  VPWR = 158                               |  VPWR = 159                               
+  X = 2                                    |  X = 2                                    
+                                           |                                           
+Instance: sky130_fd_sc_hd__buf_2:input8    |Instance: input32                          
+  A = 1                                    |  A = 1                                    
+  VGND = 158                               |  VGND = 159                               
+  VNB = 158                                |  VNB = 159                                
+  VPB = 158                                |  VPB = 159                                
+  VPWR = 158                               |  VPWR = 159                               
+  X = 2                                    |  X = 2                                    
+                                           |                                           
+Instance: sky130_fd_sc_hd__buf_2:input10   |Instance: input30                          
+  A = 1                                    |  A = 1                                    
+  VGND = 158                               |  VGND = 159                               
+  VNB = 158                                |  VNB = 159                                
+  VPB = 158                                |  VPB = 159                                
+  VPWR = 158                               |  VPWR = 159                               
+  X = 2                                    |  X = 2                                    
+                                           |                                           
+Instance: sky130_fd_sc_hd__buf_2:input32   |Instance: input29                          
+  A = 1                                    |  A = 1                                    
+  VGND = 158                               |  VGND = 159                               
+  VNB = 158                                |  VNB = 159                                
+  VPB = 158                                |  VPB = 159                                
+  VPWR = 158                               |  VPWR = 159                               
+  X = 2                                    |  X = 2                                    
+                                           |                                           
+Instance: sky130_fd_sc_hd__buf_2:input42   |Instance: input25                          
+  A = 1                                    |  A = 1                                    
+  VGND = 158                               |  VGND = 159                               
+  VNB = 158                                |  VNB = 159                                
+  VPB = 158                                |  VPB = 159                                
+  VPWR = 158                               |  VPWR = 159                               
+  X = 2                                    |  X = 2                                    
+                                           |                                           
+Instance: sky130_fd_sc_hd__buf_2:input64   |Instance: input18                          
+  A = 1                                    |  A = 1                                    
+  VGND = 158                               |  VGND = 159                               
+  VNB = 158                                |  VNB = 159                                
+  VPB = 158                                |  VPB = 159                                
+  VPWR = 158                               |  VPWR = 159                               
+  X = 2                                    |  X = 2                                    
+                                           |                                           
+Instance: sky130_fd_sc_hd__buf_2:input30   |Instance: input16                          
+  A = 1                                    |  A = 1                                    
+  VGND = 158                               |  VGND = 159                               
+  VNB = 158                                |  VNB = 159                                
+  VPB = 158                                |  VPB = 159                                
+  VPWR = 158                               |  VPWR = 159                               
+  X = 2                                    |  X = 2                                    
+                                           |                                           
+Instance: sky130_fd_sc_hd__buf_2:input5    |Instance: input15                          
+  A = 1                                    |  A = 1                                    
+  VGND = 158                               |  VGND = 159                               
+  VNB = 158                                |  VNB = 159                                
+  VPB = 158                                |  VPB = 159                                
+  VPWR = 158                               |  VPWR = 159                               
+  X = 2                                    |  X = 2                                    
+                                           |                                           
+Instance: sky130_fd_sc_hd__buf_2:input51   |Instance: input10                          
+  A = 1                                    |  A = 1                                    
+  VGND = 158                               |  VGND = 159                               
+  VNB = 158                                |  VNB = 159                                
+  VPB = 158                                |  VPB = 159                                
+  VPWR = 158                               |  VPWR = 159                               
+  X = 2                                    |  X = 2                                    
+---------------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------------
+Instance: sky130_fd_sc_hd__clkbuf_2:input1 |Instance: input68                          
+  A = 1                                    |  A = 1                                    
+  VGND = 158                               |  VGND = 159                               
+  VNB = 158                                |  VNB = 159                                
+  VPB = 158                                |  VPB = 159                                
+  VPWR = 158                               |  VPWR = 159                               
+  X = 2                                    |  X = 2                                    
+                                           |                                           
+Instance: sky130_fd_sc_hd__clkbuf_2:input4 |Instance: input65                          
+  A = 1                                    |  A = 1                                    
+  VGND = 158                               |  VGND = 159                               
+  VNB = 158                                |  VNB = 159                                
+  VPB = 158                                |  VPB = 159                                
+  VPWR = 158                               |  VPWR = 159                               
+  X = 2                                    |  X = 2                                    
+                                           |                                           
+Instance: sky130_fd_sc_hd__clkbuf_2:input2 |Instance: input63                          
+  A = 1                                    |  A = 1                                    
+  VGND = 158                               |  VGND = 159                               
+  VNB = 158                                |  VNB = 159                                
+  VPB = 158                                |  VPB = 159                                
+  VPWR = 158                               |  VPWR = 159                               
+  X = 2                                    |  X = 2                                    
+                                           |                                           
+Instance: sky130_fd_sc_hd__clkbuf_2:input4 |Instance: input6                           
+  A = 1                                    |  A = 1                                    
+  VGND = 158                               |  VGND = 159                               
+  VNB = 158                                |  VNB = 159                                
+  VPB = 158                                |  VPB = 159                                
+  VPWR = 158                               |  VPWR = 159                               
+  X = 2                                    |  X = 2                                    
+                                           |                                           
+Instance: sky130_fd_sc_hd__clkbuf_2:input1 |Instance: input55                          
+  A = 1                                    |  A = 1                                    
+  VGND = 158                               |  VGND = 159                               
+  VNB = 158                                |  VNB = 159                                
+  VPB = 158                                |  VPB = 159                                
+  VPWR = 158                               |  VPWR = 159                               
+  X = 2                                    |  X = 2                                    
+                                           |                                           
+Instance: sky130_fd_sc_hd__clkbuf_2:input2 |Instance: input52                          
+  A = 1                                    |  A = 1                                    
+  VGND = 158                               |  VGND = 159                               
+  VNB = 158                                |  VNB = 159                                
+  VPB = 158                                |  VPB = 159                                
+  VPWR = 158                               |  VPWR = 159                               
+  X = 2                                    |  X = 2                                    
+                                           |                                           
+Instance: sky130_fd_sc_hd__clkbuf_2:input3 |Instance: input50                          
+  A = 1                                    |  A = 1                                    
+  VGND = 158                               |  VGND = 159                               
+  VNB = 158                                |  VNB = 159                                
+  VPB = 158                                |  VPB = 159                                
+  VPWR = 158                               |  VPWR = 159                               
+  X = 2                                    |  X = 2                                    
+                                           |                                           
+Instance: sky130_fd_sc_hd__clkbuf_2:input6 |Instance: input48                          
+  A = 1                                    |  A = 1                                    
+  VGND = 158                               |  VGND = 159                               
+  VNB = 158                                |  VNB = 159                                
+  VPB = 158                                |  VPB = 159                                
+  VPWR = 158                               |  VPWR = 159                               
+  X = 2                                    |  X = 2                                    
+                                           |                                           
+Instance: sky130_fd_sc_hd__clkbuf_2:input4 |Instance: input47                          
+  A = 1                                    |  A = 1                                    
+  VGND = 158                               |  VGND = 159                               
+  VNB = 158                                |  VNB = 159                                
+  VPB = 158                                |  VPB = 159                                
+  VPWR = 158                               |  VPWR = 159                               
+  X = 2                                    |  X = 2                                    
+                                           |                                           
+Instance: sky130_fd_sc_hd__clkbuf_2:input1 |Instance: input46                          
+  A = 1                                    |  A = 1                                    
+  VGND = 158                               |  VGND = 159                               
+  VNB = 158                                |  VNB = 159                                
+  VPB = 158                                |  VPB = 159                                
+  VPWR = 158                               |  VPWR = 159                               
+  X = 2                                    |  X = 2                                    
+                                           |                                           
+Instance: sky130_fd_sc_hd__clkbuf_2:input1 |Instance: input43                          
+  A = 1                                    |  A = 1                                    
+  VGND = 158                               |  VGND = 159                               
+  VNB = 158                                |  VNB = 159                                
+  VPB = 158                                |  VPB = 159                                
+  VPWR = 158                               |  VPWR = 159                               
+  X = 2                                    |  X = 2                                    
+                                           |                                           
+Instance: sky130_fd_sc_hd__clkbuf_2:input5 |Instance: input41                          
+  A = 1                                    |  A = 1                                    
+  VGND = 158                               |  VGND = 159                               
+  VNB = 158                                |  VNB = 159                                
+  VPB = 158                                |  VPB = 159                                
+  VPWR = 158                               |  VPWR = 159                               
+  X = 2                                    |  X = 2                                    
+                                           |                                           
+Instance: sky130_fd_sc_hd__clkbuf_2:input6 |Instance: input40                          
+  A = 1                                    |  A = 1                                    
+  VGND = 158                               |  VGND = 159                               
+  VNB = 158                                |  VNB = 159                                
+  VPB = 158                                |  VPB = 159                                
+  VPWR = 158                               |  VPWR = 159                               
+  X = 2                                    |  X = 2                                    
+                                           |                                           
+Instance: sky130_fd_sc_hd__clkbuf_2:input2 |Instance: input4                           
+  A = 1                                    |  A = 1                                    
+  VGND = 158                               |  VGND = 159                               
+  VNB = 158                                |  VNB = 159                                
+  VPB = 158                                |  VPB = 159                                
+  VPWR = 158                               |  VPWR = 159                               
+  X = 2                                    |  X = 2                                    
+                                           |                                           
+Instance: sky130_fd_sc_hd__clkbuf_2:input4 |Instance: input35                          
+  A = 1                                    |  A = 1                                    
+  VGND = 158                               |  VGND = 159                               
+  VNB = 158                                |  VNB = 159                                
+  VPB = 158                                |  VPB = 159                                
+  VPWR = 158                               |  VPWR = 159                               
+  X = 2                                    |  X = 2                                    
+                                           |                                           
+Instance: sky130_fd_sc_hd__clkbuf_2:input3 |Instance: input31                          
+  A = 1                                    |  A = 1                                    
+  VGND = 158                               |  VGND = 159                               
+  VNB = 158                                |  VNB = 159                                
+  VPB = 158                                |  VPB = 159                                
+  VPWR = 158                               |  VPWR = 159                               
+  X = 2                                    |  X = 2                                    
+                                           |                                           
+Instance: sky130_fd_sc_hd__clkbuf_2:input6 |Instance: input26                          
+  A = 1                                    |  A = 1                                    
+  VGND = 158                               |  VGND = 159                               
+  VNB = 158                                |  VNB = 159                                
+  VPB = 158                                |  VPB = 159                                
+  VPWR = 158                               |  VPWR = 159                               
+  X = 2                                    |  X = 2                                    
+                                           |                                           
+Instance: sky130_fd_sc_hd__clkbuf_2:input4 |Instance: input24                          
+  A = 1                                    |  A = 1                                    
+  VGND = 158                               |  VGND = 159                               
+  VNB = 158                                |  VNB = 159                                
+  VPB = 158                                |  VPB = 159                                
+  VPWR = 158                               |  VPWR = 159                               
+  X = 2                                    |  X = 2                                    
+                                           |                                           
+Instance: sky130_fd_sc_hd__clkbuf_2:input5 |Instance: input21                          
+  A = 1                                    |  A = 1                                    
+  VGND = 158                               |  VGND = 159                               
+  VNB = 158                                |  VNB = 159                                
+  VPB = 158                                |  VPB = 159                                
+  VPWR = 158                               |  VPWR = 159                               
+  X = 2                                    |  X = 2                                    
+                                           |                                           
+Instance: sky130_fd_sc_hd__clkbuf_2:input6 |Instance: input19                          
+  A = 1                                    |  A = 1                                    
+  VGND = 158                               |  VGND = 159                               
+  VNB = 158                                |  VNB = 159                                
+  VPB = 158                                |  VPB = 159                                
+  VPWR = 158                               |  VPWR = 159                               
+  X = 2                                    |  X = 2                                    
+                                           |                                           
+Instance: sky130_fd_sc_hd__clkbuf_2:input4 |Instance: input14                          
+  A = 1                                    |  A = 1                                    
+  VGND = 158                               |  VGND = 159                               
+  VNB = 158                                |  VNB = 159                                
+  VPB = 158                                |  VPB = 159                                
+  VPWR = 158                               |  VPWR = 159                               
+  X = 2                                    |  X = 2                                    
+                                           |                                           
+Instance: sky130_fd_sc_hd__clkbuf_2:input4 |Instance: input13                          
+  A = 1                                    |  A = 1                                    
+  VGND = 158                               |  VGND = 159                               
+  VNB = 158                                |  VNB = 159                                
+  VPB = 158                                |  VPB = 159                                
+  VPWR = 158                               |  VPWR = 159                               
+  X = 2                                    |  X = 2                                    
+                                           |                                           
+Instance: sky130_fd_sc_hd__clkbuf_2:input5 |Instance: input11                          
+  A = 1                                    |  A = 1                                    
+  VGND = 158                               |  VGND = 159                               
+  VNB = 158                                |  VNB = 159                                
+  VPB = 158                                |  VPB = 159                                
+  VPWR = 158                               |  VPWR = 159                               
+  X = 2                                    |  X = 2                                    
+---------------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------------
+Instance: sky130_fd_sc_hd__dlymetal6s2s_1: |Instance: input7                           
+  A = 1                                    |  A = 1                                    
+  VGND = 158                               |  VGND = 159                               
+  VNB = 158                                |  VNB = 159                                
+  VPB = 158                                |  VPB = 159                                
+  VPWR = 158                               |  VPWR = 159                               
+  X = 2                                    |  X = 2                                    
+                                           |                                           
+Instance: sky130_fd_sc_hd__dlymetal6s2s_1: |Instance: input69                          
+  A = 1                                    |  A = 1                                    
+  VGND = 158                               |  VGND = 159                               
+  VNB = 158                                |  VNB = 159                                
+  VPB = 158                                |  VPB = 159                                
+  VPWR = 158                               |  VPWR = 159                               
+  X = 2                                    |  X = 2                                    
+                                           |                                           
+Instance: sky130_fd_sc_hd__dlymetal6s2s_1: |Instance: input66                          
+  A = 1                                    |  A = 1                                    
+  VGND = 158                               |  VGND = 159                               
+  VNB = 158                                |  VNB = 159                                
+  VPB = 158                                |  VPB = 159                                
+  VPWR = 158                               |  VPWR = 159                               
+  X = 2                                    |  X = 2                                    
+                                           |                                           
+Instance: sky130_fd_sc_hd__dlymetal6s2s_1: |Instance: input61                          
+  A = 1                                    |  A = 1                                    
+  VGND = 158                               |  VGND = 159                               
+  VNB = 158                                |  VNB = 159                                
+  VPB = 158                                |  VPB = 159                                
+  VPWR = 158                               |  VPWR = 159                               
+  X = 2                                    |  X = 2                                    
+                                           |                                           
+Instance: sky130_fd_sc_hd__dlymetal6s2s_1: |Instance: input58                          
+  A = 1                                    |  A = 1                                    
+  VGND = 158                               |  VGND = 159                               
+  VNB = 158                                |  VNB = 159                                
+  VPB = 158                                |  VPB = 159                                
+  VPWR = 158                               |  VPWR = 159                               
+  X = 2                                    |  X = 2                                    
+                                           |                                           
+Instance: sky130_fd_sc_hd__dlymetal6s2s_1: |Instance: input57                          
+  A = 1                                    |  A = 1                                    
+  VGND = 158                               |  VGND = 159                               
+  VNB = 158                                |  VNB = 159                                
+  VPB = 158                                |  VPB = 159                                
+  VPWR = 158                               |  VPWR = 159                               
+  X = 2                                    |  X = 2                                    
+                                           |                                           
+Instance: sky130_fd_sc_hd__dlymetal6s2s_1: |Instance: input44                          
+  A = 1                                    |  A = 1                                    
+  VGND = 158                               |  VGND = 159                               
+  VNB = 158                                |  VNB = 159                                
+  VPB = 158                                |  VPB = 159                                
+  VPWR = 158                               |  VPWR = 159                               
+  X = 2                                    |  X = 2                                    
+                                           |                                           
+Instance: sky130_fd_sc_hd__dlymetal6s2s_1: |Instance: input37                          
+  A = 1                                    |  A = 1                                    
+  VGND = 158                               |  VGND = 159                               
+  VNB = 158                                |  VNB = 159                                
+  VPB = 158                                |  VPB = 159                                
+  VPWR = 158                               |  VPWR = 159                               
+  X = 2                                    |  X = 2                                    
+                                           |                                           
+Instance: sky130_fd_sc_hd__dlymetal6s2s_1: |Instance: input36                          
+  A = 1                                    |  A = 1                                    
+  VGND = 158                               |  VGND = 159                               
+  VNB = 158                                |  VNB = 159                                
+  VPB = 158                                |  VPB = 159                                
+  VPWR = 158                               |  VPWR = 159                               
+  X = 2                                    |  X = 2                                    
+                                           |                                           
+Instance: sky130_fd_sc_hd__dlymetal6s2s_1: |Instance: input34                          
+  A = 1                                    |  A = 1                                    
+  VGND = 158                               |  VGND = 159                               
+  VNB = 158                                |  VNB = 159                                
+  VPB = 158                                |  VPB = 159                                
+  VPWR = 158                               |  VPWR = 159                               
+  X = 2                                    |  X = 2                                    
+                                           |                                           
+Instance: sky130_fd_sc_hd__dlymetal6s2s_1: |Instance: input3                           
+  A = 1                                    |  A = 1                                    
+  VGND = 158                               |  VGND = 159                               
+  VNB = 158                                |  VNB = 159                                
+  VPB = 158                                |  VPB = 159                                
+  VPWR = 158                               |  VPWR = 159                               
+  X = 2                                    |  X = 2                                    
+                                           |                                           
+Instance: sky130_fd_sc_hd__dlymetal6s2s_1: |Instance: input27                          
+  A = 1                                    |  A = 1                                    
+  VGND = 158                               |  VGND = 159                               
+  VNB = 158                                |  VNB = 159                                
+  VPB = 158                                |  VPB = 159                                
+  VPWR = 158                               |  VPWR = 159                               
+  X = 2                                    |  X = 2                                    
+                                           |                                           
+Instance: sky130_fd_sc_hd__dlymetal6s2s_1: |Instance: input2                           
+  A = 1                                    |  A = 1                                    
+  VGND = 158                               |  VGND = 159                               
+  VNB = 158                                |  VNB = 159                                
+  VPB = 158                                |  VPB = 159                                
+  VPWR = 158                               |  VPWR = 159                               
+  X = 2                                    |  X = 2                                    
+---------------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------------
+Instance: sky130_fd_sc_hd__clkbuf_1:input1 |Instance: input62                          
+  A = 1                                    |  A = 1                                    
+  VGND = 158                               |  VGND = 159                               
+  VNB = 158                                |  VNB = 159                                
+  VPB = 158                                |  VPB = 159                                
+  VPWR = 158                               |  VPWR = 159                               
+  X = 2                                    |  X = 2                                    
+                                           |                                           
+Instance: sky130_fd_sc_hd__clkbuf_1:input2 |Instance: input60                          
+  A = 1                                    |  A = 1                                    
+  VGND = 158                               |  VGND = 159                               
+  VNB = 158                                |  VNB = 159                                
+  VPB = 158                                |  VPB = 159                                
+  VPWR = 158                               |  VPWR = 159                               
+  X = 2                                    |  X = 2                                    
+                                           |                                           
+Instance: sky130_fd_sc_hd__clkbuf_1:input3 |Instance: input56                          
+  A = 1                                    |  A = 1                                    
+  VGND = 158                               |  VGND = 159                               
+  VNB = 158                                |  VNB = 159                                
+  VPB = 158                                |  VPB = 159                                
+  VPWR = 158                               |  VPWR = 159                               
+  X = 2                                    |  X = 2                                    
+                                           |                                           
+Instance: sky130_fd_sc_hd__clkbuf_1:input5 |Instance: input54                          
+  A = 1                                    |  A = 1                                    
+  VGND = 158                               |  VGND = 159                               
+  VNB = 158                                |  VNB = 159                                
+  VPB = 158                                |  VPB = 159                                
+  VPWR = 158                               |  VPWR = 159                               
+  X = 2                                    |  X = 2                                    
+                                           |                                           
+Instance: sky130_fd_sc_hd__clkbuf_1:input2 |Instance: input53                          
+  A = 1                                    |  A = 1                                    
+  VGND = 158                               |  VGND = 159                               
+  VNB = 158                                |  VNB = 159                                
+  VPB = 158                                |  VPB = 159                                
+  VPWR = 158                               |  VPWR = 159                               
+  X = 2                                    |  X = 2                                    
+                                           |                                           
+Instance: sky130_fd_sc_hd__clkbuf_1:input2 |Instance: input38                          
+  A = 1                                    |  A = 1                                    
+  VGND = 158                               |  VGND = 159                               
+  VNB = 158                                |  VNB = 159                                
+  VPB = 158                                |  VPB = 159                                
+  VPWR = 158                               |  VPWR = 159                               
+  X = 2                                    |  X = 2                                    
+                                           |                                           
+Instance: sky130_fd_sc_hd__clkbuf_1:input5 |Instance: input28                          
+  A = 1                                    |  A = 1                                    
+  VGND = 158                               |  VGND = 159                               
+  VNB = 158                                |  VNB = 159                                
+  VPB = 158                                |  VPB = 159                                
+  VPWR = 158                               |  VPWR = 159                               
+  X = 2                                    |  X = 2                                    
+                                           |                                           
+Instance: sky130_fd_sc_hd__clkbuf_1:input5 |Instance: input23                          
+  A = 1                                    |  A = 1                                    
+  VGND = 158                               |  VGND = 159                               
+  VNB = 158                                |  VNB = 159                                
+  VPB = 158                                |  VPB = 159                                
+  VPWR = 158                               |  VPWR = 159                               
+  X = 2                                    |  X = 2                                    
+                                           |                                           
+Instance: sky130_fd_sc_hd__clkbuf_1:input2 |Instance: input22                          
+  A = 1                                    |  A = 1                                    
+  VGND = 158                               |  VGND = 159                               
+  VNB = 158                                |  VNB = 159                                
+  VPB = 158                                |  VPB = 159                                
+  VPWR = 158                               |  VPWR = 159                               
+  X = 2                                    |  X = 2                                    
+                                           |                                           
+Instance: sky130_fd_sc_hd__clkbuf_1:input6 |Instance: input20                          
+  A = 1                                    |  A = 1                                    
+  VGND = 158                               |  VGND = 159                               
+  VNB = 158                                |  VNB = 159                                
+  VPB = 158                                |  VPB = 159                                
+  VPWR = 158                               |  VPWR = 159                               
+  X = 2                                    |  X = 2                                    
+                                           |                                           
+Instance: sky130_fd_sc_hd__clkbuf_1:input6 |Instance: input17                          
+  A = 1                                    |  A = 1                                    
+  VGND = 158                               |  VGND = 159                               
+  VNB = 158                                |  VNB = 159                                
+  VPB = 158                                |  VPB = 159                                
+  VPWR = 158                               |  VPWR = 159                               
+  X = 2                                    |  X = 2                                    
+                                           |                                           
+Instance: sky130_fd_sc_hd__clkbuf_1:input1 |Instance: input1                           
+  A = 1                                    |  A = 1                                    
+  VGND = 158                               |  VGND = 159                               
+  VNB = 158                                |  VNB = 159                                
+  VPB = 158                                |  VPB = 159                                
+  VPWR = 158                               |  VPWR = 159                               
+  X = 2                                    |  X = 2                                    
+---------------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------------
+Instance: sky130_fd_sc_hd__tapvpwrvgnd_1:T |Instance: TAP_220                          
+  VGND = 158                               |  VGND = 159                               
+  VPWR = 158                               |  VPWR = 159                               
+---------------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------------
+Instance: sky130_fd_sc_hd__fill_2:FILLER_0 |Instance: FILLER_0_169                     
+  VGND = 158                               |  VGND = 159                               
+  VNB = 158                                |  VNB = 159                                
+  VPB = 158                                |  VPB = 159                                
+  VPWR = 158                               |  VPWR = 159                               
+---------------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------------
+Instance: sky130_fd_sc_hd__decap_8:FILLER_ |Instance: FILLER_0_186                     
+  VGND = 158                               |  VGND = 159                               
+  VNB = 158                                |  VNB = 159                                
+  VPB = 158                                |  VPB = 159                                
+  VPWR = 158                               |  VPWR = 159                               
+---------------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------------
+Instance: sky130_fd_sc_hd__decap_4:FILLER_ |Instance: FILLER_0_163                     
+  VGND = 158                               |  VGND = 159                               
+  VNB = 158                                |  VNB = 159                                
+  VPB = 158                                |  VPB = 159                                
+  VPWR = 158                               |  VPWR = 159                               
+---------------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------------
+Instance: sky130_fd_sc_hd__decap_3:FILLER_ |Instance: FILLER_0_137                     
+  VGND = 158                               |  VGND = 159                               
+  VNB = 158                                |  VNB = 159                                
+  VPB = 158                                |  VPB = 159                                
+  VPWR = 158                               |  VPWR = 159                               
+---------------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------------
+Instance: sky130_fd_sc_hd__fill_1:FILLER_8 |Instance: FILLER_0_111                     
+  VGND = 158                               |  VGND = 159                               
+  VNB = 158                                |  VNB = 159                                
+  VPB = 158                                |  VPB = 159                                
+  VPWR = 158                               |  VPWR = 159                               
+---------------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------------
+Instance: sky130_fd_sc_hd__decap_6:FILLER_ |Instance: FILLER_100_133                   
+  VGND = 158                               |  VGND = 159                               
+  VNB = 158                                |  VNB = 159                                
+  VPB = 158                                |  VPB = 159                                
+  VPWR = 158                               |  VPWR = 159                               
+---------------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------------
+Instance: sky130_ef_sc_hd__decap_12:FILLER |Instance: FILLER_0_113                     
+  VGND = 158                               |  VGND = 159                               
+  VPWR = 158                               |  VPWR = 159                               
+  VPB = 158                                |  VPB = 159                                
+  VNB = 158                                |  VNB = 159                                
+---------------------------------------------------------------------------------------
+Netlists do not match.
+Netlists do not match.

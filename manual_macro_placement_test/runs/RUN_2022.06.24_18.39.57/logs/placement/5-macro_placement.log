@@ -1,0 +1,20 @@
+OpenROAD 0b8b7ae255f8fbbbefa57d443949b84e73eed757 
+This program is licensed under the BSD-3 license. See the LICENSE file for details.
+Components of this program may be licensed under more restrictive licenses which must be honored.
+[INFO ODB-0222] Reading LEF file: /openlane/designs/manual_macro_placement_test/runs/RUN_2022.06.24_18.39.57/tmp/merged.nom.lef
+[INFO ODB-0223]     Created 13 technology layers
+[INFO ODB-0224]     Created 25 technology vias
+[INFO ODB-0225]     Created 442 library cells
+[INFO ODB-0226] Finished LEF file:  /openlane/designs/manual_macro_placement_test/runs/RUN_2022.06.24_18.39.57/tmp/merged.nom.lef
+[INFO ODB-0127] Reading DEF file: /openlane/designs/manual_macro_placement_test/runs/RUN_2022.06.24_18.39.57/tmp/floorplan/4-io.def
+[INFO ODB-0128] Design: manual_macro_placement_test
+[INFO ODB-0130]     Created 72 pins.
+[INFO ODB-0131]     Created 2 components and 76 component-terminals.
+[INFO ODB-0133]     Created 72 nets and 72 connections.
+[INFO ODB-0134] Finished DEF file: /openlane/designs/manual_macro_placement_test/runs/RUN_2022.06.24_18.39.57/tmp/floorplan/4-io.def
+Placing the following macros:
+{'spm_inst_0': ['5590', '100230', 'N'], 'spm_inst_1': ['179870', '100230', 'N']}
+Design name: manual_macro_placement_test
+Placing spm_inst_0
+Placing spm_inst_1
+Successfully placed 2 instances

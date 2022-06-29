@@ -1,0 +1,18 @@
+
+Input: /openlane/designs/manual_macro_placement_test/runs/RUN_2022.06.24_18.39.57/results/routing/manual_macro_placement_test.def
+Output: /openlane/designs/manual_macro_placement_test/runs/RUN_2022.06.24_18.39.57/results/signoff/manual_macro_placement_test.klayout.gds
+Design: manual_macro_placement_test
+Technology File: /home/htf6ry/skywater-pdk/sky130A/libs.tech/klayout/sky130A.lyt
+GDS File List: ['/home/htf6ry/skywater-pdk/sky130A/libs.ref/sky130_fd_sc_hd/gds/sky130_fd_sc_hd.gds', '/openlane/designs/manual_macro_placement_test/macros/gds/spm.gds']
+LEF File: /openlane/designs/manual_macro_placement_test/runs/RUN_2022.06.24_18.39.57/tmp/merged.nom.lef
+
+[INFO] Clearing cells...
+[INFO] Merging GDS files...
+	/home/htf6ry/skywater-pdk/sky130A/libs.ref/sky130_fd_sc_hd/gds/sky130_fd_sc_hd.gds
+	/openlane/designs/manual_macro_placement_test/macros/gds/spm.gds
+[INFO] Copying toplevel cell 'manual_macro_placement_test'
+WARNING: no fill config file specified
+[INFO] Checking for missing GDS...
+[INFO] All LEF cells have matching GDS cells
+[INFO] Writing out GDS '/openlane/designs/manual_macro_placement_test/runs/RUN_2022.06.24_18.39.57/results/signoff/manual_macro_placement_test.klayout.gds'
+[INFO] Done.

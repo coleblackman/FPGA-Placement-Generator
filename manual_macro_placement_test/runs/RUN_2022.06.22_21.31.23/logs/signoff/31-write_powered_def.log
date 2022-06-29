@@ -1,0 +1,22 @@
+OpenROAD 0b8b7ae255f8fbbbefa57d443949b84e73eed757 
+This program is licensed under the BSD-3 license. See the LICENSE file for details.
+Components of this program may be licensed under more restrictive licenses which must be honored.
+[INFO ODB-0222] Reading LEF file: /openlane/designs/manual_macro_placement_test/runs/RUN_2022.06.22_21.31.23/tmp/merged.nom.lef
+[INFO ODB-0223]     Created 13 technology layers
+[INFO ODB-0224]     Created 25 technology vias
+[INFO ODB-0225]     Created 442 library cells
+[INFO ODB-0226] Finished LEF file:  /openlane/designs/manual_macro_placement_test/runs/RUN_2022.06.22_21.31.23/tmp/merged.nom.lef
+[INFO ODB-0127] Reading DEF file: /openlane/designs/manual_macro_placement_test/runs/RUN_2022.06.22_21.31.23/results/routing/manual_macro_placement_test.def
+[INFO ODB-0128] Design: manual_macro_placement_test
+[INFO ODB-0130]     Created 74 pins.
+[INFO ODB-0131]     Created 5112 components and 19232 component-terminals.
+[INFO ODB-0132]     Created 2 special nets and 19018 connections.
+[INFO ODB-0133]     Created 143 nets and 214 connections.
+[INFO ODB-0134] Finished DEF file: /openlane/designs/manual_macro_placement_test/runs/RUN_2022.06.22_21.31.23/results/routing/manual_macro_placement_test.def
+Top-level design name: manual_macro_placement_test
+Default power net:  VPWR
+Default ground net: VGND
+Found a total of 1 power ports.
+Found a total of 1 ground ports.
+Modified power connections of 5112 cells (Remaining: 0 ).
+<odb.dbBlock; proxy of <Swig Object of type 'odb::dbBlock *' at 0x7fce10644840> > /openlane/designs/manual_macro_placement_test/runs/RUN_2022.06.22_21.31.23/tmp/signoff/30-powered_def.def

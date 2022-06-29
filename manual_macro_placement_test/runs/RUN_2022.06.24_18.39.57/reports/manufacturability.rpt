@@ -1,0 +1,14 @@
+Design Name: manual_macro_placement_test
+Run Directory: /openlane/designs/manual_macro_placement_test/runs/RUN_2022.06.24_18.39.57
+Source not found.
+----------------------------------------
+
+LVS Summary:
+Source: /openlane/designs/manual_macro_placement_test/runs/RUN_2022.06.24_18.39.57/logs/signoff/33-manual_macro_placement_test.lvs.lef.log
+    net count difference = 2
+    unmatched nets = 1
+Total errors = 3
+----------------------------------------
+
+Antenna Summary:
+No antenna report found.

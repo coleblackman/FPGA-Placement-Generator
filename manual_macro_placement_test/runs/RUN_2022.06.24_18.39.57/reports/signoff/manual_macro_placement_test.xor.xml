@@ -1,0 +1,1075 @@
+<?xml version="1.0" encoding="utf-8"?>
+<report-database>
+ <description>XOR /openlane/designs/manual_macro_placement_test/runs/RUN_2022.06.24_18.39.57/results/signoff/manual_macro_placement_test.gds vs. /openlane/designs/manual_macro_placement_test/runs/RUN_2022.06.24_18.39.57/results/signoff/manual_macro_placement_test.klayout.gds</description>
+ <original-file/>
+ <generator>drc: script='/openlane/scripts/klayout/xor.drc'</generator>
+ <top-cell>manual_macro_placement_test</top-cell>
+ <tags>
+ </tags>
+ <categories>
+  <category>
+   <name>122/16</name>
+   <description>XOR results for layer 122/16 </description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>235/4</name>
+   <description>XOR results for layer 235/4 </description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>236/0</name>
+   <description>XOR results for layer 236/0 </description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>64/16</name>
+   <description>XOR results for layer 64/16 </description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>64/20</name>
+   <description>XOR results for layer 64/20 </description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>64/5</name>
+   <description>XOR results for layer 64/5 </description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>64/59</name>
+   <description>XOR results for layer 64/59 </description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>65/20</name>
+   <description>XOR results for layer 65/20 </description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>65/44</name>
+   <description>XOR results for layer 65/44 </description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>66/20</name>
+   <description>XOR results for layer 66/20 </description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>66/44</name>
+   <description>XOR results for layer 66/44 </description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>67/16</name>
+   <description>XOR results for layer 67/16 </description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>67/20</name>
+   <description>XOR results for layer 67/20 </description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>67/44</name>
+   <description>XOR results for layer 67/44 </description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>67/5</name>
+   <description>XOR results for layer 67/5 </description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>68/16</name>
+   <description>XOR results for layer 68/16 </description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>68/20</name>
+   <description>XOR results for layer 68/20 </description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>68/44</name>
+   <description>XOR results for layer 68/44 </description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>68/5</name>
+   <description>XOR results for layer 68/5 </description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>69/16</name>
+   <description>XOR results for layer 69/16 </description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>69/20</name>
+   <description>XOR results for layer 69/20 </description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>69/44</name>
+   <description>XOR results for layer 69/44 </description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>69/5</name>
+   <description>XOR results for layer 69/5 </description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>70/16</name>
+   <description>XOR results for layer 70/16 </description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>70/20</name>
+   <description>XOR results for layer 70/20 </description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>70/44</name>
+   <description>XOR results for layer 70/44 </description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>70/5</name>
+   <description>XOR results for layer 70/5 </description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>71/16</name>
+   <description>XOR results for layer 71/16 </description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>71/20</name>
+   <description>XOR results for layer 71/20 </description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>71/44</name>
+   <description>XOR results for layer 71/44 </description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>71/5</name>
+   <description>XOR results for layer 71/5 </description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>72/16</name>
+   <description>XOR results for layer 72/16 </description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>72/20</name>
+   <description>XOR results for layer 72/20 </description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>72/5</name>
+   <description>XOR results for layer 72/5 </description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>78/44</name>
+   <description>XOR results for layer 78/44 </description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>81/4</name>
+   <description>XOR results for layer 81/4 </description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>83/44</name>
+   <description>XOR results for layer 83/44 </description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>93/44</name>
+   <description>XOR results for layer 93/44 </description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>94/20</name>
+   <description>XOR results for layer 94/20 </description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>95/20</name>
+   <description>XOR results for layer 95/20 </description>
+   <categories>
+   </categories>
+  </category>
+ </categories>
+ <cells>
+  <cell>
+   <name>manual_macro_placement_test</name>
+   <variant/>
+   <references>
+   </references>
+  </cell>
+ </cells>
+ <items>
+  <item>
+   <tags/>
+   <category>'69/20'</category>
+   <cell>manual_macro_placement_test</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <image/>
+   <values>
+    <value>polygon: (0.09,0;0.09,4;0.16,4;0.16,3.74;0.3,3.74;0.3,4;0.37,4;0.37,0)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'69/20'</category>
+   <cell>manual_macro_placement_test</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <image/>
+   <values>
+    <value>polygon: (16.19,0;16.19,4;16.26,4;16.26,3.74;16.4,3.74;16.4,4;16.47,4;16.47,0)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'69/20'</category>
+   <cell>manual_macro_placement_test</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <image/>
+   <values>
+    <value>polygon: (32.29,0;32.29,4;32.36,4;32.36,3.74;32.5,3.74;32.5,4;32.57,4;32.57,0)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'69/20'</category>
+   <cell>manual_macro_placement_test</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <image/>
+   <values>
+    <value>polygon: (51.61,0;51.61,4;51.68,4;51.68,3.74;51.82,3.74;51.82,4;51.89,4;51.89,0)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'69/20'</category>
+   <cell>manual_macro_placement_test</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <image/>
+   <values>
+    <value>polygon: (67.71,0;67.71,4;67.78,4;67.78,3.74;67.92,3.74;67.92,4;67.99,4;67.99,0)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'69/20'</category>
+   <cell>manual_macro_placement_test</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <image/>
+   <values>
+    <value>polygon: (83.81,0;83.81,4;83.88,4;83.88,3.74;84.02,3.74;84.02,4;84.09,4;84.09,0)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'69/20'</category>
+   <cell>manual_macro_placement_test</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <image/>
+   <values>
+    <value>polygon: (103.13,0;103.13,4;103.2,4;103.2,3.74;103.34,3.74;103.34,4;103.41,4;103.41,0)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'69/20'</category>
+   <cell>manual_macro_placement_test</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <image/>
+   <values>
+    <value>polygon: (119.23,0;119.23,4;119.3,4;119.3,3.74;119.44,3.74;119.44,4;119.51,4;119.51,0)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'69/20'</category>
+   <cell>manual_macro_placement_test</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <image/>
+   <values>
+    <value>polygon: (135.33,0;135.33,4;135.4,4;135.4,3.74;135.54,3.74;135.54,4;135.61,4;135.61,0)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'69/20'</category>
+   <cell>manual_macro_placement_test</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <image/>
+   <values>
+    <value>polygon: (154.65,0;154.65,4;154.72,4;154.72,3.74;154.86,3.74;154.86,4;154.93,4;154.93,0)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'69/20'</category>
+   <cell>manual_macro_placement_test</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <image/>
+   <values>
+    <value>polygon: (170.75,0;170.75,4;170.82,4;170.82,3.74;170.96,3.74;170.96,4;171.03,4;171.03,0)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'69/20'</category>
+   <cell>manual_macro_placement_test</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <image/>
+   <values>
+    <value>polygon: (186.85,0;186.85,4;186.92,4;186.92,3.74;187.06,3.74;187.06,4;187.13,4;187.13,0)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'69/20'</category>
+   <cell>manual_macro_placement_test</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <image/>
+   <values>
+    <value>polygon: (206.17,0;206.17,4;206.24,4;206.24,3.74;206.38,3.74;206.38,4;206.45,4;206.45,0)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'69/20'</category>
+   <cell>manual_macro_placement_test</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <image/>
+   <values>
+    <value>polygon: (222.27,0;222.27,4;222.34,4;222.34,3.74;222.48,3.74;222.48,4;222.55,4;222.55,0)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'69/20'</category>
+   <cell>manual_macro_placement_test</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <image/>
+   <values>
+    <value>polygon: (238.37,0;238.37,4;238.44,4;238.44,3.74;238.58,3.74;238.58,4;238.65,4;238.65,0)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'69/20'</category>
+   <cell>manual_macro_placement_test</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <image/>
+   <values>
+    <value>polygon: (257.69,0;257.69,4;257.76,4;257.76,3.74;257.9,3.74;257.9,4;257.97,4;257.97,0)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'69/20'</category>
+   <cell>manual_macro_placement_test</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <image/>
+   <values>
+    <value>polygon: (273.79,0;273.79,4;273.86,4;273.86,3.74;274,3.74;274,4;274.07,4;274.07,0)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'69/20'</category>
+   <cell>manual_macro_placement_test</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <image/>
+   <values>
+    <value>polygon: (289.89,0;289.89,4;289.96,4;289.96,3.74;290.1,3.74;290.1,4;290.17,4;290.17,0)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'69/20'</category>
+   <cell>manual_macro_placement_test</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <image/>
+   <values>
+    <value>polygon: (309.21,0;309.21,4;309.28,4;309.28,3.74;309.42,3.74;309.42,4;309.49,4;309.49,0)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'69/20'</category>
+   <cell>manual_macro_placement_test</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <image/>
+   <values>
+    <value>polygon: (0.09,318.78;0.09,322.78;0.37,322.78;0.37,318.78;0.3,318.78;0.3,319.26;0.16,319.26;0.16,318.78)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'69/20'</category>
+   <cell>manual_macro_placement_test</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <image/>
+   <values>
+    <value>polygon: (19.41,318.78;19.41,319.19;19.55,319.19;19.55,319.33;19.41,319.33;19.41,322.78;19.69,322.78;19.69,318.78)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'69/20'</category>
+   <cell>manual_macro_placement_test</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <image/>
+   <values>
+    <value>polygon: (35.51,318.78;35.51,322.78;35.79,322.78;35.79,319.33;35.65,319.33;35.65,319.19;35.79,319.19;35.79,318.78)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'69/20'</category>
+   <cell>manual_macro_placement_test</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <image/>
+   <values>
+    <value>polygon: (51.61,318.78;51.61,322.78;51.89,322.78;51.89,319.33;51.75,319.33;51.75,319.19;51.89,319.19;51.89,318.78)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'69/20'</category>
+   <cell>manual_macro_placement_test</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <image/>
+   <values>
+    <value>polygon: (70.93,318.78;70.93,322.78;71.21,322.78;71.21,319.33;71.07,319.33;71.07,319.19;71.21,319.19;71.21,318.78)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'69/20'</category>
+   <cell>manual_macro_placement_test</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <image/>
+   <values>
+    <value>polygon: (87.03,318.78;87.03,322.78;87.31,322.78;87.31,319.33;87.17,319.33;87.17,319.19;87.31,319.19;87.31,318.78)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'69/20'</category>
+   <cell>manual_macro_placement_test</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <image/>
+   <values>
+    <value>polygon: (103.13,318.78;103.13,322.78;103.41,322.78;103.41,318.78;103.34,318.78;103.34,319.26;103.2,319.26;103.2,318.78)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'69/20'</category>
+   <cell>manual_macro_placement_test</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <image/>
+   <values>
+    <value>polygon: (122.45,318.78;122.45,322.78;122.73,322.78;122.73,319.33;122.59,319.33;122.59,319.19;122.73,319.19;122.73,318.78)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'69/20'</category>
+   <cell>manual_macro_placement_test</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <image/>
+   <values>
+    <value>polygon: (138.55,318.78;138.55,322.78;138.83,322.78;138.83,319.33;138.69,319.33;138.69,319.19;138.83,319.19;138.83,318.78)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'69/20'</category>
+   <cell>manual_macro_placement_test</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <image/>
+   <values>
+    <value>polygon: (154.65,318.78;154.65,322.78;154.93,322.78;154.93,319.33;154.79,319.33;154.79,319.19;154.93,319.19;154.93,318.78)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'69/20'</category>
+   <cell>manual_macro_placement_test</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <image/>
+   <values>
+    <value>polygon: (173.97,318.78;173.97,322.78;174.25,322.78;174.25,319.33;174.11,319.33;174.11,319.19;174.25,319.19;174.25,318.78)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'69/20'</category>
+   <cell>manual_macro_placement_test</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <image/>
+   <values>
+    <value>polygon: (190.07,318.78;190.07,322.78;190.35,322.78;190.35,319.33;190.21,319.33;190.21,319.19;190.35,319.19;190.35,318.78)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'69/20'</category>
+   <cell>manual_macro_placement_test</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <image/>
+   <values>
+    <value>polygon: (206.17,318.78;206.17,322.78;206.45,322.78;206.45,319.33;206.31,319.33;206.31,319.19;206.45,319.19;206.45,318.78)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'69/20'</category>
+   <cell>manual_macro_placement_test</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <image/>
+   <values>
+    <value>polygon: (225.49,318.78;225.49,322.78;225.77,322.78;225.77,319.33;225.63,319.33;225.63,319.19;225.77,319.19;225.77,318.78)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'69/20'</category>
+   <cell>manual_macro_placement_test</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <image/>
+   <values>
+    <value>polygon: (241.59,318.78;241.59,322.78;241.87,322.78;241.87,319.33;241.73,319.33;241.73,319.19;241.87,319.19;241.87,318.78)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'69/20'</category>
+   <cell>manual_macro_placement_test</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <image/>
+   <values>
+    <value>polygon: (257.69,318.78;257.69,322.78;257.97,322.78;257.97,319.33;257.83,319.33;257.83,319.19;257.97,319.19;257.97,318.78)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'69/20'</category>
+   <cell>manual_macro_placement_test</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <image/>
+   <values>
+    <value>polygon: (277.01,318.78;277.01,322.78;277.29,322.78;277.29,319.33;277.15,319.33;277.15,319.19;277.29,319.19;277.29,318.78)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'69/20'</category>
+   <cell>manual_macro_placement_test</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <image/>
+   <values>
+    <value>polygon: (293.11,318.78;293.11,322.78;293.39,322.78;293.39,319.33;293.25,319.33;293.25,319.19;293.39,319.19;293.39,318.78)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'69/20'</category>
+   <cell>manual_macro_placement_test</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <image/>
+   <values>
+    <value>polygon: (309.21,318.78;309.21,322.78;309.49,322.78;309.49,318.78;309.42,318.78;309.42,319.26;309.28,319.26;309.28,318.78)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'70/20'</category>
+   <cell>manual_macro_placement_test</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <image/>
+   <values>
+    <value>polygon: (308.06,13.64;308.06,13.79;308.66,13.79;308.66,14.09;308.06,14.09;308.06,14.24;312.06,14.24;312.06,13.64)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'70/20'</category>
+   <cell>manual_macro_placement_test</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <image/>
+   <values>
+    <value>polygon: (0,17.04;0,17.64;4,17.64;4,17.49;3.22,17.49;3.22,17.19;4,17.19;4,17.04)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'70/20'</category>
+   <cell>manual_macro_placement_test</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <image/>
+   <values>
+    <value>polygon: (308.06,30.64;308.06,30.79;308.66,30.79;308.66,31.09;308.06,31.09;308.06,31.24;312.06,31.24;312.06,30.64)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'70/20'</category>
+   <cell>manual_macro_placement_test</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <image/>
+   <values>
+    <value>polygon: (0,34.04;0,34.64;4,34.64;4,34.49;3.22,34.49;3.22,34.19;4,34.19;4,34.04)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'70/20'</category>
+   <cell>manual_macro_placement_test</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <image/>
+   <values>
+    <value>polygon: (0,51.04;0,51.64;3.99,51.64;3.99,51.49;3.22,51.49;3.22,51.19;4,51.19;4,51.04)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'70/20'</category>
+   <cell>manual_macro_placement_test</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <image/>
+   <values>
+    <value>polygon: (308.06,51.04;308.06,51.19;308.66,51.19;308.66,51.49;308.06,51.49;308.06,51.64;312.06,51.64;312.06,51.04)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'70/20'</category>
+   <cell>manual_macro_placement_test</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <image/>
+   <values>
+    <value>polygon: (308.06,68.04;308.06,68.19;308.66,68.19;308.66,68.49;308.06,68.49;308.06,68.64;312.06,68.64;312.06,68.04)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'70/20'</category>
+   <cell>manual_macro_placement_test</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <image/>
+   <values>
+    <value>polygon: (0,71.44;0,72.04;4,72.04;4,71.89;3.22,71.89;3.22,71.59;4,71.59;4,71.44)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'70/20'</category>
+   <cell>manual_macro_placement_test</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <image/>
+   <values>
+    <value>polygon: (308.06,85.04;308.06,85.19;308.66,85.19;308.66,85.49;308.06,85.49;308.06,85.64;312.06,85.64;312.06,85.04)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'70/20'</category>
+   <cell>manual_macro_placement_test</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <image/>
+   <values>
+    <value>polygon: (0,88.44;0,89.04;4,89.04;4,88.89;3.22,88.89;3.22,88.59;4,88.59;4,88.44)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'70/20'</category>
+   <cell>manual_macro_placement_test</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <image/>
+   <values>
+    <value>polygon: (0,105.44;0,106.04;4,106.04;4,105.89;3.22,105.89;3.22,105.59;4,105.59;4,105.44)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'70/20'</category>
+   <cell>manual_macro_placement_test</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <image/>
+   <values>
+    <value>polygon: (308.06,105.44;308.06,105.59;308.66,105.59;308.66,105.89;308.06,105.89;308.06,106.04;312.06,106.04;312.06,105.44)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'70/20'</category>
+   <cell>manual_macro_placement_test</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <image/>
+   <values>
+    <value>polygon: (308.06,122.44;308.06,122.59;308.66,122.59;308.66,122.89;308.06,122.89;308.06,123.04;312.06,123.04;312.06,122.44)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'70/20'</category>
+   <cell>manual_macro_placement_test</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <image/>
+   <values>
+    <value>polygon: (0,125.84;0,126.44;4,126.44;4,126.29;3.22,126.29;3.22,125.99;4,125.99;4,125.84)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'70/20'</category>
+   <cell>manual_macro_placement_test</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <image/>
+   <values>
+    <value>polygon: (308.06,139.44;308.06,139.59;308.66,139.59;308.66,139.89;308.06,139.89;308.06,140.04;312.06,140.04;312.06,139.44)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'70/20'</category>
+   <cell>manual_macro_placement_test</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <image/>
+   <values>
+    <value>polygon: (0,142.84;0,143.44;4,143.44;4,143.29;3.22,143.29;3.22,142.99;4,142.99;4,142.84)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'70/20'</category>
+   <cell>manual_macro_placement_test</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <image/>
+   <values>
+    <value>polygon: (0,159.84;0,160.44;4,160.44;4,160.29;3.22,160.29;3.22,159.99;4,159.99;4,159.84)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'70/20'</category>
+   <cell>manual_macro_placement_test</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <image/>
+   <values>
+    <value>polygon: (308.06,159.84;308.06,159.99;308.66,159.99;308.66,160.29;308.06,160.29;308.06,160.44;312.06,160.44;312.06,159.84)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'70/20'</category>
+   <cell>manual_macro_placement_test</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <image/>
+   <values>
+    <value>polygon: (308.06,176.84;308.06,176.99;308.66,176.99;308.66,177.29;308.06,177.29;308.06,177.44;312.06,177.44;312.06,176.84)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'70/20'</category>
+   <cell>manual_macro_placement_test</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <image/>
+   <values>
+    <value>polygon: (0,180.24;0,180.84;4,180.84;4,180.69;3.22,180.69;3.22,180.39;4,180.39;4,180.24)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'70/20'</category>
+   <cell>manual_macro_placement_test</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <image/>
+   <values>
+    <value>polygon: (308.06,193.84;308.06,193.99;308.66,193.99;308.66,194.29;308.06,194.29;308.06,194.44;312.06,194.44;312.06,193.84)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'70/20'</category>
+   <cell>manual_macro_placement_test</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <image/>
+   <values>
+    <value>polygon: (0,197.24;0,197.84;4,197.84;4,197.69;3.22,197.69;3.22,197.39;4,197.39;4,197.24)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'70/20'</category>
+   <cell>manual_macro_placement_test</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <image/>
+   <values>
+    <value>polygon: (0,214.24;0,214.84;4,214.84;4,214.69;3.22,214.69;3.22,214.39;4,214.39;4,214.24)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'70/20'</category>
+   <cell>manual_macro_placement_test</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <image/>
+   <values>
+    <value>polygon: (308.06,214.24;308.06,214.39;308.66,214.39;308.66,214.69;308.06,214.69;308.06,214.84;312.06,214.84;312.06,214.24)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'70/20'</category>
+   <cell>manual_macro_placement_test</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <image/>
+   <values>
+    <value>polygon: (308.06,231.24;308.06,231.39;308.66,231.39;308.66,231.69;308.06,231.69;308.06,231.84;312.06,231.84;312.06,231.24)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'70/20'</category>
+   <cell>manual_macro_placement_test</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <image/>
+   <values>
+    <value>polygon: (0,234.64;0,235.24;4,235.24;4,235.09;3.22,235.09;3.22,234.79;4,234.79;4,234.64)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'70/20'</category>
+   <cell>manual_macro_placement_test</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <image/>
+   <values>
+    <value>polygon: (308.06,248.24;308.06,248.39;308.66,248.39;308.66,248.69;308.06,248.69;308.06,248.84;312.06,248.84;312.06,248.24)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'70/20'</category>
+   <cell>manual_macro_placement_test</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <image/>
+   <values>
+    <value>polygon: (0,251.64;0,252.24;4,252.24;4,252.09;3.22,252.09;3.22,251.79;4,251.79;4,251.64)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'70/20'</category>
+   <cell>manual_macro_placement_test</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <image/>
+   <values>
+    <value>polygon: (0,268.64;0,269.24;4,269.24;4,269.09;3.22,269.09;3.22,268.79;3.99,268.79;3.99,268.64)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'70/20'</category>
+   <cell>manual_macro_placement_test</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <image/>
+   <values>
+    <value>polygon: (308.06,268.64;308.06,268.79;308.66,268.79;308.66,269.09;308.06,269.09;308.06,269.24;312.06,269.24;312.06,268.64)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'70/20'</category>
+   <cell>manual_macro_placement_test</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <image/>
+   <values>
+    <value>polygon: (308.06,285.64;308.06,285.79;308.66,285.79;308.66,286.09;308.06,286.09;308.06,286.24;312.06,286.24;312.06,285.64)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'70/20'</category>
+   <cell>manual_macro_placement_test</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <image/>
+   <values>
+    <value>polygon: (0,289.04;0,289.64;4,289.64;4,289.49;3.22,289.49;3.22,289.19;4,289.19;4,289.04)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'70/20'</category>
+   <cell>manual_macro_placement_test</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <image/>
+   <values>
+    <value>polygon: (308.06,302.64;308.06,302.79;308.66,302.79;308.66,303.09;308.06,303.09;308.06,303.24;312.06,303.24;312.06,302.64)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'70/20'</category>
+   <cell>manual_macro_placement_test</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <image/>
+   <values>
+    <value>polygon: (0,306.04;0,306.64;4,306.64;4,306.49;3.22,306.49;3.22,306.19;4,306.19;4,306.04)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'72/5'</category>
+   <cell>manual_macro_placement_test</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <image/>
+   <values>
+    <value>label: ('VGND',r0 155.94,257.3)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'72/5'</category>
+   <cell>manual_macro_placement_test</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <image/>
+   <values>
+    <value>label: ('VPWR',r0 155.66,27.53)</value>
+   </values>
+  </item>
+ </items>
+</report-database>

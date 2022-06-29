@@ -1,0 +1,412 @@
+OpenROAD 0b8b7ae255f8fbbbefa57d443949b84e73eed757 
+This program is licensed under the BSD-3 license. See the LICENSE file for details.
+Components of this program may be licensed under more restrictive licenses which must be honored.
+[INFO ODB-0222] Reading LEF file: /openlane/designs/manual_macro_placement_test/runs/RUN_2022.06.24_18.39.57/tmp/merged.max.lef
+[INFO ODB-0223]     Created 13 technology layers
+[INFO ODB-0224]     Created 25 technology vias
+[INFO ODB-0225]     Created 442 library cells
+[INFO ODB-0226] Finished LEF file:  /openlane/designs/manual_macro_placement_test/runs/RUN_2022.06.24_18.39.57/tmp/merged.max.lef
+[INFO ODB-0127] Reading DEF file: /openlane/designs/manual_macro_placement_test/runs/RUN_2022.06.24_18.39.57/results/routing/manual_macro_placement_test.def
+[INFO ODB-0128] Design: manual_macro_placement_test
+[INFO ODB-0130]     Created 74 pins.
+[INFO ODB-0131]     Created 5192 components and 19532 component-terminals.
+[INFO ODB-0132]     Created 2 special nets and 19318 connections.
+[INFO ODB-0133]     Created 143 nets and 214 connections.
+[INFO ODB-0134] Finished DEF file: /openlane/designs/manual_macro_placement_test/runs/RUN_2022.06.24_18.39.57/results/routing/manual_macro_placement_test.def
+###############################################################################
+# Created by write_sdc
+# Fri Jun 24 18:40:07 2022
+###############################################################################
+current_design manual_macro_placement_test
+###############################################################################
+# Timing Constraints
+###############################################################################
+create_clock -name clk2 -period 100.0000 [get_ports {clk1}]
+set_propagated_clock [get_clocks {clk2}]
+set_input_delay 20.0000 -add_delay [get_ports {x1[0]}]
+set_input_delay 20.0000 -add_delay [get_ports {x1[10]}]
+set_input_delay 20.0000 -add_delay [get_ports {x1[11]}]
+set_input_delay 20.0000 -add_delay [get_ports {x1[12]}]
+set_input_delay 20.0000 -add_delay [get_ports {x1[13]}]
+set_input_delay 20.0000 -add_delay [get_ports {x1[14]}]
+set_input_delay 20.0000 -add_delay [get_ports {x1[15]}]
+set_input_delay 20.0000 -add_delay [get_ports {x1[16]}]
+set_input_delay 20.0000 -add_delay [get_ports {x1[17]}]
+set_input_delay 20.0000 -add_delay [get_ports {x1[18]}]
+set_input_delay 20.0000 -add_delay [get_ports {x1[19]}]
+set_input_delay 20.0000 -add_delay [get_ports {x1[1]}]
+set_input_delay 20.0000 -add_delay [get_ports {x1[20]}]
+set_input_delay 20.0000 -add_delay [get_ports {x1[21]}]
+set_input_delay 20.0000 -add_delay [get_ports {x1[22]}]
+set_input_delay 20.0000 -add_delay [get_ports {x1[23]}]
+set_input_delay 20.0000 -add_delay [get_ports {x1[24]}]
+set_input_delay 20.0000 -add_delay [get_ports {x1[25]}]
+set_input_delay 20.0000 -add_delay [get_ports {x1[26]}]
+set_input_delay 20.0000 -add_delay [get_ports {x1[27]}]
+set_input_delay 20.0000 -add_delay [get_ports {x1[28]}]
+set_input_delay 20.0000 -add_delay [get_ports {x1[29]}]
+set_input_delay 20.0000 -add_delay [get_ports {x1[2]}]
+set_input_delay 20.0000 -add_delay [get_ports {x1[30]}]
+set_input_delay 20.0000 -add_delay [get_ports {x1[31]}]
+set_input_delay 20.0000 -add_delay [get_ports {x1[3]}]
+set_input_delay 20.0000 -add_delay [get_ports {x1[4]}]
+set_input_delay 20.0000 -add_delay [get_ports {x1[5]}]
+set_input_delay 20.0000 -add_delay [get_ports {x1[6]}]
+set_input_delay 20.0000 -add_delay [get_ports {x1[7]}]
+set_input_delay 20.0000 -add_delay [get_ports {x1[8]}]
+set_input_delay 20.0000 -clock [get_clocks {clk2}] -add_delay [get_ports {x1[9]}]
+set_input_delay 20.0000 -clock [get_clocks {clk2}] -add_delay [get_ports {x2[0]}]
+set_input_delay 20.0000 -clock [get_clocks {clk2}] -add_delay [get_ports {x2[10]}]
+set_input_delay 20.0000 -clock [get_clocks {clk2}] -add_delay [get_ports {x2[11]}]
+set_input_delay 20.0000 -clock [get_clocks {clk2}] -add_delay [get_ports {x2[12]}]
+set_input_delay 20.0000 -clock [get_clocks {clk2}] -add_delay [get_ports {x2[13]}]
+set_input_delay 20.0000 -clock [get_clocks {clk2}] -add_delay [get_ports {x2[14]}]
+set_input_delay 20.0000 -clock [get_clocks {clk2}] -add_delay [get_ports {x2[15]}]
+set_input_delay 20.0000 -clock [get_clocks {clk2}] -add_delay [get_ports {x2[16]}]
+set_input_delay 20.0000 -clock [get_clocks {clk2}] -add_delay [get_ports {x2[17]}]
+set_input_delay 20.0000 -clock [get_clocks {clk2}] -add_delay [get_ports {x2[18]}]
+set_input_delay 20.0000 -clock [get_clocks {clk2}] -add_delay [get_ports {x2[19]}]
+set_input_delay 20.0000 -clock [get_clocks {clk2}] -add_delay [get_ports {x2[1]}]
+set_input_delay 20.0000 -clock [get_clocks {clk2}] -add_delay [get_ports {x2[20]}]
+set_input_delay 20.0000 -clock [get_clocks {clk2}] -add_delay [get_ports {x2[21]}]
+set_input_delay 20.0000 -clock [get_clocks {clk2}] -add_delay [get_ports {x2[22]}]
+set_input_delay 20.0000 -clock [get_clocks {clk2}] -add_delay [get_ports {x2[23]}]
+set_input_delay 20.0000 -clock [get_clocks {clk2}] -add_delay [get_ports {x2[24]}]
+set_input_delay 20.0000 -clock [get_clocks {clk2}] -add_delay [get_ports {x2[25]}]
+set_input_delay 20.0000 -clock [get_clocks {clk2}] -add_delay [get_ports {x2[26]}]
+set_input_delay 20.0000 -clock [get_clocks {clk2}] -add_delay [get_ports {x2[27]}]
+set_input_delay 20.0000 -clock [get_clocks {clk2}] -add_delay [get_ports {x2[28]}]
+set_input_delay 20.0000 -clock [get_clocks {clk2}] -add_delay [get_ports {x2[29]}]
+set_input_delay 20.0000 -clock [get_clocks {clk2}] -add_delay [get_ports {x2[2]}]
+set_input_delay 20.0000 -clock [get_clocks {clk2}] -add_delay [get_ports {x2[30]}]
+set_input_delay 20.0000 -clock [get_clocks {clk2}] -add_delay [get_ports {x2[31]}]
+set_input_delay 20.0000 -clock [get_clocks {clk2}] -add_delay [get_ports {x2[3]}]
+set_input_delay 20.0000 -clock [get_clocks {clk2}] -add_delay [get_ports {x2[4]}]
+set_input_delay 20.0000 -clock [get_clocks {clk2}] -add_delay [get_ports {x2[5]}]
+set_input_delay 20.0000 -clock [get_clocks {clk2}] -add_delay [get_ports {x2[6]}]
+set_input_delay 20.0000 -clock [get_clocks {clk2}] -add_delay [get_ports {x2[7]}]
+set_input_delay 20.0000 -clock [get_clocks {clk2}] -add_delay [get_ports {x2[8]}]
+set_input_delay 20.0000 -clock [get_clocks {clk2}] -add_delay [get_ports {x2[9]}]
+set_input_delay 20.0000 -add_delay [get_ports {y1}]
+set_input_delay 20.0000 -clock [get_clocks {clk2}] -add_delay [get_ports {y2}]
+set_output_delay 20.0000 -add_delay [get_ports {p1}]
+set_output_delay 20.0000 -clock [get_clocks {clk2}] -add_delay [get_ports {p2}]
+###############################################################################
+# Environment
+###############################################################################
+set_load -pin_load 0.0177 [get_ports {p1}]
+set_load -pin_load 0.0177 [get_ports {p2}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_8 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {clk1}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_8 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {clk2}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_8 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {rst1}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_8 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {rst2}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_8 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {y1}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_8 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {y2}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_8 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {x1[31]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_8 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {x1[30]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_8 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {x1[29]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_8 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {x1[28]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_8 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {x1[27]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_8 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {x1[26]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_8 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {x1[25]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_8 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {x1[24]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_8 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {x1[23]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_8 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {x1[22]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_8 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {x1[21]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_8 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {x1[20]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_8 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {x1[19]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_8 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {x1[18]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_8 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {x1[17]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_8 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {x1[16]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_8 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {x1[15]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_8 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {x1[14]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_8 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {x1[13]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_8 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {x1[12]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_8 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {x1[11]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_8 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {x1[10]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_8 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {x1[9]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_8 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {x1[8]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_8 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {x1[7]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_8 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {x1[6]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_8 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {x1[5]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_8 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {x1[4]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_8 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {x1[3]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_8 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {x1[2]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_8 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {x1[1]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_8 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {x1[0]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_8 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {x2[31]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_8 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {x2[30]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_8 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {x2[29]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_8 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {x2[28]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_8 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {x2[27]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_8 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {x2[26]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_8 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {x2[25]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_8 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {x2[24]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_8 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {x2[23]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_8 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {x2[22]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_8 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {x2[21]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_8 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {x2[20]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_8 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {x2[19]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_8 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {x2[18]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_8 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {x2[17]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_8 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {x2[16]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_8 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {x2[15]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_8 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {x2[14]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_8 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {x2[13]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_8 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {x2[12]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_8 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {x2[11]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_8 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {x2[10]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_8 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {x2[9]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_8 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {x2[8]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_8 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {x2[7]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_8 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {x2[6]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_8 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {x2[5]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_8 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {x2[4]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_8 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {x2[3]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_8 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {x2[2]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_8 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {x2[1]}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_8 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {x2[0]}]
+###############################################################################
+# Design Rules
+###############################################################################
+set_max_fanout 5.0000 [current_design]
+min_report
+
+===========================================================================
+report_checks -path_delay min (Hold)
+============================================================================
+
+======================= Slowest Corner ===================================
+
+No paths found.
+
+======================= Typical Corner ===================================
+
+No paths found.
+
+======================= Fastest Corner ===================================
+
+No paths found.
+min_report_end
+max_report
+
+===========================================================================
+report_checks -path_delay max (Setup)
+============================================================================
+
+======================= Slowest Corner ===================================
+
+No paths found.
+
+======================= Typical Corner ===================================
+
+No paths found.
+
+======================= Fastest Corner ===================================
+
+No paths found.
+max_report_end
+check_report
+
+===========================================================================
+report_checks -unconstrained
+============================================================================
+
+======================= Slowest Corner ===================================
+
+Startpoint: clk1 (clock source 'clk2')
+Endpoint: spm_inst_0/clk (internal pin)
+Path Group: (none)
+Path Type: max
+Corner: ss
+
+Fanout     Cap    Slew   Delay    Time   Description
+-----------------------------------------------------------------------------
+                  0.02    0.01   50.01 v clk1 (in)
+     1    0.01                           clk1 (net)
+                  0.02    0.00   50.01 v spm_inst_0/clk (spm)
+                                 50.01   data arrival time
+-----------------------------------------------------------------------------
+(Path is unconstrained)
+
+
+
+======================= Typical Corner ===================================
+
+Startpoint: clk1 (clock source 'clk2')
+Endpoint: spm_inst_0/clk (internal pin)
+Path Group: (none)
+Path Type: max
+Corner: tt
+
+Fanout     Cap    Slew   Delay    Time   Description
+-----------------------------------------------------------------------------
+                  0.01    0.01   50.01 v clk1 (in)
+     1    0.01                           clk1 (net)
+                  0.01    0.00   50.01 v spm_inst_0/clk (spm)
+                                 50.01   data arrival time
+-----------------------------------------------------------------------------
+(Path is unconstrained)
+
+
+
+======================= Fastest Corner ===================================
+
+Startpoint: clk1 (clock source 'clk2')
+Endpoint: spm_inst_0/clk (internal pin)
+Path Group: (none)
+Path Type: max
+Corner: ff
+
+Fanout     Cap    Slew   Delay    Time   Description
+-----------------------------------------------------------------------------
+                  0.01    0.00   50.00 v clk1 (in)
+     1    0.01                           clk1 (net)
+                  0.01    0.00   50.00 v spm_inst_0/clk (spm)
+                                 50.00   data arrival time
+-----------------------------------------------------------------------------
+(Path is unconstrained)
+
+
+
+===========================================================================
+report_checks --slack_max -0.01
+============================================================================
+
+======================= Slowest Corner ===================================
+
+No paths found.
+
+======================= Typical Corner ===================================
+
+No paths found.
+
+======================= Fastest Corner ===================================
+
+No paths found.
+check_report_end
+check_slew
+
+===========================================================================
+ report_check_types -max_slew -max_cap -max_fanout -violators
+============================================================================
+
+======================= Slowest Corner ===================================
+
+
+======================= Typical Corner ===================================
+
+
+======================= Fastest Corner ===================================
+
+
+===========================================================================
+max slew violation count 0
+max fanout violation count 0
+max cap violation count 0
+============================================================================
+check_slew_end
+tns_report
+
+===========================================================================
+ report_tns
+============================================================================
+tns 0.00
+tns_report_end
+wns_report
+
+===========================================================================
+ report_wns
+============================================================================
+wns 0.00
+wns_report_end
+worst_slack
+
+===========================================================================
+ report_worst_slack -max (Setup)
+============================================================================
+worst slack INF
+
+===========================================================================
+ report_worst_slack -min (Hold)
+============================================================================
+worst slack INF
+worst_slack_end
+clock_skew
+
+===========================================================================
+ report_clock_skew
+============================================================================
+
+======================== Slowest Corner ==================================
+
+Clock clk2
+No launch/capture paths found.
+
+
+======================= Typical Corner ===================================
+
+Clock clk2
+No launch/capture paths found.
+
+
+======================= Fastest Corner ===================================
+
+Clock clk2
+No launch/capture paths found.
+
+clock_skew_end
+power_report
+
+===========================================================================
+ report_power
+============================================================================
+
+
+======================= Slowest Corner =================================
+
+Group                  Internal  Switching    Leakage      Total
+                          Power      Power      Power      Power (Watts)
+----------------------------------------------------------------
+Sequential             0.00e+00   0.00e+00   0.00e+00   0.00e+00   0.0%
+Combinational          3.94e-07   8.64e-07   4.70e-07   1.73e-06 100.0%
+Macro                  0.00e+00   0.00e+00   0.00e+00   0.00e+00   0.0%
+Pad                    0.00e+00   0.00e+00   0.00e+00   0.00e+00   0.0%
+----------------------------------------------------------------
+Total                  3.94e-07   8.64e-07   4.70e-07   1.73e-06 100.0%
+                          22.8%      50.0%      27.2%
+
+======================= Typical Corner ===================================
+
+Group                  Internal  Switching    Leakage      Total
+                          Power      Power      Power      Power (Watts)
+----------------------------------------------------------------
+Sequential             0.00e+00   0.00e+00   0.00e+00   0.00e+00   0.0%
+Combinational          4.77e-07   1.09e-06   3.47e-09   1.57e-06 100.0%
+Macro                  0.00e+00   0.00e+00   0.00e+00   0.00e+00   0.0%
+Pad                    0.00e+00   0.00e+00   0.00e+00   0.00e+00   0.0%
+----------------------------------------------------------------
+Total                  4.77e-07   1.09e-06   3.47e-09   1.57e-06 100.0%
+                          30.3%      69.4%       0.2%
+
+
+======================= Fastest Corner =================================
+
+Group                  Internal  Switching    Leakage      Total
+                          Power      Power      Power      Power (Watts)
+----------------------------------------------------------------
+Sequential             0.00e+00   0.00e+00   0.00e+00   0.00e+00   0.0%
+Combinational          5.34e-07   1.28e-06   3.71e-09   1.82e-06 100.0%
+Macro                  0.00e+00   0.00e+00   0.00e+00   0.00e+00   0.0%
+Pad                    0.00e+00   0.00e+00   0.00e+00   0.00e+00   0.0%
+----------------------------------------------------------------
+Total                  5.34e-07   1.28e-06   3.71e-09   1.82e-06 100.0%
+                          29.3%      70.5%       0.2%
+power_report_end
+area_report
+
+===========================================================================
+ report_design_area
+============================================================================
+Design area 80022 u^2 89% utilization.
+area_report_end

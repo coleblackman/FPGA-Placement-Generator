@@ -1,0 +1,77 @@
+
+===========================================================================
+report_checks -unconstrained
+============================================================================
+
+======================= Slowest Corner ===================================
+
+Startpoint: clk1 (clock source 'clk2')
+Endpoint: spm_inst_0/clk (internal pin)
+Path Group: (none)
+Path Type: max
+Corner: ss
+
+Fanout     Cap    Slew   Delay    Time   Description
+-----------------------------------------------------------------------------
+                  0.02    0.01   50.01 v clk1 (in)
+     1    0.02                           clk1 (net)
+                  0.02    0.00   50.01 v spm_inst_0/clk (spm)
+                                 50.01   data arrival time
+-----------------------------------------------------------------------------
+(Path is unconstrained)
+
+
+
+======================= Typical Corner ===================================
+
+Startpoint: clk1 (clock source 'clk2')
+Endpoint: spm_inst_0/clk (internal pin)
+Path Group: (none)
+Path Type: max
+Corner: tt
+
+Fanout     Cap    Slew   Delay    Time   Description
+-----------------------------------------------------------------------------
+                  0.01    0.01   50.01 v clk1 (in)
+     1    0.02                           clk1 (net)
+                  0.01    0.00   50.01 v spm_inst_0/clk (spm)
+                                 50.01   data arrival time
+-----------------------------------------------------------------------------
+(Path is unconstrained)
+
+
+
+======================= Fastest Corner ===================================
+
+Startpoint: clk1 (clock source 'clk2')
+Endpoint: spm_inst_0/clk (internal pin)
+Path Group: (none)
+Path Type: max
+Corner: ff
+
+Fanout     Cap    Slew   Delay    Time   Description
+-----------------------------------------------------------------------------
+                  0.01    0.00   50.00 v clk1 (in)
+     1    0.02                           clk1 (net)
+                  0.01    0.00   50.00 v spm_inst_0/clk (spm)
+                                 50.00   data arrival time
+-----------------------------------------------------------------------------
+(Path is unconstrained)
+
+
+
+===========================================================================
+report_checks --slack_max -0.01
+============================================================================
+
+======================= Slowest Corner ===================================
+
+No paths found.
+
+======================= Typical Corner ===================================
+
+No paths found.
+
+======================= Fastest Corner ===================================
+
+No paths found.

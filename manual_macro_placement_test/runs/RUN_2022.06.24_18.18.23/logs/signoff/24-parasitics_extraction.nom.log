@@ -1,0 +1,33 @@
+OpenROAD 0b8b7ae255f8fbbbefa57d443949b84e73eed757 
+This program is licensed under the BSD-3 license. See the LICENSE file for details.
+Components of this program may be licensed under more restrictive licenses which must be honored.
+[INFO ODB-0222] Reading LEF file: /openlane/designs/manual_macro_placement_test/runs/RUN_2022.06.24_18.18.23/tmp/merged.nom.lef
+[INFO ODB-0223]     Created 13 technology layers
+[INFO ODB-0224]     Created 25 technology vias
+[INFO ODB-0225]     Created 442 library cells
+[INFO ODB-0226] Finished LEF file:  /openlane/designs/manual_macro_placement_test/runs/RUN_2022.06.24_18.18.23/tmp/merged.nom.lef
+[INFO ODB-0127] Reading DEF file: /openlane/designs/manual_macro_placement_test/runs/RUN_2022.06.24_18.18.23/results/routing/manual_macro_placement_test.def
+[INFO ODB-0128] Design: manual_macro_placement_test
+[INFO ODB-0130]     Created 74 pins.
+[INFO ODB-0131]     Created 5112 components and 19232 component-terminals.
+[INFO ODB-0132]     Created 2 special nets and 19018 connections.
+[INFO ODB-0133]     Created 143 nets and 214 connections.
+[INFO ODB-0134] Finished DEF file: /openlane/designs/manual_macro_placement_test/runs/RUN_2022.06.24_18.18.23/results/routing/manual_macro_placement_test.def
+Using RCX ruleset '/home/htf6ry/skywater-pdk/sky130A/libs.tech/openlane/rules.openrcx.sky130A.nom.spef_extractor'...
+[INFO RCX-0431] Defined process_corner X with ext_model_index 0
+[INFO RCX-0029] Defined extraction corner X
+[INFO RCX-0008] extracting parasitics of manual_macro_placement_test ...
+[INFO RCX-0435] Reading extraction model file /home/htf6ry/skywater-pdk/sky130A/libs.tech/openlane/rules.openrcx.sky130A.nom.spef_extractor ...
+[INFO RCX-0436] RC segment generation manual_macro_placement_test (max_merge_res 50.0) ...
+[INFO RCX-0040] Final 343 rc segments
+[INFO RCX-0439] Coupling Cap extraction manual_macro_placement_test ...
+[INFO RCX-0440] Coupling threshhold is 0.1000 fF, coupling capacitance less than 0.1000 fF will be grounded.
+[INFO RCX-0043] 1965 wires to be extracted
+[INFO RCX-0442] 84% completion -- 1663 wires have been extracted
+[INFO RCX-0442] 100% completion -- 1965 wires have been extracted
+[INFO RCX-0045] Extract 143 nets, 486 rsegs, 486 caps, 276 ccs
+[INFO RCX-0015] Finished extracting manual_macro_placement_test.
+Writing result to /openlane/designs/manual_macro_placement_test/runs/RUN_2022.06.24_18.18.23/results/routing/manual_macro_placement_test.nom.spef...
+[INFO RCX-0016] Writing SPEF ...
+[INFO RCX-0443] 143 nets finished
+[INFO RCX-0017] Finished writing SPEF ...
