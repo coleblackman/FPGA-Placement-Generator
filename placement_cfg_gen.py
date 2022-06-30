@@ -1,6 +1,7 @@
 # Ask for project directory
 import sys
 import os
+import re
 
 if len(sys.argv) > 1:
     top_path = sys.argv[1]
@@ -54,6 +55,9 @@ else:
 
 # Ensure there is a .gds for each macro
 
+print("Searching for necessary macros in ", top_path, '/gds...')
+
+
 # Source every single macro's config.tcl and get the sizes
 
 # Read in overall config.tcl
@@ -61,8 +65,9 @@ with open(config_tcl_path, 'r', encoding="utf-8") as config_tcl:
     tconfig_tcl_data = config_tcl.read()
 
 # Parse config.tcl and set various config variables
+# Here is the regex: (?<=set \:\:env\(DIE_AREA\) ).*
 
-
+Take a look here for inspiration https://stackoverflow.com/questions/4248010/how-to-exclude-comment-lines-when-searching-with-regular-expression
 
 # config variables = Die area, macro areas, etc
 horizontal_size = 6000
