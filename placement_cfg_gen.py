@@ -20,6 +20,10 @@ if(os.path.exists(macro_placement_cfg_path)):
         print("Aborting...")
         sys.exit()
 
+# Ensure there is a properly named .gds file present
+
+
+
 # Read in config.tcl
 with open(config_tcl_path, 'r', encoding="utf-8") as config_tcl:
     tconfig_tcl_data = config_tcl.read()
