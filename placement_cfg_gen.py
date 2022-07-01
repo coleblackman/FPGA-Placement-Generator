@@ -1,4 +1,5 @@
 # Ask for project directory
+import math
 import sys
 import os
 import re
@@ -8,7 +9,7 @@ if len(sys.argv) > 1:
     print("\n\033[1;32mProject\033[m location supplied as a script argument: \033[1;32m", top_path, "\033[m")
 else:
     top_path = input('Input location of \033[1;32mproject\033[m, type \"local\" for local directory, or type \"default\" for default.\n> ')
-    if top_path == "default" or top_path == "":
+    if top_path == "default" or top_path == "" or top_path == "local":
         top_path = '.'
 # Set paths for config.tcl, macro_placement.cfg
 config_tcl_path = top_path + "config.tcl"
@@ -53,21 +54,36 @@ else:
     print("No fpga_core.v or fpga_top.v found. Ensure one is available.\nAborting...")
     sys.exit()
 
-# Ensure there is a .gds for each macro
+# Use statistics about number of each module to calculate grid size
+# TODO: reject comments
+
+if(use_fpga_top):
+    with open(fpga_top_path, 'r', encoding="utf-8") as fpga_top:
+        fpga_top_data = fpga_top.read()
+    numGridObjects = fpga_top_data.count("grid_clb")
+
+elif(use_fpga_core):
+    with open(fpga_core_path, 'r', encoding="utf-8") as fpga_core:
+        fpga_core_data = fpga_core.read()
+    numGridObjects = fpga_core_data.count("grid_clb")
+
+grid_number = math.sqrt(numGridObjects)
+print("grid_number: ", grid_number)
+
+# TODO Ensure there is a .gds for each macro
 
 print("Searching for necessary macros in ", top_path, '/gds...')
 
 
-# Source every single macro's config.tcl and get the sizes
+# TODO Source every single macro's config.tcl and get the sizes
 
 # Read in overall config.tcl
 with open(config_tcl_path, 'r', encoding="utf-8") as config_tcl:
-    tconfig_tcl_data = config_tcl.read()
+    config_tcl_data = config_tcl.read()
 
 # Parse config.tcl and set various config variables
 # Here is the regex: (?<=set \:\:env\(DIE_AREA\) ).*
-
-Take a look here for inspiration https://stackoverflow.com/questions/4248010/how-to-exclude-comment-lines-when-searching-with-regular-expression
+# Take a look here for inspiration https://stackoverflow.com/questions/4248010/how-to-exclude-comment-lines-when-searching-with-regular-expression
 
 # config variables = Die area, macro areas, etc
 horizontal_size = 6000
@@ -83,7 +99,7 @@ block_height = (500, 200, 600)
 # go into macro_placement.cfg
 macro_placement = ""
 
-# Generate the grid
+### Generate the grid
 
 
 # Find smallest permissible gap between two centers
@@ -101,10 +117,10 @@ vertical_number = (vertical_size-(min_padding*2))/(min_height_dist+min_gap)
 centers_x = [min_gap]
 centers_y = [min_gap]
 
-for i,x in enumerate(horizontal_number):
+for i in range(horizontal_number-1):
     centers_x.append(centers_x[i-1]+min_gap)
 
-for i,y in enumerate(vertical_number):
+for i in range(vertical_number-1):
     centers_y.append(centers_y[i-1]+min_gap)
 
 # Convert from centers to bottom-left corner
@@ -119,3 +135,18 @@ for i,y in enumerate(vertical_number):
 
 # Output to macro_placement.cfg, neatly configured
 # with the correct inst name from the gds file
+
+macro_placement_path = top_path + "macro_placement.cfg"
+
+if(os.path.exists(macro_placement_path)):
+    rem = input('\nExisting macro_placement.cfg found on given path. Do you want to overwrite it? Type yes or no\n > ')
+    if(rem == "yes"):
+        os.remove(macro_placement_path)
+    else:
+        print("Aborting...")
+        sys.exit()
+
+# Write to the file
+macro_file = open(macro_placement_path, "w")
+macro_file.write(macro_placement)
+print("Successfully wrote to macro_placement.cfg")
