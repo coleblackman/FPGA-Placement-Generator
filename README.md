@@ -12,6 +12,8 @@ Existing scripts, such as that used by SOFA, are not open source.
 
 FPGA design typically requires specialized teams of experienced engineers. With tools such as OpenLANE, OpenFPGA, and others, it is becoming possible to produce a tape-out ready FPGA with only a small team of hardware engineers.
 
+This script will not allow overlap between macros.
+
 Use:
 
 - Make sure OpenLANE and OpenFPGA are installed. 
