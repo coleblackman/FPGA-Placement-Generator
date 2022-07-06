@@ -1,6 +1,6 @@
-horizontal_size = 6000
+horizontal_size = 3000
 
-vertical_size = 6000
+vertical_size = 3000
 min_padding = 200
 min_gap = 100
 blocks = ("grid_clb", "cby", "sb")

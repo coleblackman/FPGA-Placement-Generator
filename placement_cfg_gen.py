@@ -24,13 +24,13 @@ if(os.path.exists(macro_placement_cfg_path)):
         sys.exit()
 
 # Get desired die area
-dieX = input("Please input desired die width (x-axis). Press enter for 5000.\n> ")
-dieY = input("Please input desired die height (y-axis). Press enter for 5000.\n> ")
-padding = input("Please input desired padding. Press enter for 200.")
+dieX = input("\nPlease input desired die width (x-axis). Press enter for 1610.\n> ")
+dieY = input("\nPlease input desired die height (y-axis). Press enter for 1610.\n> ")
+padding = input("\nPlease input desired padding. Press enter for 200.\n> ")
 if dieX == "":
-    dieX = 5000
+    dieX = 3000
 if dieY == "":
-    dieY = 5000
+    dieY = 3000
 if padding == "":
     padding = 200
 
@@ -102,8 +102,6 @@ macroNames = []
 for macro in foundMacros:
     macroPaths.append((macro_tcl_path+"/"+macro))
     macroNames.append(macro[0:-10])
-print("\n", macroNames)
-print("\n", macroPaths)
 
 # Extract x and y sizes from each config.tcl
 macrox = []
@@ -111,37 +109,13 @@ macroy = []
 for i in range(len(macroNames)):
     with open(macroPaths[i], 'r', encoding="utf-8") as macro_tcl:
         macro_tcl_data = macro_tcl.read()
-        print("Macro_tcl_data: " , macro_tcl_data)
         search_term = re.compile("(?<=set \:\:env\(DIE_AREA\) ).*", re.MULTILINE|re.I)
 
         for match in search_term.finditer(macro_tcl_data): 
             found = match.group()
             macrox.append(int(found[5:-4]))
             macroy.append(int(found[9:12]))
-            print("macrox[i]: ", macrox[i])
-            print("macroy[i]: ", macroy[i])
-
-#if(os.path.exists(config_tcl_path)):
-    # Read in overall config.tcl
-    #print("Valid config.tcl found.")
-    #with open(config_tcl_path, 'r', encoding="utf-8") as config_tcl:
-        #config_tcl_data = config_tcl.read()
-#else:
-    #print("No valid config.tcl found. Ensure it is in the appropriate directory and is valid. \nAborting...")
-    #sys.exit()
-
-# Parse each macro's config.tcl and set various config variables
-# Here is the regex: (?<=set \:\:env\(DIE_AREA\) ).*
-# Take a look here for inspiration https://stackoverflow.com/questions/4248010/how-to-exclude-comment-lines-when-searching-with-regular-expression
-# FIXME does not return any output currently
-#ConfigTCLRegularExpression = re.compile("(?<=set \:\:env\(DIE_AREA\) ).*", re.MULTILINE|re.DOTALL)
-#for search in ConfigTCLRegularExpression.findall(config_tcl_data):
- #   print(search)
-# config variables = Die area, macro areas, etc
-# There are 4 types: grid_clb, sb_x_y, cbx_x_y, cby_x_y
-# First, grid_clb:
-#grid_clb_path = top_path + "fpga_core/grid_clb/config.tcl"
-# TODO Now read in that file and parse the width and height of the macro
+            
 
 horizontal_size = dieX
 
@@ -151,8 +125,6 @@ min_gap = 100
 blocks = foundMacros
 block_width = macrox
 block_height = macroy
-
-
 
 # Generate the grid
 
@@ -166,12 +138,10 @@ min_dist = max(min_width_dist, min_height_dist)
 
 # Calculate how many we can fit, 
 # both horizontally and vertically
-print("\n---------------------------\n")
 horizontal_number = (horizontal_size-(min_padding*2))//(min_width_dist+min_gap)
-print("horizontal_number: ", horizontal_number)
 vertical_number = (vertical_size-(min_padding*2))//(min_height_dist+min_gap)
 print("vertical number: ", vertical_number)
-# Put all x and y coords for centers into tuples
+# Put all x and y coords for centers into lists
 
 centers_x = [min_gap]
 centers_y = [min_gap]
@@ -184,14 +154,16 @@ for i in range(vertical_number-1):
 
 # TODO First create a 2d data structure that will hold what kind of macro to put at each point
 cols = len(centers_x)
+print("Defining cols to be equal to len(centers_x): ", len(centers_x))
 rows = len(centers_y)
+print("centers_y length: ", len(centers_y))
 macroTypeMatrix = [[0 for i in range(cols)] for j in range(rows)]
 
 # TODO Now populate it with just the grid_clbs:
 for i in range(len(macroTypeMatrix)):
     for j in range(len(macroTypeMatrix[i])):
         if i % 2 == 1 and j % 2 == 1: # found a grid_clb location
-            macroTypeMatrix[i][j] = "grid_clb"
+            macroTypeMatrix[i][j] = "grid_clb_"
         elif i % 2 == 1 and j % 2 == 0: # found a cbx location
             macroTypeMatrix[i][j] = "cbx_" + "1" + "__" + str(int(j/2))+ "_"      
         elif i % 2 == 0 and j % 2 == 1: # found a cby location
@@ -204,6 +176,11 @@ print(macroTypeMatrix)
 macrox = [[0 for i in range(cols)] for j in range(rows)]
 macroy = [[0 for i in range(cols)] for j in range(rows)]
 # TODO Assign to each module the correct coordinates from centers_y and centers_x
+
+print("%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%")
+print("first print macrox size: ", len(macrox), "\n", macrox)
+print("and centers_x: ", len(centers_x), centers_x)
+print("cols: ", cols, " rows: ", rows)
 for i in range(len(macroTypeMatrix)):
     for j in range(len(macroTypeMatrix[i])):
         macrox[i][j] = centers_x[i]
@@ -212,8 +189,7 @@ for i in range(len(macroTypeMatrix)):
     for j in range(len(macroTypeMatrix[i])):
         macroy[i][j] = centers_y[i]
 
-print(macrox)
-print(macroy)
+
 
 # Now define the variable that will be eventually written to macro_placement.cfg
 macro_placement = ""
@@ -224,7 +200,10 @@ bottom_left_y = [[0 for i in range(cols)] for j in range(rows)]
 # Requires knowing what type each block is
 # because the type determines the size
 # use the variables macrox/macroy for coords and block_width and block_height for size
-
+print("00000000000000000000000000000000000\n000000000000000000000000000000\n")
+print()
+print("macroNames = ", macroNames)
+print("\nmacrox = ", macrox)
 for i in range(len(macroTypeMatrix)):
     for j in range(len(macroTypeMatrix[i])):
         # Based on type of macro, get the x width
@@ -232,7 +211,7 @@ for i in range(len(macroTypeMatrix)):
         index = macroNames.index(macroTypeMatrix[i][j])
         bottom_left_x[i][j] = macrox[i][j] - block_width[index]
         bottom_left_y[i][j] = macroy[i][j] - block_height[index]
-        macro_placement += "Place a " + macroNames[index] + " at " + str(bottom_left_x[i][j]) + ", " + str(bottom_left_y[i][j])
+        macro_placement += "\nPlace a " + macroNames[index] + " at " + str(bottom_left_x[i][j]) + ", " + str(bottom_left_y[i][j])
 
 # grid_clb = every other, except it can never be on an edge
 
