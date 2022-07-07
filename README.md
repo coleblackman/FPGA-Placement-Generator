@@ -16,6 +16,7 @@ This script will not allow overlap between macros.
 
 Use:
 
+- This script is only compatible with unix-like and unix operating systems and python3.8 (It may work with all python versions between 3.6 and 3.10 but I am not sure. I am pretty sure it will not work with anything lower than 3.6. Don't you just love python backwards compatibility?)
 - Make sure OpenLANE and OpenFPGA are installed. 
 - Clone the repo. 
 - Optionally, copy the repo scripts into a directory containing the requisite files: config.tcl for each module, gds and lef for each pre-hardened module, either an fpga_top.v or fpga_core.v (fpga_core.v if using certain OpenFPGA configurations), and your FPGA config.tcl file. If you don't copy/move these scripts into this directory and you don't provide a command line argument, the script will prompt you to input a starting directory containing all of these requisites. 
