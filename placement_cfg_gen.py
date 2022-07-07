@@ -4,7 +4,6 @@ import sys
 import os
 import re
 
-
 if len(sys.argv) > 1:
     top_path = sys.argv[1]
     print("\n\033[1;32mProject\033[m location supplied as a script argument: \033[1;32m", top_path, "\033[m")
@@ -230,13 +229,10 @@ for i in range(len(macroTypeMatrix)):
         macro_placement += macroNames[index] +  " " + str(bottom_left_x[i][j]) + " " + str(bottom_left_y[i][j]) + "\n"
 
 
-
 # Output to macro_placement.cfg, configured
 # with the correct inst name from the gds file
 
 macro_placement_path = top_path[0:-1] + "macro_placement.cfg"
-
-
 
 if(os.path.exists(macro_placement_path)):
     rem = input('\nExisting macro_placement.cfg found on given path. Do you want to overwrite it? Type yes or no\n > ')
@@ -245,6 +241,33 @@ if(os.path.exists(macro_placement_path)):
     else:
         print("Aborting...")
         sys.exit()
+
+
+macro_placement_inst = ""
+counter = 0
+# Now add the inst_x lines if there are repeats
+for i in range(len(macroNames)): # Iterate through every TYPE of macro
+    if macro_placement.count(macroNames[i]) > 1: # If there is a macro that is used more than once
+        for k in macro_placement.splitlines(): # Search every line for instances of that macro
+            if k.count(macroNames[i]) > 0: # If the current line contains that macro
+                macro_placement_inst += k.replace(macroNames[i], (str(macroNames[i]) + "inst_" + str(counter))) + "\n"
+                counter += 1
+        counter = 0
+        # Now that we have added replacements for all of the duplicate modules, remove their original copies
+    for l in macro_placement.splitlines():
+        if l.count(macroNames[i]) > 0 and macro_placement_inst.count(macroNames[i]) > 0:
+            print("removing ", macroNames[i])
+            macro_placement = macro_placement.replace(l, '')
+
+macro_placement += macro_placement_inst
+for u in macro_placement.splitlines():
+    if u == "\n":
+        macro_placement = macro_placement.replace(u, '')
+
+macro_placement = "".join([s for s in macro_placement.splitlines(True) if s.strip("\r\n")])
+#
+
+#
 
 # Write to the file
 macro_file = open(macro_placement_path, "w")
