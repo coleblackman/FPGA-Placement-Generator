@@ -238,13 +238,16 @@ print("00000000000000000000000000000000000\n000000000000000000000000000000\n")
 print()
 print("macroNames = ", macroNames)
 print("\nmacrox = ", macrox)
+print("\nmacroy = ", macroy)
 for i in range(len(macroTypeMatrix)):
     for j in range(len(macroTypeMatrix[i])):
         # Based on type of macro, get the x width
         # Find index 
-        index = macroNames.index(macroTypeMatrix[i][j])
-        bottom_left_x[i][j] = macrox[i][j] - block_width[index]
-        bottom_left_y[i][j] = macroy[i][j] - block_height[index]
+        index = macroNames.index(macroTypeMatrix[i][j]) # Find what type of module we are placing
+        bottom_left_x[i][j] = macrox[i][j] - block_width[index]//2
+        bottom_left_y[i][j] = macroy[j][i] - block_height[index]//2
+        
+        print("Placing at i = ", i, ". j = ", j, ". macrox[i][j] = ", macrox[i][j], ". macroy[i][j] = ", macroy[i][j], ". macroy[j][i] = ", macroy[j][i])
         macro_placement += "\nPlace a " + macroNames[index] + " at " + str(bottom_left_x[i][j]) + ", " + str(bottom_left_y[i][j])
 
 
