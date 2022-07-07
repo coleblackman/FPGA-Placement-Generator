@@ -118,13 +118,25 @@ for i in range(len(macroNames)):
             
 
 horizontal_size = dieX
-
+print("REF: horizontal Size: ", horizontal_size)
 vertical_size = dieY
+print("REF: vertical Size: ", vertical_size)
+
 min_padding = padding
+print("REF: minpadding: ", min_padding)
+
 min_gap = 100
+print("REF: min_gap: ", min_gap)
+
 blocks = foundMacros
+print("REF: blocks ", blocks)
+
 block_width = macrox
+print("REF block_width ", block_width)
+
 block_height = macroy
+print("REF: block_height ", block_height)
+
 
 # Generate the grid
 
@@ -141,22 +153,10 @@ min_dist = max(min_width_dist, min_height_dist)
 horizontal_number = (horizontal_size-(min_padding*2))//(min_width_dist+min_gap)
 vertical_number = (vertical_size-(min_padding*2))//(min_height_dist+min_gap)
 print("vertical number: ", vertical_number)
-# Put all x and y coords for centers into lists
-
-centers_x = [min_gap]
-centers_y = [min_gap]
-
-for i in range(horizontal_number-1):
-    centers_x.append(centers_x[i-1]+min_gap)
-
-for i in range(vertical_number-1):
-    centers_y.append(centers_y[i-1]+min_gap)
 
 # TODO First create a 2d data structure that will hold what kind of macro to put at each point
-cols = len(centers_x)
-print("Defining cols to be equal to len(centers_x): ", len(centers_x))
-rows = len(centers_y)
-print("centers_y length: ", len(centers_y))
+cols = horizontal_number
+rows = vertical_number
 macroTypeMatrix = [[0 for i in range(cols)] for j in range(rows)]
 
 # TODO Now populate it with just the grid_clbs:
@@ -171,6 +171,40 @@ for i in range(len(macroTypeMatrix)):
         elif i % 2 == 0 and j % 2 == 0: # found sb location
             macroTypeMatrix[i][j] = "sb_" + str(int(i/2)) + "__" + str(int(j/2)) + "_"
 print(macroTypeMatrix)
+
+# Put all x and y coords for centers into lists
+
+centers_x = [0 for i in range(horizontal_number)]
+centers_y = [0 for i in range(vertical_number)]
+
+# First define the bottom left block center coords:
+index = macroNames.index(macroTypeMatrix[0][0])
+prior_half = block_width[index]//2
+centers_x[0] = min_padding + prior_half
+for i in range(horizontal_number):
+    if i == 0:
+        continue
+    else:
+        index = macroNames.index(macroTypeMatrix[i][0])
+        centers_x[i] = centers_x[i-1] + min_gap + prior_half + block_width[index]//2
+        #print("REF: about to calculate centers_x[", i, "]. block_width[index] = ", block_width[index], "centers_x[i-1]: ", centers_x[i-1], "prior_half = ", prior_half, " min_gap = ", min_gap, ". centers_x[", i, "]= ", centers_x[i])
+        prior_half = centers_x[i-1]//2
+
+index = macroNames.index(macroTypeMatrix[0][0])
+prior_half = block_height[index]//2
+centers_y[0] = min_padding + prior_half    
+for i in range(vertical_number):
+    if i == 0:
+        continue
+    else:
+        index = macroNames.index(macroTypeMatrix[0][i])
+        centers_y[i] = centers_y[i-1] + min_gap + prior_half + block_height[index]//2
+        prior_half = centers_y[i-1]//2
+
+print("REF: centers_x: ", centers_x)
+print("REF: centers_y: ", centers_y)
+
+
 
 # macrox and macroy now contain the x and y coords of each block.
 macrox = [[0 for i in range(cols)] for j in range(rows)]
@@ -213,12 +247,12 @@ for i in range(len(macroTypeMatrix)):
         bottom_left_y[i][j] = macroy[i][j] - block_height[index]
         macro_placement += "\nPlace a " + macroNames[index] + " at " + str(bottom_left_x[i][j]) + ", " + str(bottom_left_y[i][j])
 
-# grid_clb = every other, except it can never be on an edge
+
 
 # Output to macro_placement.cfg, configured
 # with the correct inst name from the gds file
 
-macro_placement_path = top_path + "macro_placement.cfg"
+macro_placement_path = top_path[0:-1] + "macro_placement.cfg"
 
 
 
