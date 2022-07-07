@@ -93,7 +93,6 @@ foundMacros = os.walk(macro_tcl_path).__next__()[2]
 numFoundMacros = len(foundMacros)
 
 print("\nFound", numFoundMacros, "macro[s].\n")
-print(foundMacros)
 
 # Make a parallel array with just the paths of the macro modules
 macroPaths = []
@@ -118,24 +117,17 @@ for i in range(len(macroNames)):
             
 
 horizontal_size = dieX
-print("REF: horizontal Size: ", horizontal_size)
 vertical_size = dieY
-print("REF: vertical Size: ", vertical_size)
 
 min_padding = padding
-print("REF: minpadding: ", min_padding)
 
 min_gap = 100
-print("REF: min_gap: ", min_gap)
 
 blocks = foundMacros
-print("REF: blocks ", blocks)
 
 block_width = macrox
-print("REF block_width ", block_width)
 
 block_height = macroy
-print("REF: block_height ", block_height)
 
 
 # Generate the grid
@@ -152,7 +144,6 @@ min_dist = max(min_width_dist, min_height_dist)
 # both horizontally and vertically
 horizontal_number = (horizontal_size-(min_padding*2))//(min_width_dist+min_gap)
 vertical_number = (vertical_size-(min_padding*2))//(min_height_dist+min_gap)
-print("vertical number: ", vertical_number)
 
 # TODO First create a 2d data structure that will hold what kind of macro to put at each point
 cols = horizontal_number
@@ -201,20 +192,12 @@ for i in range(vertical_number):
         centers_y[i] = centers_y[i-1] + min_gap + prior_half + block_height[index]//2
         prior_half = centers_y[i-1]//2
 
-print("REF: centers_x: ", centers_x)
-print("REF: centers_y: ", centers_y)
-
-
-
 # macrox and macroy now contain the x and y coords of each block.
 macrox = [[0 for i in range(cols)] for j in range(rows)]
 macroy = [[0 for i in range(cols)] for j in range(rows)]
 # TODO Assign to each module the correct coordinates from centers_y and centers_x
 
-print("%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%")
-print("first print macrox size: ", len(macrox), "\n", macrox)
-print("and centers_x: ", len(centers_x), centers_x)
-print("cols: ", cols, " rows: ", rows)
+
 for i in range(len(macroTypeMatrix)):
     for j in range(len(macroTypeMatrix[i])):
         macrox[i][j] = centers_x[i]
@@ -234,11 +217,7 @@ bottom_left_y = [[0 for i in range(cols)] for j in range(rows)]
 # Requires knowing what type each block is
 # because the type determines the size
 # use the variables macrox/macroy for coords and block_width and block_height for size
-print("00000000000000000000000000000000000\n000000000000000000000000000000\n")
-print()
-print("macroNames = ", macroNames)
-print("\nmacrox = ", macrox)
-print("\nmacroy = ", macroy)
+
 for i in range(len(macroTypeMatrix)):
     for j in range(len(macroTypeMatrix[i])):
         # Based on type of macro, get the x width
@@ -248,7 +227,7 @@ for i in range(len(macroTypeMatrix)):
         bottom_left_y[i][j] = macroy[j][i] - block_height[index]//2
         
         print("Placing at i = ", i, ". j = ", j, ". macrox[i][j] = ", macrox[i][j], ". macroy[i][j] = ", macroy[i][j], ". macroy[j][i] = ", macroy[j][i])
-        macro_placement += "\nPlace a " + macroNames[index] + " at " + str(bottom_left_x[i][j]) + ", " + str(bottom_left_y[i][j])
+        macro_placement += macroNames[index] +  " " + str(bottom_left_x[i][j]) + " " + str(bottom_left_y[i][j]) + "\n"
 
 
 
@@ -270,4 +249,4 @@ if(os.path.exists(macro_placement_path)):
 # Write to the file
 macro_file = open(macro_placement_path, "w")
 macro_file.write(macro_placement)
-print("Successfully wrote to macro_placement.cfg")
+print("\n\033[1;32mSuccessfully wrote to macro_placement.cfg\033[m\n")
