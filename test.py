@@ -1,1 +1,1 @@
-print("" + str(5))
+set ::env(DIE_AREA)
