@@ -151,12 +151,12 @@ macroTypeMatrix = [[0 for i in range(cols)] for j in range(rows)]
 for i in range(len(macroTypeMatrix)):
     for j in range(len(macroTypeMatrix[i])):
         if i % 2 == 1 and j % 2 == 1: # found a grid_clb location
-            macroTypeMatrix[i][j] = "grid_clb_"
+            macroTypeMatrix[i][j] = "grid_clb_"# + str(int(i/2)+1) + "_"
         elif i % 2 == 1 and j % 2 == 0: # found a cbx location
             macroTypeMatrix[i][j] = "cbx_" + "1" + "__" + str(int(j/2))+ "_"      
-        elif i % 2 == 0 and j % 2 == 1: # found a cby location
+        elif i % 2 == 0 and j % 2 == 1: # found a cby location 
             macroTypeMatrix[i][j] = "cby_" + str(int(i/2)) + "__" + "1" + "_"
-        elif i % 2 == 0 and j % 2 == 0: # found sb location
+        elif i % 2 == 0 and j % 2 == 0: # found sb location (WORKING because sb's never have overlap)
             macroTypeMatrix[i][j] = "sb_" + str(int(i/2)) + "__" + str(int(j/2)) + "_"
 print(macroTypeMatrix)
 
@@ -223,7 +223,15 @@ for i in range(len(macroTypeMatrix)):
         bottom_left_y[i][j] = macroy[j][i] - block_height[index]//2
         
         print("Placing at i = ", i, ". j = ", j, ". macrox[i][j] = ", macrox[i][j], ". macroy[i][j] = ", macroy[i][j], ". macroy[j][i] = ", macroy[j][i])
-        macro_placement += macroNames[index] +  " " + str(bottom_left_x[i][j]) + " " + str(bottom_left_y[i][j]) + " N \n"
+        # IMPORTANT lines, this assigns what will ultimately be written to the file
+        if macroNames[index] == "grid_clb_":
+            macro_placement += macroNames[index] + str(int(i/2)+1) + "__" + str(int(j/2)+1) + "_ " + str(bottom_left_x[i][j]) + " " + str(bottom_left_y[i][j]) + " N \n"
+        elif macroNames[index][0:3] == "cbx":
+            macro_placement += "cbx_" + str(int(i/2)+1) + "__" + str(int(j/2)) + "_ " + str(bottom_left_x[i][j]) + " " + str(bottom_left_y[i][j]) + " N \n"
+        elif macroNames[index][0:3] == "cby":
+            macro_placement += "cby_" + str(int(i/2)) + "__" + str(int(j/2)+1) + "_ " + str(bottom_left_x[i][j]) + " " + str(bottom_left_y[i][j]) + " N \n"
+        else:
+            macro_placement += macroNames[index] +  " " + str(bottom_left_x[i][j]) + " " + str(bottom_left_y[i][j]) + " N \n"
 
 
 # Output to macro_placement.cfg, configured
@@ -242,12 +250,14 @@ if(os.path.exists(macro_placement_path)):
 
 macro_placement_inst = ""
 counter = 0
+
+
 # Now add the inst_x lines if there are repeats
 for i in range(len(macroNames)): # Iterate through every TYPE of macro
     if macro_placement.count(macroNames[i]) > 1: # If there is a macro that is used more than once
         for k in macro_placement.splitlines(): # Search every line for instances of that macro
             if k.count(macroNames[i]) > 0: # If the current line contains that macro
-                macro_placement_inst += k.replace(macroNames[i], (str(macroNames[i]) + str(counter+1))) + "\n"
+                #macro_placement_inst += k.replace(macroNames[i], (str(macroNames[i]) + str(counter+1))) + "\n"
                 counter += 1
         counter = 0
         # Now that we have added replacements for all of the duplicate modules, remove their original copies
