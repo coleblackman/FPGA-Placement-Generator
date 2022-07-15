@@ -25,11 +25,14 @@ if(os.path.exists(macro_placement_cfg_path)):
 # Get desired die area
 dieX = input("\nPlease input desired die width (x-axis). Press enter for 1610.\n> ")
 dieY = input("\nPlease input desired die height (y-axis). Press enter for 1610.\n> ")
-padding = input("\nPlease input desired padding. Press enter for 200.\n> ")
+gap = input("\nPlease input desired gap (the distance between two modules). Press enter for 100.\n>")
+padding = input("\nPlease input desired padding (the distance between the edges and the outermost blocks). Press enter for 200.\n> ")
 if dieX == "":
     dieX = "3000"
 if dieY == "":
     dieY = "3000"
+if gap == "":
+    gap = "100"
 if padding == "":
     padding = "200"
 
@@ -119,7 +122,7 @@ vertical_size = dieY
 
 min_padding = padding
 
-min_gap = 100
+min_gap = int(gap)
 
 blocks = foundMacros
 
