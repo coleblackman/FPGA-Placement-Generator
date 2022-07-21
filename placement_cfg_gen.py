@@ -49,6 +49,7 @@ fpga_core_path = top_path + "/fpga_core.v"
 print("Searching for fpga_top.v at ", fpga_top_path)
 print("Searching for fpga_core.v at ", fpga_core_path)
 
+
 if(os.path.exists(fpga_top_path)):
     valid_fpga_top_found = True
 if(os.path.exists(fpga_core_path)):
