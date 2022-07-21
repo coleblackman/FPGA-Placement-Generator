@@ -23,14 +23,14 @@ if(os.path.exists(macro_placement_cfg_path)):
         sys.exit()
 
 # Get desired die area
-dieX = input("\nPlease input desired die width (x-axis). Press enter for 1610.\n> ")
-dieY = input("\nPlease input desired die height (y-axis). Press enter for 1610.\n> ")
+dieX = input("\nPlease input desired die width (x-axis). Press enter for 2000.\n> ")
+dieY = input("\nPlease input desired die height (y-axis). Press enter for 2200.\n> ")
 gap = input("\nPlease input desired gap (the distance between two modules). Press enter for 100.\n>")
 padding = input("\nPlease input desired padding (the distance between the edges and the outermost blocks). Press enter for 200.\n> ")
 if dieX == "":
-    dieX = "3000"
+    dieX = "2000"
 if dieY == "":
-    dieY = "3000"
+    dieY = "2200"
 if gap == "":
     gap = "100"
 if padding == "":
@@ -136,19 +136,38 @@ block_height = macroy
 
 # Find smallest permissible gap between two centers
 # This works because half_width*2 = block_width
-min_width_dist = max(block_width)+min_gap
-min_height_dist = max(block_height)+min_gap
+min_width_dist = max(block_width)#+min_gap
+print("HEREHEREHERHEREHEREHEREHRERE ", min_gap)
+min_height_dist = max(block_height)#+min_gap 
 min_dist = max(min_width_dist, min_height_dist)
 
 # Calculate how many we can fit, 
 # both horizontally and vertically
-horizontal_number = (int(horizontal_size)-(int(min_padding)*2))//(min_width_dist+min_gap)
-vertical_number = (int(vertical_size)-(int(min_padding)*2))//(min_height_dist+min_gap)
+width_without_padding = (int(horizontal_size)-(int(min_padding)*2)) 
+if width_without_padding < min_width_dist+min_gap+min_width_dist:
+    print("Insufficient die width for more than a 1x1 grid.\nAborting...")
+    sys.exit()
+else: # now we know it is more than 1x1
+    horizontal_number = 1 + (width_without_padding-min_width_dist)//(min_width_dist+min_gap)
+    # add 1 for the last block, then divide by the blocks+ their respective gaps
+print("horizontal_number ", horizontal_number)
+print("horizontal_size ", horizontal_size)
+
+height_without_padding = int(vertical_size)-(int(min_padding)*2)
+if height_without_padding < min_height_dist+min_gap+min_height_dist:
+    print("min_height_dist: ", min_height_dist)
+    print("height without padding: ", height_without_padding)
+    print("min_padding: ", min_padding)
+    print("vertical size: ", vertical_size)
+    print("Insufficient die height for more than a 1x1 grid.\nAborting...")
+    sys.exit()
+else:
+    vertical_number = 1 + (height_without_padding-min_height_dist)//(min_height_dist+min_gap)
+print("vertical_number:  ", vertical_number)
 
 # TODO First create a 2d data structure that will hold what kind of macro to put at each point
-cols = horizontal_number
-rows = vertical_number
-macroTypeMatrix = [[0 for i in range(cols)] for j in range(rows)]
+
+macroTypeMatrix = [[0 for i in range(horizontal_number)] for j in range(vertical_number)]
 
 # TODO Now populate it with just the grid_clbs:
 for i in range(len(macroTypeMatrix)):
@@ -174,9 +193,10 @@ prior_half = block_width[index]//2
 centers_x[0] = int(min_padding) + prior_half
 for i in range(horizontal_number):
     if i == 0:
-        continue
+        continue # iterate 4 times, from 1 to 4
     else:
-        index = macroNames.index(macroTypeMatrix[i][0])
+        print("Analyzing i = ", i)
+        index = macroNames.index(macroTypeMatrix[i-1][0])
         centers_x[i] = centers_x[i-1] + min_gap + prior_half + block_width[index]//2
         prior_half = centers_x[i-1]//2
 
@@ -187,13 +207,13 @@ for i in range(vertical_number):
     if i == 0:
         continue
     else:
-        index = macroNames.index(macroTypeMatrix[0][i])
+        index = macroNames.index(macroTypeMatrix[0][i-1])
         centers_y[i] = centers_y[i-1] + min_gap + prior_half + block_height[index]//2
         prior_half = centers_y[i-1]//2
 
 # macrox and macroy now contain the x and y coords of each block.
-macrox = [[0 for i in range(cols)] for j in range(rows)]
-macroy = [[0 for i in range(cols)] for j in range(rows)]
+macrox = [[0 for i in range(horizontal_number)] for j in range(vertical_number)]
+macroy = [[0 for i in range(horizontal_number)] for j in range(vertical_number)]
 # TODO Assign to each module the correct coordinates from centers_y and centers_x
 
 
@@ -211,8 +231,8 @@ for i in range(len(macroTypeMatrix)):
 macro_placement = ""
 
 # Convert from centers to bottom-left corner
-bottom_left_x = [[0 for i in range(cols)] for j in range(rows)]
-bottom_left_y = [[0 for i in range(cols)] for j in range(rows)]
+bottom_left_x = [[0 for i in range(horizontal_number)] for j in range(vertical_number)]
+bottom_left_y = [[0 for i in range(horizontal_number)] for j in range(vertical_number)]
 # Requires knowing what type each block is
 # because the type determines the size
 # use the variables macrox/macroy for coords and block_width and block_height for size
@@ -223,7 +243,10 @@ for i in range(len(macroTypeMatrix)):
         # Find index 
         index = macroNames.index(macroTypeMatrix[i][j]) # Find what type of module we are placing
         bottom_left_x[i][j] = macrox[i][j] - block_width[index]//2
-        bottom_left_y[i][j] = macroy[j][i] - block_height[index]//2
+        print(bottom_left_y[i][j])
+        print(macroy[j][i])
+        print(block_height[index])
+        bottom_left_y[i][j] = macroy[j][i] - block_height[index]//2 # problem is with macroy
         
         print("Placing at i = ", i, ". j = ", j, ". macrox[i][j] = ", macrox[i][j], ". macroy[i][j] = ", macroy[i][j], ". macroy[j][i] = ", macroy[j][i])
         # IMPORTANT lines, this assigns what will ultimately be written to the file
