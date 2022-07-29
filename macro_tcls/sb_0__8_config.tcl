@@ -1,5 +1,5 @@
 # User config
-set ::env(DESIGN_NAME) cbx_1__0_
+set ::env(DESIGN_NAME) sb_0__8_
 
 # Change if needed
 set ::env(VERILOG_FILES) [glob $::env(DESIGN_DIR)/src/*.v]

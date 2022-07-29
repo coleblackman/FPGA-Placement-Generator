@@ -23,16 +23,17 @@ if(os.path.exists(macro_placement_cfg_path)):
         sys.exit()
 
 # Get desired die area
-dieX = input("\nPlease input desired die width (x-axis). Press enter for 2000.\n> ")
-dieY = input("\nPlease input desired die height (y-axis). Press enter for 2200.\n> ")
-gap = input("\nPlease input desired gap (the distance between two modules). Press enter for 100.\n>")
+dieX = input("\nPlease input desired die width (x-axis). Press enter for 2650.\n> ")
+dieY = input("\nPlease input desired die height (y-axis). Press enter for 2650.\n> ")
+numBlocks = input("\nPlease input the number of blocks (i.e. 8 for an 8x8 grid, 4 for a 4x4 grid, etc.)\n> ")
+gap = input("\nPlease input desired gap (the distance between two modules). Press enter for 200.\n>")
 padding = input("\nPlease input desired padding (the distance between the edges and the outermost blocks). Press enter for 200.\n> ")
 if dieX == "":
-    dieX = "2000"
+    dieX = "2650"
 if dieY == "":
-    dieY = "2200"
+    dieY = "2650"
 if gap == "":
-    gap = "100"
+    gap = "200"
 if padding == "":
     padding = "200"
 
@@ -72,6 +73,7 @@ else:
     print("No fpga_core.v or fpga_top.v found. Ensure one is available.\nAborting...")
     sys.exit()
 
+
 # Use statistics about number of each module to calculate grid size
 # TODO: reject comments
 
@@ -88,7 +90,7 @@ elif(use_fpga_core):
 grid_number = math.sqrt(numGridObjects)
 print("grid_number: ", grid_number)
 
-# TODO Ensure there is a .gds for each macro
+# TODO Ensure there is a .gds folder of macros
 
 print("Searching for necessary macros in ", top_path, '/gds...')
 macro_tcl_path = top_path+"/macro_tcls"
@@ -97,7 +99,6 @@ numFoundMacros = len(foundMacros)
 
 print("\nFound", numFoundMacros, "macro[s].\n")
 
-# Make a parallel array with just the paths of the macro modules
 macroPaths = []
 # Make a parallel array with just the names of the modules
 macroNames = []
@@ -133,12 +134,9 @@ block_height = macroy
 
 # Generate the grid
 
-###################################################
-
 # Find smallest permissible gap between two centers
 # This works because half_width*2 = block_width
 min_width_dist = max(block_width)#+min_gap
-print("HEREHEREHERHEREHEREHEREHRERE ", min_gap)
 min_height_dist = max(block_height)#+min_gap 
 min_dist = max(min_width_dist, min_height_dist)
 
@@ -151,11 +149,15 @@ if width_without_padding < min_width_dist+min_gap+min_width_dist:
 else: # now we know it is more than 1x1
     horizontal_number = 1 + (width_without_padding-min_width_dist)//(min_width_dist+min_gap)
     # add 1 for the last block, then divide by the blocks+ their respective gaps
-print("horizontal_number ", horizontal_number)
-print("horizontal_size ", horizontal_size)
+
+if horizontal_number < (int(numBlocks)*2+1):
+    print("Insufficient area for ", numBlocks, "CLBs. You can only hold up to a ", int(horizontal_number/2+1)," grid. Aborting...")
+    sys.exit()
+
+horizontal_number = int(numBlocks)*2+1
 
 height_without_padding = int(vertical_size)-(int(min_padding)*2)
-if height_without_padding < min_height_dist+min_gap+min_height_dist:
+if height_without_padding < min_height_dist+min_gap+min_height_dist: # if height is not enough for a 1x1
     print("min_height_dist: ", min_height_dist)
     print("height without padding: ", height_without_padding)
     print("min_padding: ", min_padding)
@@ -165,22 +167,53 @@ if height_without_padding < min_height_dist+min_gap+min_height_dist:
 else:
     vertical_number = 1 + (height_without_padding-min_height_dist)//(min_height_dist+min_gap)
 print("vertical_number:  ", vertical_number)
-
+vertical_number = horizontal_number
 # TODO First create a 2d data structure that will hold what kind of macro to put at each point
 
 macroTypeMatrix = [[0 for i in range(horizontal_number)] for j in range(vertical_number)]
-
-# TODO Now populate it with just the grid_clbs:
+numBlocks = int(numBlocks)
+# TODO Now populate it
 for i in range(len(macroTypeMatrix)):
     for j in range(len(macroTypeMatrix[i])):
         if i % 2 == 1 and j % 2 == 1: # found a grid_clb location
             macroTypeMatrix[i][j] = "grid_clb_"# + str(int(i/2)+1) + "_"
         elif i % 2 == 1 and j % 2 == 0: # found a cbx location
-            macroTypeMatrix[i][j] = "cbx_" + "1" + "__" + str(int(j/2))+ "_"      
-        elif i % 2 == 0 and j % 2 == 1: # found a cby location 
-            macroTypeMatrix[i][j] = "cby_" + str(int(i/2)) + "__" + "1" + "_"
+                            #macroTypeMatrix[i][j] = "cbx_" + "1" + "__" + str(int(j/2))+ "_"     OLD WAY
+            if j == 0:
+                macroTypeMatrix[i][j] = "cbx_1__0_"
+            elif j == len(macroTypeMatrix):
+                macroTypeMatrix[i][j] = "cbx_1__2_"
+            else:
+                macroTypeMatrix[i][j] = "cbx_1__1_"
+
+        elif i % 2 == 0 and j % 2 == 1: # found a cby location
+            #macroTypeMatrix[i][j] = "cby_" + str(int(i/2)) + "__" + "1" + "_"
+            if i == 0:
+                macroTypeMatrix[i][j] = "cby_0__1_"
+            elif i == len(macroTypeMatrix):
+                macroTypeMatrix[i][j] = "cby_2__1_"
+            else:
+                macroTypeMatrix[i][j] = "cby_1__1_"
         elif i % 2 == 0 and j % 2 == 0: # found sb location (WORKING because sb's never have overlap)
             macroTypeMatrix[i][j] = "sb_" + str(int(i/2)) + "__" + str(int(j/2)) + "_"
+            # Now fix it if the grid size is greater than 2 and the placement above was wrong
+            if numBlocks > 2 and j == 0: # if it is on the bottom row
+                if i != 0 and i != len(macroTypeMatrix): # assuming it is not a corner
+                    macroTypeMatrix[i][j] = "sb_1__0_"
+                
+            elif numBlocks > 2 and j == len(macroTypeMatrix): # if we are at the top row
+                if i != 0 and i != len(macroTypeMatrix):
+                    macroTypeMatrix[i][j] = "sb_1__" + str(numBlocks) + "_"
+
+            elif numBlocks > 2 and i == 0:
+                macroTypeMatrix[i][j] = "sb_0__1_"
+            
+            elif numBlocks > 2 and i == len(macroTypeMatrix):
+                macroTypeMatrix[i][j] = "sb_" + numBlocks + "__1_"
+            
+            elif numBlocks > 2:
+                macroTypeMatrix[i][j] = "sb_1__1_"
+
 print(macroTypeMatrix)
 
 # Put all x and y coords for centers into lists
@@ -208,6 +241,7 @@ for i in range(vertical_number):
     if i == 0:
         continue
     else:
+        print("attempting to find the index of the element: ", macroTypeMatrix[0][i-1])
         index = macroNames.index(macroTypeMatrix[0][i-1])
         centers_y[i] = centers_y[i-1] + min_gap + prior_half + block_height[index]//2
         prior_half = centers_y[i-1]//2
@@ -217,7 +251,6 @@ macrox = [[0 for i in range(horizontal_number)] for j in range(vertical_number)]
 macroy = [[0 for i in range(horizontal_number)] for j in range(vertical_number)]
 # TODO Assign to each module the correct coordinates from centers_y and centers_x
 
-
 for i in range(len(macroTypeMatrix)):
     for j in range(len(macroTypeMatrix[i])):
         macrox[i][j] = centers_x[i]
@@ -225,7 +258,6 @@ for i in range(len(macroTypeMatrix)):
 for i in range(len(macroTypeMatrix)):
     for j in range(len(macroTypeMatrix[i])):
         macroy[i][j] = centers_y[i]
-
 
 
 # Now define the variable that will be eventually written to macro_placement.cfg
