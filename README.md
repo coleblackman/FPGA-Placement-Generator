@@ -2,7 +2,7 @@
 
 **This tool is a work in progress**
 
-This tool generates a macro_placement.cfg file for use with OpenLANE and OpenFPGA. It takes as input a config.tcl file, an fpga_top.v and your parameters. It requires pre-hardened macros for each block as well. 
+This tool generates an optimized FPGA configuration for use with OpenLANE and OpenFPGA. It takes as input a config.tcl file, an fpga_top.v and your parameters. It requires pre-hardened macros for each block as well. Essentially, if you want to generate an FPGA with OpenLANE and OpenFPGA, this tool will make that easier.
 
 ## Motivation: 
 
