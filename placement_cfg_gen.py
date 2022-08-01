@@ -167,7 +167,11 @@ if height_without_padding < min_height_dist+min_gap+min_height_dist: # if height
 else:
     vertical_number = 1 + (height_without_padding-min_height_dist)//(min_height_dist+min_gap)
 print("vertical_number:  ", vertical_number)
+
+
+# Set to a square grid
 vertical_number = horizontal_number
+
 # TODO First create a 2d data structure that will hold what kind of macro to put at each point
 
 macroTypeMatrix = [[0 for i in range(horizontal_number)] for j in range(vertical_number)]
@@ -221,30 +225,41 @@ print(macroTypeMatrix)
 centers_x = [0 for i in range(horizontal_number)]
 centers_y = [0 for i in range(vertical_number)]
 
+###########
+###########
+#NOTE: we assume the worst case here, which is two of the largest blocks (usually grid_clb) right next to each other. In theory, this will never happen.
+# You could optimize this by finding the largest ACTUAL size in the given row or column and calculating the median (center) point based on that.
+# However, whether this would actually result in gains depends on your P&R scheme. We haven't tested it but my uneducated guess would be it doesn't matter. It will increase usable area tho
+
+
 # First define the bottom left block center coords:
-index = macroNames.index(macroTypeMatrix[0][0])
-prior_half = block_width[index]//2
+#index = macroNames.index(macroTypeMatrix[0][0])
+prior_half = max(block_width)//2
+print("PRIOR HALF: ", prior_half)
 centers_x[0] = int(min_padding) + prior_half
 for i in range(horizontal_number):
     if i == 0:
-        continue # iterate 4 times, from 1 to 4
+        continue # iterate n times, from 1 to n
     else:
-        print("Analyzing i = ", i)
-        index = macroNames.index(macroTypeMatrix[i-1][0])
-        centers_x[i] = centers_x[i-1] + min_gap + prior_half + block_width[index]//2
-        prior_half = centers_x[i-1]//2
+        index = macroNames.index(macroTypeMatrix[i][0]) # get the previous 
+        centers_x[i] = centers_x[i-1] + prior_half + min_gap + block_width[index]//2
+        print("Analyzing index = ", index, "Type: ", macroNames[index], " center: ", centers_x[i], " | prior center: ", centers_x[i-1], "Block_width[index]//2 = ", block_width[index]//2)
+
+        prior_half = max(block_width)//2
+        print("PRIOR HALF: ", prior_half)
+
 
 index = macroNames.index(macroTypeMatrix[0][0])
-prior_half = block_height[index]//2
+prior_half = max(block_height)//2
 centers_y[0] = int(min_padding) + prior_half    
 for i in range(vertical_number):
     if i == 0:
         continue
     else:
-        print("attempting to find the index of the element: ", macroTypeMatrix[0][i-1])
-        index = macroNames.index(macroTypeMatrix[0][i-1])
+        print("attempting to find the index of the element: ", macroTypeMatrix[0][i])
+        index = macroNames.index(macroTypeMatrix[0][i])
         centers_y[i] = centers_y[i-1] + min_gap + prior_half + block_height[index]//2
-        prior_half = centers_y[i-1]//2
+        prior_half = max(block_height)//2
 
 # macrox and macroy now contain the x and y coords of each block.
 macrox = [[0 for i in range(horizontal_number)] for j in range(vertical_number)]
@@ -276,12 +291,12 @@ for i in range(len(macroTypeMatrix)):
         # Find index 
         index = macroNames.index(macroTypeMatrix[i][j]) # Find what type of module we are placing
         bottom_left_x[i][j] = macrox[i][j] - block_width[index]//2
-        print(bottom_left_y[i][j])
-        print(macroy[j][i])
-        print(block_height[index])
+        #print(bottom_left_y[i][j])
+       # print(macroy[j][i])
+        #print(block_height[index])
         bottom_left_y[i][j] = macroy[j][i] - block_height[index]//2 # problem is with macroy
         
-        print("Placing at i = ", i, ". j = ", j, ". macrox[i][j] = ", macrox[i][j], ". macroy[i][j] = ", macroy[i][j], ". macroy[j][i] = ", macroy[j][i])
+        #print("Placing at i = ", i, ". j = ", j, ". macrox[i][j] = ", macrox[i][j], ". macroy[i][j] = ", macroy[i][j], ". macroy[j][i] = ", macroy[j][i])
         # IMPORTANT lines, this assigns what will ultimately be written to the file
         if macroNames[index] == "grid_clb_":
             macro_placement += macroNames[index] + str(int(i/2)+1) + "__" + str(int(j/2)+1) + "_ " + str(bottom_left_x[i][j]) + " " + str(bottom_left_y[i][j]) + " N \n"
