@@ -104,6 +104,7 @@ macroPaths = []
 macroNames = []
 for macro in foundMacros:
     macroPaths.append((macro_tcl_path+"/"+macro))
+    
     macroNames.append(macro[0:-10])
 
 # Extract x and y sizes from each config.tcl
@@ -306,7 +307,7 @@ for i in range(len(macroTypeMatrix)):
         #print("Placing at i = ", i, ". j = ", j, ". macrox[i][j] = ", macrox[i][j], ". macroy[i][j] = ", macroy[i][j], ". macroy[j][i] = ", macroy[j][i])
         # IMPORTANT lines, this assigns what will ultimately be written to the file
         if macroNames[index] == "grid_clb_":
-            macro_placement += macroNames[index] + " " + str(bottom_left_x[i][j]) + " " + str(bottom_left_y[i][j]) + " N \n"#+ str(int(i/2)+1) + "__" + str(int(j/2)+1) + "_ " + str(bottom_left_x[i][j]) + " " + str(bottom_left_y[i][j]) + " N \n"
+            macro_placement += "grid_clb" + "_" + str(int(i/2)+1) + "__" + str(int(j/2)+1) + "_ " + str(bottom_left_x[i][j]) + " " + str(bottom_left_y[i][j]) + " N \n"#+ str(int(i/2)+1) + "__" + str(int(j/2)+1) + "_ " + str(bottom_left_x[i][j]) + " " + str(bottom_left_y[i][j]) + " N \n"
         elif macroNames[index][0:3] == "cbx":
             macro_placement += macroNames[index] + " " + str(bottom_left_x[i][j]) + " " + str(bottom_left_y[i][j]) + " N \n"
         elif macroNames[index][0:3] == "cby":
