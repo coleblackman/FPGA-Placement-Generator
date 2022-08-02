@@ -180,15 +180,16 @@ numBlocks = int(numBlocks)
 for i in range(len(macroTypeMatrix)):
     for j in range(len(macroTypeMatrix[i])):
         if i % 2 == 1 and j % 2 == 1: # found a grid_clb location
-            macroTypeMatrix[i][j] = "grid_clb_"# + str(int(i/2)+1) + "_"
+            macroTypeMatrix[i][j] = "grid_clb_" 
         elif i % 2 == 1 and j % 2 == 0: # found a cbx location
-                            #macroTypeMatrix[i][j] = "cbx_" + "1" + "__" + str(int(j/2))+ "_"     OLD WAY
             if j == 0:
                 macroTypeMatrix[i][j] = "cbx_1__0_"
             elif j == len(macroTypeMatrix):
                 macroTypeMatrix[i][j] = "cbx_1__2_"
             else:
                 macroTypeMatrix[i][j] = "cbx_1__1_"
+            print("Found a cbx and assigned it: ", macroTypeMatrix[i][j])
+
 
         elif i % 2 == 0 and j % 2 == 1: # found a cby location
             #macroTypeMatrix[i][j] = "cby_" + str(int(i/2)) + "__" + "1" + "_"
@@ -200,23 +201,32 @@ for i in range(len(macroTypeMatrix)):
                 macroTypeMatrix[i][j] = "cby_1__1_"
         elif i % 2 == 0 and j % 2 == 0: # found sb location (WORKING because sb's never have overlap)
             macroTypeMatrix[i][j] = "sb_" + str(int(i/2)) + "__" + str(int(j/2)) + "_"
+            print("\nfound an sb ", macroTypeMatrix[i][j])
+            print("macroTypeMatrix length: ", len(macroTypeMatrix[i]))
             # Now fix it if the grid size is greater than 2 and the placement above was wrong
             if numBlocks > 2 and j == 0: # if it is on the bottom row
-                if i != 0 and i != len(macroTypeMatrix): # assuming it is not a corner
+                if i != 0 and i != len(macroTypeMatrix[i])-1: # assuming it is not a corner
                     macroTypeMatrix[i][j] = "sb_1__0_"
-                
-            elif numBlocks > 2 and j == len(macroTypeMatrix): # if we are at the top row
-                if i != 0 and i != len(macroTypeMatrix):
+                    print("SB CHANGED 1 ", macroTypeMatrix[i][j])
+
+            elif numBlocks > 2 and j == len(macroTypeMatrix[i])-1: # if we are at the top row
+                if i != 0 and i != len(macroTypeMatrix[i])-1:
                     macroTypeMatrix[i][j] = "sb_1__" + str(numBlocks) + "_"
+                    print("SB CHANGED 2 ", macroTypeMatrix[i][j])
 
             elif numBlocks > 2 and i == 0:
                 macroTypeMatrix[i][j] = "sb_0__1_"
-            
-            elif numBlocks > 2 and i == len(macroTypeMatrix):
-                macroTypeMatrix[i][j] = "sb_" + numBlocks + "__1_"
-            
-            elif numBlocks > 2:
-                macroTypeMatrix[i][j] = "sb_1__1_"
+                print("SB CHANGED 3 ", macroTypeMatrix[i][j])
+
+            elif numBlocks > 2 and i == len(macroTypeMatrix[i])-1:
+                macroTypeMatrix[i][j] = "sb_" + str(numBlocks) + "__1_"
+                print("SB CHANGED 4 ", macroTypeMatrix[i][j])
+
+            else:
+                if numBlocks > 2:
+                    macroTypeMatrix[i][j] = "sb_1__1_"
+                    print("SB CHANGED 5 ", macroTypeMatrix[i][j], " i = ", i)
+
 
 print(macroTypeMatrix)
 
@@ -291,19 +301,16 @@ for i in range(len(macroTypeMatrix)):
         # Find index 
         index = macroNames.index(macroTypeMatrix[i][j]) # Find what type of module we are placing
         bottom_left_x[i][j] = macrox[i][j] - block_width[index]//2
-        #print(bottom_left_y[i][j])
-       # print(macroy[j][i])
-        #print(block_height[index])
         bottom_left_y[i][j] = macroy[j][i] - block_height[index]//2 # problem is with macroy
         
         #print("Placing at i = ", i, ". j = ", j, ". macrox[i][j] = ", macrox[i][j], ". macroy[i][j] = ", macroy[i][j], ". macroy[j][i] = ", macroy[j][i])
         # IMPORTANT lines, this assigns what will ultimately be written to the file
         if macroNames[index] == "grid_clb_":
-            macro_placement += macroNames[index] + str(int(i/2)+1) + "__" + str(int(j/2)+1) + "_ " + str(bottom_left_x[i][j]) + " " + str(bottom_left_y[i][j]) + " N \n"
+            macro_placement += macroNames[index] + " " + str(bottom_left_x[i][j]) + " " + str(bottom_left_y[i][j]) + " N \n"#+ str(int(i/2)+1) + "__" + str(int(j/2)+1) + "_ " + str(bottom_left_x[i][j]) + " " + str(bottom_left_y[i][j]) + " N \n"
         elif macroNames[index][0:3] == "cbx":
-            macro_placement += "cbx_" + str(int(i/2)+1) + "__" + str(int(j/2)) + "_ " + str(bottom_left_x[i][j]) + " " + str(bottom_left_y[i][j]) + " N \n"
+            macro_placement += macroNames[index] + " " + str(bottom_left_x[i][j]) + " " + str(bottom_left_y[i][j]) + " N \n"
         elif macroNames[index][0:3] == "cby":
-            macro_placement += "cby_" + str(int(i/2)) + "__" + str(int(j/2)+1) + "_ " + str(bottom_left_x[i][j]) + " " + str(bottom_left_y[i][j]) + " N \n"
+            macro_placement += macroNames[index] + " " + str(bottom_left_x[i][j]) + " " + str(bottom_left_y[i][j]) + " N \n"
         else:
             macro_placement += macroNames[index] +  " " + str(bottom_left_x[i][j]) + " " + str(bottom_left_y[i][j]) + " N \n"
 
