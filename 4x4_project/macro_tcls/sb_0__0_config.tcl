@@ -1,5 +1,5 @@
 # User config
-set ::env(DESIGN_NAME) cbx_1__0_
+set ::env(DESIGN_NAME) sb_0__0_
 
 # Change if needed
 set ::env(VERILOG_FILES) [glob $::env(DESIGN_DIR)/src/*.v]
@@ -17,3 +17,4 @@ set filename $::env(DESIGN_DIR)/$::env(PDK)_$::env(STD_CELL_LIBRARY)_config.tcl
 if { [file exists $filename] == 1} {
 	source $filename
 }
+

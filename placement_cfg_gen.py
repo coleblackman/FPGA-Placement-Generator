@@ -5,7 +5,7 @@ import os
 import re
 
 if len(sys.argv) > 1:
-    top_path = sys.argv[1]
+    top_path = sys.argv[1] + "/"
     print("\n\033[1;32mProject\033[m location supplied as a script argument: \033[1;32m", top_path, "\033[m")
 else:
     top_path = input('Input location of \033[1;32mproject\033[m, type \"local\" for local directory, or type \"default\" for default.\n> ')
@@ -14,6 +14,7 @@ else:
 # Set paths for config.tcl, macro_placement.cfg
 config_tcl_path = top_path + "/config.tcl"
 macro_placement_cfg_path = top_path + "macro_placement.cfg"
+print("Searching at ", macro_placement_cfg_path)
 if(os.path.exists(macro_placement_cfg_path)):
     rem = input('\nExisting macro_placement.cfg found on project path. Do you want to overwrite it? Type yes or no\n > ')
     if(rem == "yes"):
@@ -316,7 +317,7 @@ for i in range(len(macroTypeMatrix)):
             macro_placement += macroNames[index] +  " " + str(bottom_left_x[i][j]) + " " + str(bottom_left_y[i][j]) + " N \n"
 
 
-# Output to macro_placement.cfg, configured
+# Output to macro_placement.cfg, configu
 # with the correct inst name from the gds file
 
 macro_placement_path = top_path[0:-1] + "macro_placement.cfg"
