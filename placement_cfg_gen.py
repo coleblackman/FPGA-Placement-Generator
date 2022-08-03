@@ -247,7 +247,6 @@ centers_y = [0 for i in range(vertical_number)]
 # First define the bottom left block center coords:
 #index = macroNames.index(macroTypeMatrix[0][0])
 prior_half = max(block_width)//2
-print("PRIOR HALF: ", prior_half)
 centers_x[0] = int(min_padding) + prior_half
 for i in range(horizontal_number):
     if i == 0:
@@ -255,10 +254,8 @@ for i in range(horizontal_number):
     else:
         index = macroNames.index(macroTypeMatrix[i][0]) # get the previous 
         centers_x[i] = centers_x[i-1] + prior_half + min_gap + block_width[index]//2
-        print("Analyzing index = ", index, "Type: ", macroNames[index], " center: ", centers_x[i], " | prior center: ", centers_x[i-1], "Block_width[index]//2 = ", block_width[index]//2)
-
+        print("New centerline x: ", centers_x[i])
         prior_half = max(block_width)//2
-        print("PRIOR HALF: ", prior_half)
 
 
 index = macroNames.index(macroTypeMatrix[0][0])
@@ -268,9 +265,10 @@ for i in range(vertical_number):
     if i == 0:
         continue
     else:
-        print("attempting to find the index of the element: ", macroTypeMatrix[0][i])
         index = macroNames.index(macroTypeMatrix[0][i])
         centers_y[i] = centers_y[i-1] + min_gap + prior_half + block_height[index]//2
+        print("New centerline y: ", centers_y[i])
+
         prior_half = max(block_height)//2
 
 # macrox and macroy now contain the x and y coords of each block.
@@ -281,16 +279,19 @@ macroy = [[0 for i in range(horizontal_number)] for j in range(vertical_number)]
 for i in range(len(macroTypeMatrix)):
     for j in range(len(macroTypeMatrix[i])):
         macrox[i][j] = centers_x[i]
+        macroy[i][j] = centers_y[j]
+
 
 for i in range(len(macroTypeMatrix)):
     for j in range(len(macroTypeMatrix[i])):
-        macroy[i][j] = centers_y[i]
-
+        print("Module ", macroTypeMatrix[i][j], " has center ", macrox[i][j], ", ", macroy[i][j])
 
 # Now define the variable that will be eventually written to macro_placement.cfg
 macro_placement = ""
 
 # Convert from centers to bottom-left corner
+
+
 bottom_left_x = [[0 for i in range(horizontal_number)] for j in range(vertical_number)]
 bottom_left_y = [[0 for i in range(horizontal_number)] for j in range(vertical_number)]
 # Requires knowing what type each block is
@@ -302,10 +303,13 @@ for i in range(len(macroTypeMatrix)):
         # Based on type of macro, get the x width
         # Find index 
         index = macroNames.index(macroTypeMatrix[i][j]) # Find what type of module we are placing
-        bottom_left_x[i][j] = macrox[i][j] - block_width[index]//2
-        bottom_left_y[i][j] = macroy[j][i] - block_height[index]//2 # problem is with macroy
+        bottom_left_x[i][j] = macrox[i][j] - (block_width[index]//2)
+        bottom_left_y[i][j] = macroy[i][j] - (block_height[index]//2) # problem is with macroy
         
-        #print("Placing at i = ", i, ". j = ", j, ". macrox[i][j] = ", macrox[i][j], ". macroy[i][j] = ", macroy[i][j], ". macroy[j][i] = ", macroy[j][i])
+        print("Placing ", macroTypeMatrix[i][j], "at i = ", i, ". j = ", j, ". center x coordinate = ", macrox[i][j], "Center y coordinate = ", macroy[i][j])
+        print("for this module, calculated bottom left coordinates are: ", bottom_left_x[i][j], ",", bottom_left_y[i][j])
+        print("the module x width is ", block_width[index], "and the module y height is ", block_height[index])
+
         # IMPORTANT lines, this assigns what will ultimately be written to the file
         if macroNames[index] == "grid_clb_":
             macro_placement += "grid_clb" + "_" + str(int(i/2)+1) + "__" + str(int(j/2)+1) + "_ " + str(bottom_left_x[i][j]) + " " + str(bottom_left_y[i][j]) + " N \n"#+ str(int(i/2)+1) + "__" + str(int(j/2)+1) + "_ " + str(bottom_left_x[i][j]) + " " + str(bottom_left_y[i][j]) + " N \n"
