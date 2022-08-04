@@ -184,50 +184,17 @@ for i in range(len(macroTypeMatrix)):
         if i % 2 == 1 and j % 2 == 1: # found a grid_clb location
             macroTypeMatrix[i][j] = "grid_clb_" 
         elif i % 2 == 1 and j % 2 == 0: # found a cbx location
-            if j == 0:
-                macroTypeMatrix[i][j] = "cbx_1__0_"
-            elif j == len(macroTypeMatrix):
-                macroTypeMatrix[i][j] = "cbx_1__2_"
-            else:
-                macroTypeMatrix[i][j] = "cbx_1__1_"
+            macroTypeMatrix[i][j] = "cbx_" + str(int(i/2)+1) + "__" + str(int(j/2))+ "_"
             print("Found a cbx and assigned it: ", macroTypeMatrix[i][j])
 
 
         elif i % 2 == 0 and j % 2 == 1: # found a cby location
-            #macroTypeMatrix[i][j] = "cby_" + str(int(i/2)) + "__" + "1" + "_"
-            if i == 0:
-                macroTypeMatrix[i][j] = "cby_0__1_"
-            elif i == len(macroTypeMatrix):
-                macroTypeMatrix[i][j] = "cby_2__1_"
-            else:
-                macroTypeMatrix[i][j] = "cby_1__1_"
+            macroTypeMatrix[i][j] = "cby_" + str(int(i/2)) + "__" + str(int(j/2)+1) + "_"
         elif i % 2 == 0 and j % 2 == 0: # found sb location (WORKING because sb's never have overlap)
             macroTypeMatrix[i][j] = "sb_" + str(int(i/2)) + "__" + str(int(j/2)) + "_"
             print("\nfound an sb ", macroTypeMatrix[i][j])
             print("macroTypeMatrix length: ", len(macroTypeMatrix[i]))
-            # Now fix it if the grid size is greater than 2 and the placement above was wrong
-            if numBlocks > 2 and j == 0: # if it is on the bottom row
-                if i != 0 and i != len(macroTypeMatrix[i])-1: # assuming it is not a corner
-                    macroTypeMatrix[i][j] = "sb_1__0_"
-                    print("SB CHANGED 1 ", macroTypeMatrix[i][j])
-
-            elif numBlocks > 2 and j == len(macroTypeMatrix[i])-1: # if we are at the top row
-                if i != 0 and i != len(macroTypeMatrix[i])-1:
-                    macroTypeMatrix[i][j] = "sb_1__" + str(numBlocks) + "_"
-                    print("SB CHANGED 2 ", macroTypeMatrix[i][j])
-
-            elif numBlocks > 2 and i == 0:
-                macroTypeMatrix[i][j] = "sb_0__1_"
-                print("SB CHANGED 3 ", macroTypeMatrix[i][j])
-
-            elif numBlocks > 2 and i == len(macroTypeMatrix[i])-1:
-                macroTypeMatrix[i][j] = "sb_" + str(numBlocks) + "__1_"
-                print("SB CHANGED 4 ", macroTypeMatrix[i][j])
-
-            else:
-                if numBlocks > 2:
-                    macroTypeMatrix[i][j] = "sb_1__1_"
-                    print("SB CHANGED 5 ", macroTypeMatrix[i][j], " i = ", i)
+            
 
 
 print(macroTypeMatrix)
@@ -252,11 +219,18 @@ for i in range(horizontal_number):
     if i == 0:
         continue # iterate n times, from 1 to n
     else:
-        index = macroNames.index(macroTypeMatrix[i][0]) # get the previous 
+        if macroTypeMatrix[i][0][0:3] == "cbx": 
+            index = macroNames.index("cbx_1__0_") # let's assume all cbx blocks are the same size
+        elif macroTypeMatrix[i][0][0:3] == "cby":
+            index = macroNames.index("cby_1__0_") # let's assume all cby blocks are the same size
+        elif macroTypeMatrix[i][0][0:3] == "sb_":
+            index = macroNames.index("sb_0__0_") # let's assume all sb blocks are the same size
+        else:
+            index = macroNames.index(macroTypeMatrix[i][0])
+
         centers_x[i] = centers_x[i-1] + prior_half + min_gap + block_width[index]//2
         print("New centerline x: ", centers_x[i])
         prior_half = max(block_width)//2
-
 
 index = macroNames.index(macroTypeMatrix[0][0])
 prior_half = max(block_height)//2
@@ -265,7 +239,16 @@ for i in range(vertical_number):
     if i == 0:
         continue
     else:
-        index = macroNames.index(macroTypeMatrix[0][i])
+        if macroTypeMatrix[0][i][0:3] == "cbx": 
+            index = macroNames.index("cbx_1__0_") # let's assume all cbx blocks are the same size
+        elif macroTypeMatrix[0][i][0:3] == "cby":
+            index = macroNames.index("cby_0__1_") # let's assume all cby blocks are the same size
+        elif macroTypeMatrix[0][i][0:3] == "sb_":
+            index = macroNames.index("sb_0__0_") # let's assume all sb blocks are the same size
+        else:
+            index = macroNames.index(macroTypeMatrix[0][i])
+
+
         centers_y[i] = centers_y[i-1] + min_gap + prior_half + block_height[index]//2
         print("New centerline y: ", centers_y[i])
 
@@ -302,7 +285,24 @@ for i in range(len(macroTypeMatrix)):
     for j in range(len(macroTypeMatrix[i])):
         # Based on type of macro, get the x width
         # Find index 
-        index = macroNames.index(macroTypeMatrix[i][j]) # Find what type of module we are placing
+       # index = macroNames.index(macroTypeMatrix[i][j]) # Find what type of module we are placing
+
+########################################
+
+
+        if macroTypeMatrix[i][j][0:3] == "cbx": 
+            index = macroNames.index("cbx_1__0_") # let's assume all cbx blocks are the same size
+        elif macroTypeMatrix[i][j][0:3] == "cby":
+            index = macroNames.index("cby_0__1_") # let's assume all cby blocks are the same size
+        elif macroTypeMatrix[i][j][0:3] == "sb_":
+            index = macroNames.index("sb_0__0_") # let's assume all sb blocks are the same size
+        else:
+            index = macroNames.index(macroTypeMatrix[i][j])
+
+#########################################
+
+
+
         bottom_left_x[i][j] = macrox[i][j] - (block_width[index]//2)
         bottom_left_y[i][j] = macroy[i][j] - (block_height[index]//2) # problem is with macroy
         
@@ -314,11 +314,11 @@ for i in range(len(macroTypeMatrix)):
         if macroNames[index] == "grid_clb_":
             macro_placement += "grid_clb" + "_" + str(int(i/2)+1) + "__" + str(int(j/2)+1) + "_ " + str(bottom_left_x[i][j]) + " " + str(bottom_left_y[i][j]) + " N \n"#+ str(int(i/2)+1) + "__" + str(int(j/2)+1) + "_ " + str(bottom_left_x[i][j]) + " " + str(bottom_left_y[i][j]) + " N \n"
         elif macroNames[index][0:3] == "cbx":
-            macro_placement += macroNames[index] + " " + str(bottom_left_x[i][j]) + " " + str(bottom_left_y[i][j]) + " N \n"
+            macro_placement += macroTypeMatrix[i][j] + " " + str(bottom_left_x[i][j]) + " " + str(bottom_left_y[i][j]) + " N \n"
         elif macroNames[index][0:3] == "cby":
-            macro_placement += macroNames[index] + " " + str(bottom_left_x[i][j]) + " " + str(bottom_left_y[i][j]) + " N \n"
+            macro_placement += macroTypeMatrix[i][j] + " " + str(bottom_left_x[i][j]) + " " + str(bottom_left_y[i][j]) + " N \n"
         else:
-            macro_placement += macroNames[index] +  " " + str(bottom_left_x[i][j]) + " " + str(bottom_left_y[i][j]) + " N \n"
+            macro_placement += macroTypeMatrix[i][j]+  " " + str(bottom_left_x[i][j]) + " " + str(bottom_left_y[i][j]) + " N \n"
 
 
 # Output to macro_placement.cfg, configu
