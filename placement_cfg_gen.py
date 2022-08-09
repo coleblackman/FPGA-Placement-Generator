@@ -118,8 +118,10 @@ for i in range(len(macroNames)):
 
         for match in search_term.finditer(macro_tcl_data): 
             found = match.group()
-            macrox.append(int(found[5:-4]))
-            macroy.append(int(found[9:12]))
+            found = found[5:-1] # Trim the "" and the 0's
+            splitFound = found.split(" ")
+            macrox.append(int(splitFound[0]))
+            macroy.append(int(splitFound[1]))
             
 horizontal_size = dieX
 vertical_size = dieY
